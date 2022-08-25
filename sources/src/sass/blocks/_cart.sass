@@ -1,0 +1,272 @@
+.cart
+   margin-bottom: var(--mainMargin)
+   &__section
+      margin-bottom: 10px
+      display: none
+      &--active
+         display: block
+   &__title
+      margin-bottom: var(--mainMargin)
+   &__list
+      margin-bottom: 25px
+   &__item
+      margin-bottom: 10px
+      @extend %borderSec
+      padding: 12px
+      font-family: var(--firaSans)
+      overflow: hidden
+      &:last-child
+         margin-bottom: 0
+   &__top
+      padding-top: 18px
+      margin-bottom: 6px
+      display: flex
+      flex-direction: column
+      position: relative
+   &__delete
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 10px
+      min-width: 10px
+      height: 10px
+      position: absolute
+      right: 0
+      top: 0
+   &__pic
+      width: 100%
+      max-width: 100px
+      margin-bottom: 10px
+      border: 1px solid rgba(0, 0, 0, 0.1)
+      border-radius: 10px
+      overflow: hidden
+      img
+         display: block
+         width: 100%
+   &__right
+      display: flex
+      flex-grow: 1
+      flex-direction: column
+   &__info
+      margin-bottom: 10px
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+   &__numbers
+      max-width: 140px
+      display: flex
+      justify-content: space-between
+      font-size: 12px
+      line-height: 120%
+   &__name
+      margin-bottom: 8px
+      font-weight: 400
+      font-size: 16px
+   &__manage
+      max-width: 90px
+      padding: 2px
+      display: flex
+      align-items: center
+      border: 1px solid #F0F0F0
+      border-radius: 10px
+      &-btn
+         width: 24px
+         min-width: 24px
+         height: 24px
+         display: flex
+         justify-content: center
+         align-items: center
+         color: #C8C8C8
+         font-size: 18px
+         svg
+            width: 13px
+            height: 13px
+      &-num
+         padding-top: 2px
+         min-width: 30px
+         font-size: 14px
+         line-height: 120%
+         text-align: center
+         overflow: hidden
+   &__code
+      font-size: 12px
+      line-height: 120%
+      &-name
+         color: #858784
+   &__result
+      font-family: var(--firaSans)
+      &-item
+         margin-bottom: var(--mainMargin)
+         &:last-child
+            margin-bottom: 0
+      &-total
+         display: flex
+         justify-content: space-between
+      &-title
+         font-family: var(--firaSans)
+         font-weight: 400
+         font-size: 16px
+      &-price
+         min-width: 85px
+         font-weight: 400
+         font-size: 18px
+      &-author
+         .cart__result-title
+            margin-bottom: 12px
+      &-info
+         margin-bottom: var(--mainMargin)
+   &__form
+      &-top
+         @extend %borderSec
+         padding: 12px
+         border-radius: 10px 10px 0 0
+      &-bottom
+         @extend %borderSec
+         margin-bottom: var(--mainMargin)
+         padding: 12px
+         border-radius: 0 0 10px 10px
+      &-sec
+         margin-bottom: var(--mainMargin)
+         &:last-child
+            margin-bottom: 0
+      &-person
+         width: 100%
+         max-width: 350px
+         margin-bottom: 14px
+         display: flex
+         justify-content: space-between
+         flex-wrap: wrap
+         .cart
+            &__form
+               &-field
+                  margin-bottom: 10px
+                  width: calc(50% - 3px)
+      &-field
+         display: flex
+         flex-direction: column
+         align-items: flex-start
+      &-title
+         margin-bottom: 12px
+         font-family: var(--firaSans)
+         font-weight: 400
+         font-size: 16px
+      &-location
+         .cart
+            &__form
+               &-field
+                  margin-bottom: var(--mainMargin)
+                  &:last-child
+                     margin-bottom: 0
+   &__notify
+      @extend %borderSec
+      padding: 24px 34px
+
+      &-inner
+         width: 100%
+         max-width: 280px
+         margin: 0 auto
+         display: flex
+         flex-direction: column
+         align-items: center
+         text-align: center
+         font-family: var(--firaSans)
+         font-weight: 400
+         font-size: 20px
+         line-height: 120%
+      &-text
+         font-weight: 400
+         font-size: 20px
+      &-number
+         font-size: 25px
+         font-weight: 400
+      p
+         margin-bottom: var(--mainMargin)
+
+@media screen and (min-width: 390px)
+   .cart
+      &__top
+         padding: 0
+         padding-left: 18px
+         flex-direction: row
+      &__delete
+         left: 0
+         top: 50%
+         transform: translateY(-50%)
+      &__pic
+         max-width: 80px
+         margin: 0
+         margin-right: 10px
+      &__right
+         flex-direction: row
+      &__manage
+         margin: auto
+         margin-right: 0
+      &__bottom
+         padding-left: 18px
+      &__info
+         max-width: 128px
+         margin: 0
+
+@media screen and (min-width: 500px)
+   .cart
+      &__info
+         max-width: 200px
+
+@media screen and (min-width: $tablet)
+   .cart
+      &__shop
+         display: flex
+         align-items: flex-start
+      &__list
+         margin-bottom: 0
+         margin-right: var(--mainMargin)
+         flex-grow: 1
+      &__result
+         min-width: 250px
+
+@media screen and (min-width: 900px)
+   .cart
+      &__result
+         min-width: 350px
+      &__form
+         &-inner
+            padding: 24px 44px
+            background: #fff
+            border-radius: 10px
+            display: flex
+            justify-content: space-between
+            flex-wrap: wrap
+         &-top, &-bottom
+            padding: 0
+            background: transparent
+            border-radius: 0
+         &-col
+            width: calc(50% - 5px)
+            max-width: 336px
+            padding: 0 15px
+
+@media screen and (min-width: $desktop)
+   .cart
+      &__numbers
+         justify-content: flex-start
+         &-item
+            margin-right: 16px
+            &:last-child
+               margin-right: 0
+      &__result
+         min-width: 400px
+         &-title
+            font-size: 20px
+         &-price
+            font-size: 20px
+            text-align: right
+         &-author
+            .cart
+               &__result
+                  &-title
+                     font-size: 16px
+      &__form
+         &-inner
+            padding: 24px 88px
+         &-col
+            width: calc(50% - 10px)

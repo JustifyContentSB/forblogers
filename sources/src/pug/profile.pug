@@ -1,0 +1,93 @@
+extends base/_layout
+block head
+   title Профиль блогера
+block page
+   section.breadcrumbs
+      .breadcrumbs__inner
+         h2.visually-hidden Цепочка навигации по сайту
+         ul.breadcrumbs__list
+            li.breadcrumbs__item
+               a.breadcrumbs__link(href="#") 4BLOGERS
+            li.breadcrumbs__item
+               a.breadcrumbs__link(href="#") Свет
+            li.breadcrumbs__item
+               a.breadcrumbs__link(href="#") Кольцевые лампы
+            li.breadcrumbs__item
+               a.breadcrumbs__link.breadcrumbs__link--active(href="#") CXB-RGB-460
+
+   section.profile
+      .profile__inner.container
+         section.profile__main
+            h2.visually-hidden Профиль человека
+            .profile__top
+               h3.profile__name Olyashaa
+            .profile__info
+               .profile__ava
+                  picture
+                     source(srcset="images/profile/ava.webp" type="image/webp")
+                     img(src="images/profile/ava.png" alt="Фото профиля" width="190" height="190")
+               ul.social
+                  li.social__item
+                     a.social__link(href="#")
+                        img(src="images/soc/instagram.svg", alt="instagram" width="24" height="24")
+                  li.social__item
+                     a.social__link(href="#")
+                        img(src="images/soc/youtube.svg", alt="youtube" width="24" height="24")
+                  li.social__item
+                     a.social__link(href="#")
+                        img(src="images/soc/twitch.svg", alt="twitch" width="24" height="24")
+                  li.social__item
+                     a.social__link(href="#")
+                        img(src="images/soc/steam.svg", alt="steam" width="24" height="24")
+               ul.profile__table
+                     li.profile__table-item
+                        span.profile__table-title Команда:
+                        span Создатель контента
+                     li.profile__table-item
+                        span.profile__table-title Город:
+                        span Российская Федерация
+                     li.profile__table-item
+                        span.profile__table-title ABJ:
+                        span Ольга Саксон
+                     li.profile__table-item
+                        span.profile__table-title СДР:
+                        span Июнь  08, 1993
+         section.profile__setup
+            h2.profile__setup-heading.title #[span Рекомендуемое оборудование]
+            .profile__setup-info
+               .profile__setup-top
+                  h3.profile__setup-title.title Текущий cетап
+               .profile__setup-main
+                  ul.profile__setup-list
+                     li.profile__setup-item.profile__setup-item--active
+                        picture
+                           source(srcset="images/profile/setup.webp" type="image/webp")
+                           img(src="images/profile/setup.png" alt="Текущий сетап" width="294" height="294")
+                     li.profile__setup-item
+                        picture
+                           source(srcset="images/profile/setup.webp" type="image/webp")
+                           img(src="images/profile/setup.png" alt="Текущий сетап" width="294" height="294")
+                     li.profile__setup-item
+                        picture
+                           source(srcset="images/profile/setup.webp" type="image/webp")
+                           img(src="images/profile/setup.png" alt="Текущий сетап" width="294" height="294")
+                     li.profile__setup-item
+                        picture
+                           source(srcset="images/profile/setup.webp" type="image/webp")
+                           img(src="images/profile/setup.png" alt="Текущий сетап" width="294" height="294")
+                  .profile__setup-bottom
+                     h4.profile__setup-model.title Razer Strider XXL
+                     a.profile__setup-read(href="#") Читать комментарий
+
+         section.profile__about
+            .profile__setup-top
+               h3.profile__setup-title.title Инфо...
+            .profile__text
+               p.
+                  Стас Давыдов родился в Риге в русской семье. С детства он увлекался музыкой. Вторым хобби мальчика была радиоэлектроника. Впоследствии технический склад ума помог юноше поступить в Авиационный институт при Рижском техническом университете. В студенчестве Стас играл за команду КВН «109 кабинет».
+
+               p.
+                  Давыдову приписывали отношения с популярной ютуб-блогершей Катей Клэп, в тандеме с которой он записал несколько роликов и снялся в телевизионной рекламе «Билайн». Однако Катя и Стас неоднократно заявляли, что между ними нет никаких романтических отношений.
+
+               p.
+                  В 2016 году ведущий женился на модели Инге Селивановой. Супруги живут в Риге и много путешествуют.

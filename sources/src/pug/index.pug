@@ -1,0 +1,183 @@
+extends base/_layout
+block head
+   title Главная
+block page
+   section.picture
+      h2.visually-hidden Картинки товара
+      .picture__slider
+         .swiper-wrapper
+            .picture__slide.swiper-slide
+               picture
+                  source(srcset="images/picture/picture-desktop.webp" media="(min-width: 1280px)" type="image/webp")
+                  source(srcset="images/picture/picture-desktop.jpg" media="(min-width: 1280px)" type="image/jpeg")
+                  source(srcset="images/picture/picture-tablet.webp" media="(min-width: 768px)" type="image/webp")
+                  source(srcset="images/picture/picture-tablet.jpg" media="(min-width: 768px)" type="image/jpeg")
+                  source(srcset="images/picture/picture-mob.webp" type="image/webp")
+                  img(src="images/picture/picture-mob.jpg" alt="Картинка товара" width="390" height="419")
+            .picture__slide.swiper-slide
+               picture
+                  source(srcset="images/picture/picture-desktop.webp" media="(min-width: 1280px)" type="image/webp")
+                  source(srcset="images/picture/picture-desktop.jpg" media="(min-width: 1280px)" type="image/jpeg")
+                  source(srcset="images/picture/picture-tablet.webp" media="(min-width: 768px)" type="image/webp")
+                  source(srcset="images/picture/picture-tablet.jpg" media="(min-width: 768px)" type="image/jpeg")
+                  source(srcset="images/picture/picture-mob.webp" type="image/webp")
+                  img(src="images/picture/picture-mob.jpg" alt="Картинка товара" width="390" height="419")
+            .picture__slide.swiper-slide
+               picture
+                  source(srcset="images/picture/picture-desktop.webp" media="(min-width: 1280px)" type="image/webp")
+                  source(srcset="images/picture/picture-desktop.jpg" media="(min-width: 1280px)" type="image/jpeg")
+                  source(srcset="images/picture/picture-tablet.webp" media="(min-width: 768px)" type="image/webp")
+                  source(srcset="images/picture/picture-tablet.jpg" media="(min-width: 768px)" type="image/jpeg")
+                  source(srcset="images/picture/picture-mob.webp" type="image/webp")
+                  img(src="images/picture/picture-mob.jpg" alt="Картинка товара" width="390" height="419")
+         .picture__pagination
+            .swiper-pagination
+
+   section.goods
+      .goods__inner.container
+         .goods__shop
+            .goods__manage
+               button.goods__manage-btn.goods__manage-btn--active.title По категориям 
+               span.goods__manage-separator /
+               button.goods__manage-btn.title По блогерам
+            .goods__chapter
+               ul.goods__list
+                  li.goods__item
+                     a.goods__product(href="#")
+                        .goods__pic
+                           picture
+                              source(srcset="images/goods/goods-desk.webp" media="(min-width: 1280px)" type="image/webp")
+                              source(srcset="images/goods/goods-desk.jpg" media="(min-width: 1280px)" type="image/jpeg")
+                              source(srcset="images/goods/goods-mob.webp" type="image/webp")
+                              img(src="images/goods/goods-mob.png" alt="Картинка товара" width="81" height="50")
+                        h3.goods__name Ноутбук
+                           span
+                              svg
+                                 use(href="images/sprites/main.stack.svg#svg-arrow")
+                  li.goods__item
+                     a.goods__product(href="#")
+                        .goods__pic
+                           picture
+                              source(srcset="images/goods/goods-desk.webp" media="(min-width: 1280px)" type="image/webp")
+                              source(srcset="images/goods/goods-desk.jpg" media="(min-width: 1280px)" type="image/jpeg")
+                              source(srcset="images/goods/goods-mob.webp" type="image/webp")
+                              img(src="images/goods/goods-mob.png" alt="Картинка товара" width="81" height="50")
+                        h3.goods__name Ноутбук
+                           span
+                              svg
+                                 use(href="images/sprites/main.stack.svg#svg-arrow")
+                  li.goods__item
+                     a.goods__product(href="#")
+                        .goods__pic
+                           picture
+                              source(srcset="images/goods/goods-desk.webp" media="(min-width: 1280px)" type="image/webp")
+                              source(srcset="images/goods/goods-desk.jpg" media="(min-width: 1280px)" type="image/jpeg")
+                              source(srcset="images/goods/goods-mob.webp" type="image/webp")
+                              img(src="images/goods/goods-mob.png" alt="Картинка товара" width="81" height="50")
+                        h3.goods__name Ноутбук
+                           span
+                              svg
+                                 use(href="images/sprites/main.stack.svg#svg-arrow")
+                  li.goods__item
+                     a.goods__product(href="#")
+                        .goods__pic
+                           picture
+                              source(srcset="images/goods/goods-desk.webp" media="(min-width: 1280px)" type="image/webp")
+                              source(srcset="images/goods/goods-desk.jpg" media="(min-width: 1280px)" type="image/jpeg")
+                              source(srcset="images/goods/goods-mob.webp" type="image/webp")
+                              img(src="images/goods/goods-mob.png" alt="Картинка товара" width="81" height="50")
+                        h3.goods__name Ноутбук
+                           span
+                              svg
+                                 use(href="images/sprites/main.stack.svg#svg-arrow")
+                  li.goods__item
+                     a.goods__product(href="#")
+                        .goods__pic
+                           picture
+                              source(srcset="images/goods/goods-desk.webp" media="(min-width: 1280px)" type="image/webp")
+                              source(srcset="images/goods/goods-desk.jpg" media="(min-width: 1280px)" type="image/jpeg")
+                              source(srcset="images/goods/goods-mob.webp" type="image/webp")
+                              img(src="images/goods/goods-mob.png" alt="Картинка товара" width="81" height="50")
+                        h3.goods__name Ноутбук
+                           span
+                              svg
+                                 use(href="images/sprites/main.stack.svg#svg-arrow")
+                  li.goods__item
+                     a.goods__product(href="#")
+                        .goods__pic
+                           picture
+                              source(srcset="images/goods/goods-desk.webp" media="(min-width: 1280px)" type="image/webp")
+                              source(srcset="images/goods/goods-desk.jpg" media="(min-width: 1280px)" type="image/jpeg")
+                              source(srcset="images/goods/goods-mob.webp" type="image/webp")
+                              img(src="images/goods/goods-mob.png" alt="Картинка товара" width="81" height="50")
+                        h3.goods__name Ноутбук
+                           span
+                              svg
+                                 use(href="images/sprites/main.stack.svg#svg-arrow")
+                  li.goods__item
+                     a.goods__product(href="#")
+                        .goods__pic
+                           picture
+                              source(srcset="images/goods/goods-desk.webp" media="(min-width: 1280px)" type="image/webp")
+                              source(srcset="images/goods/goods-desk.jpg" media="(min-width: 1280px)" type="image/jpeg")
+                              source(srcset="images/goods/goods-mob.webp" type="image/webp")
+                              img(src="images/goods/goods-mob.png" alt="Картинка товара" width="81" height="50")
+                        h3.goods__name Ноутбук
+                           span
+                              svg
+                                 use(href="images/sprites/main.stack.svg#svg-arrow")
+                  li.goods__item
+                     a.goods__product(href="#")
+                        .goods__pic
+                           picture
+                              source(srcset="images/goods/goods-desk.webp" media="(min-width: 1280px)" type="image/webp")
+                              source(srcset="images/goods/goods-desk.jpg" media="(min-width: 1280px)" type="image/jpeg")
+                              source(srcset="images/goods/goods-mob.webp" type="image/webp")
+                              img(src="images/goods/goods-mob.png" alt="Картинка товара" width="81" height="50")
+                        h3.goods__name Ноутбук
+                           span
+                              svg
+                                 use(href="images/sprites/main.stack.svg#svg-arrow")
+
+         .goods__news.news
+            h2.news__title.title Новости / Блог
+            .news__list
+               a.news__item.news__item--active(href="#") 
+                  article.news__article
+                     time.news__date 25 июля 2022
+                     .news__pic
+                        picture
+                           source(srcset="images/news/news-desk.webp" media="(min-width: 1280px)" type="image/webp")
+                           source(srcset="images/news/news-desk.jpg" media="(min-width: 1280px)" type="image/png")
+                           source(srcset="images/news/news.webp" type="image/webp")
+                           img(src="images/news/news.png" alt="Картинка товара" width="320" height="135")
+                     .news__info
+                        h3.news__heading.title Уход за механической клавиатурой
+                        p.
+                           Мороженое в магазинах дорожает из-за импортной упаковки, стабилизаторов, эмульгаторов и разных других вещей
+               a.news__item(href="#")
+                  article.news__article
+                     time.news__date 25 июля 2022
+                     .news__pic
+                        picture
+                           source(srcset="images/news/news-desk.webp" media="(min-width: 1280px)" type="image/webp")
+                           source(srcset="images/news/news-desk.jpg" media="(min-width: 1280px)" type="image/png")
+                           source(srcset="images/news/news.webp" type="image/webp")
+                           img(src="images/news/news.png" alt="Картинка товара" width="320" height="135")
+                     .news__info
+                        h3.news__heading.title Уход за механической клавиатурой
+                        p.
+                           Мороженое в магазинах дорожает из-за импортной упаковки, стабилизаторов, эмульгаторов и разных других вещей
+               a.news__item(href="#") 
+                  article.news__article
+                     time.news__date 25 июля 2022
+                     .news__pic
+                        picture
+                           source(srcset="images/news/news-desk.webp" media="(min-width: 1280px)" type="image/webp")
+                           source(srcset="images/news/news-desk.jpg" media="(min-width: 1280px)" type="image/png")
+                           source(srcset="images/news/news.webp" type="image/webp")
+                           img(src="images/news/news.png" alt="Картинка товара" width="320" height="135")
+                     .news__info
+                        h3.news__heading.title Уход за механической клавиатурой
+                        p.
+                           Мороженое в магазинах дорожает из-за импортной упаковки, стабилизаторов, эмульгаторов и разных других вещей

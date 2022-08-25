@@ -1,0 +1,192 @@
+extends base/_layout
+block head
+   title Корзина
+block page
+   section.breadcrumbs
+      .breadcrumbs__inner
+         h2.visually-hidden Цепочка навигации по сайту
+         ul.breadcrumbs__list
+            li.breadcrumbs__item
+               a.breadcrumbs__link(href="#") 4BLOGERS
+            li.breadcrumbs__item
+               a.breadcrumbs__link(href="#") Корзина
+
+   section.cart
+      .cart__inner.container
+         h2.cart__title.main-title Корзина
+         .cart__section.cart__section--active
+            .cart__shop
+               ul.cart__list
+                  li.cart__item
+                     .cart__top
+                        button.cart__delete
+                           span.visually-hidden Удалить товар
+                           svg
+                              use(href="images/sprites/main.stack.svg#svg-close")
+                        .cart__pic
+                           picture
+                              source(srcset="images/cart/cart.webp" type="image/webp")
+                              img(src="images/cart/cart.png" alt="Картинка товара" width="80" height="80")
+                        .cart__right
+                           .cart__info
+                              h3.cart__name Razer Basilisk X Razer Basilisk X
+                              .cart__numbers
+                                 p.cart__numbers-item Цена: #[span.cart__price 1400]
+                                 p.cart__numbers-item Сумма: #[span.cart__price 19600]
+                           .cart__manage
+                              button.cart__manage-btn
+                                 span.visually-hidden Убавить количество товара
+                                 span
+                                    svg
+                                       use(href="images/sprites/main.stack.svg#svg-minus")
+                              span.cart__manage-num 14
+                              button.cart__manage-btn
+                                 span.visually-hidden Добавить количество товара
+                                 span
+                                    svg
+                                       use(href="images/sprites/main.stack.svg#svg-plus")
+                     .cart__bottom
+                        .cart__code
+                           span Артикул: 
+                           span.cart__code-name Razer
+                  li.cart__item
+                     .cart__top
+                        button.cart__delete
+                           span.visually-hidden Удалить товар
+                           svg
+                              use(href="images/sprites/main.stack.svg#svg-close")
+                        .cart__pic
+                           picture
+                              source(srcset="images/cart/cart.webp" type="image/webp")
+                              img(src="images/cart/cart.png" alt="Картинка товара" width="80" height="80")
+                        .cart__right
+                           .cart__info
+                              h3.cart__name Razer Basilisk X Razer Basilisk X
+                              .cart__numbers
+                                 p.cart__numbers-item Цена: #[span.cart__price 1400]
+                                 p.cart__numbers-item Сумма: #[span.cart__price 19600]
+                           .cart__manage
+                              button.cart__manage-btn
+                                 span.visually-hidden Убавить количество товара
+                                 span
+                                    svg
+                                       use(href="images/sprites/main.stack.svg#svg-minus")
+                              span.cart__manage-num 14
+                              button.cart__manage-btn
+                                 span.visually-hidden Добавить количество товара
+                                 span
+                                    svg
+                                       use(href="images/sprites/main.stack.svg#svg-plus")
+                     .cart__bottom
+                        .cart__code
+                           span Артикул: 
+                           span.cart__code-name Razer
+                  li.cart__item
+                     .cart__top
+                        button.cart__delete
+                           span.visually-hidden Удалить товар
+                           svg
+                              use(href="images/sprites/main.stack.svg#svg-close")
+                        .cart__pic
+                           picture
+                              source(srcset="images/cart/cart.webp" type="image/webp")
+                              img(src="images/cart/cart.png" alt="Картинка товара" width="80" height="80")
+                        .cart__right
+                           .cart__info
+                              h3.cart__name Razer Basilisk X Razer Basilisk X
+                              .cart__numbers
+                                 p.cart__numbers-item Цена: #[span.cart__price 1400]
+                                 p.cart__numbers-item Сумма: #[span.cart__price 19600]
+                           .cart__manage
+                              button.cart__manage-btn
+                                 span.visually-hidden Убавить количество товара
+                                 span
+                                    svg
+                                       use(href="images/sprites/main.stack.svg#svg-minus")
+                              span.cart__manage-num 14
+                              button.cart__manage-btn
+                                 span.visually-hidden Добавить количество товара
+                                 span
+                                    svg
+                                       use(href="images/sprites/main.stack.svg#svg-plus")
+                     .cart__bottom
+                        .cart__code
+                           span Артикул: 
+                           span.cart__code-name Razer
+               .cart__result
+                  .cart__result-info
+                     p.cart__result-item.cart__result-total
+                        span.cart__result-title Итого:
+                        span.cart__result-price  19600Р
+                     .cart__result-item.cart__result-author
+                        p.cart__result-title Код автора:
+                        a.btn.btn--empty(href="#") Код сертификата
+                  a.btn.btn--cart(href="#") Продолжить оформление
+               
+         .cart__section.cart__section--active
+            form.cart__form(action="#")
+               .cart__form-inner
+                  .cart__form-col.cart__form-top
+                     .cart__form-person.cart__form-sec
+                        .cart__form-field
+                           h3.cart__form-title Телефон *
+                           input.field(type="tel" placeholder="Номер телефона")
+                        .cart__form-field
+                           h3.cart__form-title Имя
+                           input.field(type="text" placeholder="Представьтесь")
+                     .cart__form-choose.cart__form-sec
+                        .choose
+                           h3.cart__form-title Доставка
+                           .choose__item
+                              label.choose__label
+                                 input(type="radio" name="delivery")
+                                 span.choose__radio
+                                 span.choose__info
+                                    span.choose__title Самовывоз из пункта выдачи в Москве
+                                    span.choose__desc Работает с 10 - 12 мы находимся по адресу
+                                 span.choose__price +300Р
+                           .choose__item
+                              label.choose__label
+                                 input(type="radio" name="delivery")
+                                 span.choose__radio
+                                 span.choose__info
+                                    span.choose__title До квартиры
+                                    span.choose__desc Наш офис работает круглосуточно
+                                 span.choose__price +300Р
+                  .cart__form-col
+                     .cart__form-col__inner.cart__form-bottom
+                        .cart__form-location.cart__form-sec
+                           .cart__form-field
+                              h3.cart__form-title Населенный пункт / Город *
+                              input.field(type="tel" placeholder="Укажите адрес доставки")
+                           .cart__form-field
+                              h3.cart__form-title Улица / Дом / Квартира *
+                              input.field(type="text" placeholder="Укажите адрес доставки")
+                        .cart__form-choose.cart__form-sec
+                           .choose
+                              h3.cart__form-title Способ оплаты
+                              .choose__item
+                                 label.choose__label
+                                    input(type="radio" name="payment")
+                                    span.choose__radio
+                                    span.choose__info
+                                       span.choose__title Банковской картой Онлайн
+                              .choose__item
+                                 label.choose__label
+                                    input(type="radio" name="payment")
+                                    span.choose__radio
+                                    span.choose__info
+                                       span.choose__title Наличными курьеру при получении
+                                       span.choose__desc Можно и картой  когда приедет курьер
+                     button.btn.btn--cart Подтвердить заказ
+
+         .cart__section.cart__section--active
+            .cart__notify
+               .cart__notify-inner
+                  p.cart__notify-text Спасибо! Ваш заказ успешно сформирован!
+                  p.cart__notify-number Номер вашего заказа: 12313
+                  p.cart__notify-text Наши менеджеры свяжутся с Вами в ближайшее время!
+                  .cart__notify-pic
+                     picture
+                        source(srcset="images/cart/cart-notify.webp" type="image/webp")
+                        img(src="images/cart/cart-notify.png" alt="спасибо" width="160" height="198")

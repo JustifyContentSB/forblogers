@@ -1,0 +1,214 @@
+@use 'sass:math';
+
+%svg-common {
+	background: url("../images/sprites/main.svg") no-repeat;
+}
+
+.svg-svg-arrow {
+	@extend %svg-common;
+	background-position: 48% 75.55555555555556%;
+	background-size: math.div(65, 15)*100% auto;
+	width: 15px;
+
+}
+@mixin svg-pos-svg-arrow {
+	background-position: 48% 75.55555555555556%;
+}
+@mixin svg-svg-arrow-hover {
+	.svg-svg-arrow {
+		@include svg-pos-svg-arrow-hover
+	}
+}
+
+.svg-svg-arrow:before {
+	content:"";
+	display:block;
+	font-size:0;
+	line-height:0;
+	padding-top: math.div(13, 15)*100%;
+}
+
+.svg-svg-arrow-dims {
+	width: 15px;
+	height: 13px;
+}
+
+.svg-svg-basket {
+	@extend %svg-common;
+	background-position: 100% 0;
+	background-size: math.div(65, 31)*100% auto;
+	width: 31px;
+
+}
+@mixin svg-pos-svg-basket {
+	background-position: 100% 0;
+}
+@mixin svg-svg-basket-hover {
+	.svg-svg-basket {
+		@include svg-pos-svg-basket-hover
+	}
+}
+
+.svg-svg-basket:before {
+	content:"";
+	display:block;
+	font-size:0;
+	line-height:0;
+	padding-top: math.div(28, 31)*100%;
+}
+
+.svg-svg-basket-dims {
+	width: 31px;
+	height: 28px;
+}
+
+.svg-svg-burger {
+	@extend %svg-common;
+	background-position: 0 0;
+	background-size: math.div(65, 34)*100% auto;
+	width: 34px;
+
+}
+@mixin svg-pos-svg-burger {
+	background-position: 0 0;
+}
+@mixin svg-svg-burger-hover {
+	.svg-svg-burger {
+		@include svg-pos-svg-burger-hover
+	}
+}
+
+.svg-svg-burger:before {
+	content:"";
+	display:block;
+	font-size:0;
+	line-height:0;
+	padding-top: math.div(34, 34)*100%;
+}
+
+.svg-svg-burger-dims {
+	width: 34px;
+	height: 34px;
+}
+
+.svg-svg-close {
+	@extend %svg-common;
+	background-position: 94.44444444444444% 72.34042553191489%;
+	background-size: math.div(65, 11)*100% auto;
+	width: 11px;
+
+}
+@mixin svg-pos-svg-close {
+	background-position: 94.44444444444444% 72.34042553191489%;
+}
+@mixin svg-svg-close-hover {
+	.svg-svg-close {
+		@include svg-pos-svg-close-hover
+	}
+}
+
+.svg-svg-close:before {
+	content:"";
+	display:block;
+	font-size:0;
+	line-height:0;
+	padding-top: math.div(11, 11)*100%;
+}
+
+.svg-svg-close-dims {
+	width: 11px;
+	height: 11px;
+}
+
+.svg-svg-loop {
+	@extend %svg-common;
+	background-position: 0 100%;
+	background-size: math.div(65, 24)*100% auto;
+	width: 24px;
+
+}
+@mixin svg-pos-svg-loop {
+	background-position: 0 100%;
+}
+@mixin svg-svg-loop-hover {
+	.svg-svg-loop {
+		@include svg-pos-svg-loop-hover
+	}
+}
+
+.svg-svg-loop:before {
+	content:"";
+	display:block;
+	font-size:0;
+	line-height:0;
+	padding-top: math.div(24, 24)*100%;
+}
+
+.svg-svg-loop-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-svg-minus {
+	@extend %svg-common;
+	background-position: 64.15094339622641% 52.83018867924528%;
+	background-size: math.div(65, 12)*100% auto;
+	width: 12px;
+
+}
+@mixin svg-pos-svg-minus {
+	background-position: 64.15094339622641% 52.83018867924528%;
+}
+@mixin svg-svg-minus-hover {
+	.svg-svg-minus {
+		@include svg-pos-svg-minus-hover
+	}
+}
+
+.svg-svg-minus:before {
+	content:"";
+	display:block;
+	font-size:0;
+	line-height:0;
+	padding-top: math.div(5, 12)*100%;
+}
+
+.svg-svg-minus-dims {
+	width: 12px;
+	height: 5px;
+}
+
+.svg-svg-plus {
+	@extend %svg-common;
+	background-position: 73.58490566037736% 75.55555555555556%;
+	background-size: math.div(65, 12)*100% auto;
+	width: 12px;
+
+}
+@mixin svg-pos-svg-plus {
+	background-position: 73.58490566037736% 75.55555555555556%;
+}
+@mixin svg-svg-plus-hover {
+	.svg-svg-plus {
+		@include svg-pos-svg-plus-hover
+	}
+}
+
+.svg-svg-plus:before {
+	content:"";
+	display:block;
+	font-size:0;
+	line-height:0;
+	padding-top: math.div(13, 12)*100%;
+}
+
+.svg-svg-plus-dims {
+	width: 12px;
+	height: 13px;
+}
+
+
+.image-by-height { width:auto; }
+.image-by-height:before { content:none; }
+.image-by-height > svg { height: inherit; }
+.image-by-height > img { height: inherit !important; vertical-align: top !important; margin: 0 !important; padding: 0 !important; max-width: none !important; max-height: none !important; border: 0 !important; opacity: 0 !important; }

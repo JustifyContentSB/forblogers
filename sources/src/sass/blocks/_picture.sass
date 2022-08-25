@@ -1,0 +1,32 @@
+.picture
+   &__pagination
+      height: 40px
+      position: relative
+   &__slider
+      overflow: hidden
+      .swiper
+         &-pagination
+            bottom: auto
+            top: 50%
+            transform: translateY(-50%)
+            &-bullet
+               width: 15px
+               height: 15px
+               margin: 0 10px !important
+               background: #000 !important
+               opacity: 1
+               &-active
+                  background: #545454 !important
+   &__slide
+      img
+         display: block
+         width: 100%
+
+@media screen and (min-width: $desktop)
+   .picture
+      &__pagination
+         height: 40px
+
+@media screen and (min-width: $desktopMedium)
+   .picture
+      margin-bottom: 10px

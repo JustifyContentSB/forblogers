@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Корзина</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" href="images/favicons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/favicons/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicons/android-chrome-96x96.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="images/favicons/manifest.json">
+    <link rel="yandex-tableau-widget" href="images/favicons/yandex-browser-manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/favicons/mstile-144x144.png">
+    <meta name="msapplication-config" content="images/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="css/main.min.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__inner">
+          <div class="header__menu">
+            <button class="header__burger"><span class="visually-hidden">открыть меню</span>
+              <svg>
+                <use href="images/sprites/main.stack.svg#svg-burger"></use>
+              </svg>
+            </button>
+          </div><a class="header__logo logo" href="#">
+            <h1 class="logo__title">4BLOGERS</h1></a>
+          <div class="header__right">
+            <form class="header__search" action="#">
+              <button class="header__search-btn"><span class="visually-hidden">открыть поиск</span>
+                <svg>
+                  <use href="images/sprites/main.stack.svg#svg-loop"></use>
+                </svg>
+              </button>
+            </form><a class="header__cart" href="#"><span class="visually-hidden">Открыть корзину товаров</span>
+              <svg>
+                <use href="images/sprites/main.stack.svg#svg-basket"></use>
+              </svg><span class="header__cart-num">10</span></a>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="breadcrumbs">
+          <div class="breadcrumbs__inner">
+            <h2 class="visually-hidden">Цепочка навигации по сайту</h2>
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">4BLOGERS</a></li>
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Корзина</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="cart">
+          <div class="cart__inner container">
+            <h2 class="cart__title main-title">Корзина</h2>
+            <div class="cart__section cart__section--active">
+              <div class="cart__shop">
+                <ul class="cart__list">
+                  <li class="cart__item">
+                    <div class="cart__top">
+                      <button class="cart__delete"><span class="visually-hidden">Удалить товар</span>
+                        <svg>
+                          <use href="images/sprites/main.stack.svg#svg-close"></use>
+                        </svg>
+                      </button>
+                      <div class="cart__pic">
+                        <picture>
+                          <source srcset="images/cart/cart.webp" type="image/webp"><img src="images/cart/cart.png" alt="Картинка товара" width="80" height="80">
+                        </picture>
+                      </div>
+                      <div class="cart__right">
+                        <div class="cart__info">
+                          <h3 class="cart__name">Razer Basilisk X Razer Basilisk X</h3>
+                          <div class="cart__numbers">
+                            <p class="cart__numbers-item">Цена: <span class="cart__price">1400</span></p>
+                            <p class="cart__numbers-item">Сумма: <span class="cart__price">19600</span></p>
+                          </div>
+                        </div>
+                        <div class="cart__manage">
+                          <button class="cart__manage-btn"><span class="visually-hidden">Убавить количество товара</span><span>
+                              <svg>
+                                <use href="images/sprites/main.stack.svg#svg-minus"></use>
+                              </svg></span></button><span class="cart__manage-num">14</span>
+                          <button class="cart__manage-btn"><span class="visually-hidden">Добавить количество товара</span><span>
+                              <svg>
+                                <use href="images/sprites/main.stack.svg#svg-plus"></use>
+                              </svg></span></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cart__bottom">
+                      <div class="cart__code"><span>Артикул: </span><span class="cart__code-name">Razer</span></div>
+                    </div>
+                  </li>
+                  <li class="cart__item">
+                    <div class="cart__top">
+                      <button class="cart__delete"><span class="visually-hidden">Удалить товар</span>
+                        <svg>
+                          <use href="images/sprites/main.stack.svg#svg-close"></use>
+                        </svg>
+                      </button>
+                      <div class="cart__pic">
+                        <picture>
+                          <source srcset="images/cart/cart.webp" type="image/webp"><img src="images/cart/cart.png" alt="Картинка товара" width="80" height="80">
+                        </picture>
+                      </div>
+                      <div class="cart__right">
+                        <div class="cart__info">
+                          <h3 class="cart__name">Razer Basilisk X Razer Basilisk X</h3>
+                          <div class="cart__numbers">
+                            <p class="cart__numbers-item">Цена: <span class="cart__price">1400</span></p>
+                            <p class="cart__numbers-item">Сумма: <span class="cart__price">19600</span></p>
+                          </div>
+                        </div>
+                        <div class="cart__manage">
+                          <button class="cart__manage-btn"><span class="visually-hidden">Убавить количество товара</span><span>
+                              <svg>
+                                <use href="images/sprites/main.stack.svg#svg-minus"></use>
+                              </svg></span></button><span class="cart__manage-num">14</span>
+                          <button class="cart__manage-btn"><span class="visually-hidden">Добавить количество товара</span><span>
+                              <svg>
+                                <use href="images/sprites/main.stack.svg#svg-plus"></use>
+                              </svg></span></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cart__bottom">
+                      <div class="cart__code"><span>Артикул: </span><span class="cart__code-name">Razer</span></div>
+                    </div>
+                  </li>
+                  <li class="cart__item">
+                    <div class="cart__top">
+                      <button class="cart__delete"><span class="visually-hidden">Удалить товар</span>
+                        <svg>
+                          <use href="images/sprites/main.stack.svg#svg-close"></use>
+                        </svg>
+                      </button>
+                      <div class="cart__pic">
+                        <picture>
+                          <source srcset="images/cart/cart.webp" type="image/webp"><img src="images/cart/cart.png" alt="Картинка товара" width="80" height="80">
+                        </picture>
+                      </div>
+                      <div class="cart__right">
+                        <div class="cart__info">
+                          <h3 class="cart__name">Razer Basilisk X Razer Basilisk X</h3>
+                          <div class="cart__numbers">
+                            <p class="cart__numbers-item">Цена: <span class="cart__price">1400</span></p>
+                            <p class="cart__numbers-item">Сумма: <span class="cart__price">19600</span></p>
+                          </div>
+                        </div>
+                        <div class="cart__manage">
+                          <button class="cart__manage-btn"><span class="visually-hidden">Убавить количество товара</span><span>
+                              <svg>
+                                <use href="images/sprites/main.stack.svg#svg-minus"></use>
+                              </svg></span></button><span class="cart__manage-num">14</span>
+                          <button class="cart__manage-btn"><span class="visually-hidden">Добавить количество товара</span><span>
+                              <svg>
+                                <use href="images/sprites/main.stack.svg#svg-plus"></use>
+                              </svg></span></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cart__bottom">
+                      <div class="cart__code"><span>Артикул: </span><span class="cart__code-name">Razer</span></div>
+                    </div>
+                  </li>
+                </ul>
+                <div class="cart__result">
+                  <div class="cart__result-info">
+                    <p class="cart__result-item cart__result-total"><span class="cart__result-title">Итого:</span><span class="cart__result-price"> 19600Р</span></p>
+                    <div class="cart__result-item cart__result-author">
+                      <p class="cart__result-title">Код автора:</p><a class="btn btn--empty" href="#">Код сертификата</a>
+                    </div>
+                  </div><a class="btn btn--cart" href="#">Продолжить оформление</a>
+                </div>
+              </div>
+            </div>
+            <div class="cart__section cart__section--active">
+              <form class="cart__form" action="#">
+                <div class="cart__form-inner">
+                  <div class="cart__form-col cart__form-top">
+                    <div class="cart__form-person cart__form-sec">
+                      <div class="cart__form-field">
+                        <h3 class="cart__form-title">Телефон *</h3>
+                        <input class="field" type="tel" placeholder="Номер телефона">
+                      </div>
+                      <div class="cart__form-field">
+                        <h3 class="cart__form-title">Имя</h3>
+                        <input class="field" type="text" placeholder="Представьтесь">
+                      </div>
+                    </div>
+                    <div class="cart__form-choose cart__form-sec">
+                      <div class="choose">
+                        <h3 class="cart__form-title">Доставка</h3>
+                        <div class="choose__item">
+                          <label class="choose__label">
+                            <input type="radio" name="delivery"><span class="choose__radio"></span><span class="choose__info"><span class="choose__title">Самовывоз из пункта выдачи в Москве</span><span class="choose__desc">Работает с 10 - 12 мы находимся по адресу</span></span><span class="choose__price">+300Р</span>
+                          </label>
+                        </div>
+                        <div class="choose__item">
+                          <label class="choose__label">
+                            <input type="radio" name="delivery"><span class="choose__radio"></span><span class="choose__info"><span class="choose__title">До квартиры</span><span class="choose__desc">Наш офис работает круглосуточно</span></span><span class="choose__price">+300Р</span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cart__form-col">
+                    <div class="cart__form-col__inner cart__form-bottom">
+                      <div class="cart__form-location cart__form-sec">
+                        <div class="cart__form-field">
+                          <h3 class="cart__form-title">Населенный пункт / Город *</h3>
+                          <input class="field" type="tel" placeholder="Укажите адрес доставки">
+                        </div>
+                        <div class="cart__form-field">
+                          <h3 class="cart__form-title">Улица / Дом / Квартира *</h3>
+                          <input class="field" type="text" placeholder="Укажите адрес доставки">
+                        </div>
+                      </div>
+                      <div class="cart__form-choose cart__form-sec">
+                        <div class="choose">
+                          <h3 class="cart__form-title">Способ оплаты</h3>
+                          <div class="choose__item">
+                            <label class="choose__label">
+                              <input type="radio" name="payment"><span class="choose__radio"></span><span class="choose__info"><span class="choose__title">Банковской картой Онлайн</span></span>
+                            </label>
+                          </div>
+                          <div class="choose__item">
+                            <label class="choose__label">
+                              <input type="radio" name="payment"><span class="choose__radio"></span><span class="choose__info"><span class="choose__title">Наличными курьеру при получении</span><span class="choose__desc">Можно и картой  когда приедет курьер</span></span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="btn btn--cart">Подтвердить заказ</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="cart__section cart__section--active">
+              <div class="cart__notify">
+                <div class="cart__notify-inner">
+                  <p class="cart__notify-text">Спасибо! Ваш заказ успешно сформирован!</p>
+                  <p class="cart__notify-number">Номер вашего заказа: 12313</p>
+                  <p class="cart__notify-text">Наши менеджеры свяжутся с Вами в ближайшее время!</p>
+                  <div class="cart__notify-pic">
+                    <picture>
+                      <source srcset="images/cart/cart-notify.webp" type="image/webp"><img src="images/cart/cart-notify.png" alt="спасибо" width="160" height="198">
+                    </picture>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__inner container"><a class="footer__logo logo" href="#">
+            <h2 class="logo__title">4BLOGERS</h2></a>
+          <div class="footer__info">
+            <div class="footer__info-sec">
+              <h3 class="footer__info-title">Шоурум</h3>
+              <address class="footer__address">Каждый день <br>
+                11:00 – 20:00 <br>
+                м. Курская <br>
+                Нижний Сусальный переулок, <br>
+                5с4, подъезд 8
+              </address><a class="footer__btn" href="#">Онлайн тур</a>
+            </div>
+            <div class="footer__info-sec">
+              <h3 class="footer__info-title">Полезная информация</h3>
+              <nav class="footer__nav">
+                <ul class="footer__nav-menu">
+                  <li><a href="#">Доставка и оплата</a></li>
+                  <li><a href="#">Гарантия и возврат</a></li>
+                  <li><a href="#">Шоурум</a></li>
+                  <li><a href="#">Статьи</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

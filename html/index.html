@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Главная</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" href="images/favicons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/favicons/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicons/android-chrome-96x96.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="images/favicons/manifest.json">
+    <link rel="yandex-tableau-widget" href="images/favicons/yandex-browser-manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/favicons/mstile-144x144.png">
+    <meta name="msapplication-config" content="images/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="css/main.min.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__inner">
+          <div class="header__menu">
+            <button class="header__burger"><span class="visually-hidden">открыть меню</span>
+              <svg>
+                <use href="images/sprites/main.stack.svg#svg-burger"></use>
+              </svg>
+            </button>
+          </div><a class="header__logo logo" href="#">
+            <h1 class="logo__title">4BLOGERS</h1></a>
+          <div class="header__right">
+            <form class="header__search" action="#">
+              <button class="header__search-btn"><span class="visually-hidden">открыть поиск</span>
+                <svg>
+                  <use href="images/sprites/main.stack.svg#svg-loop"></use>
+                </svg>
+              </button>
+            </form><a class="header__cart" href="#"><span class="visually-hidden">Открыть корзину товаров</span>
+              <svg>
+                <use href="images/sprites/main.stack.svg#svg-basket"></use>
+              </svg><span class="header__cart-num">10</span></a>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="picture">
+          <h2 class="visually-hidden">Картинки товара</h2>
+          <div class="picture__slider">
+            <div class="swiper-wrapper">
+              <div class="picture__slide swiper-slide">
+                <picture>
+                  <source srcset="images/picture/picture-desktop.webp" media="(min-width: 1280px)" type="image/webp">
+                  <source srcset="images/picture/picture-desktop.jpg" media="(min-width: 1280px)" type="image/jpeg">
+                  <source srcset="images/picture/picture-tablet.webp" media="(min-width: 768px)" type="image/webp">
+                  <source srcset="images/picture/picture-tablet.jpg" media="(min-width: 768px)" type="image/jpeg">
+                  <source srcset="images/picture/picture-mob.webp" type="image/webp"><img src="images/picture/picture-mob.jpg" alt="Картинка товара" width="390" height="419">
+                </picture>
+              </div>
+              <div class="picture__slide swiper-slide">
+                <picture>
+                  <source srcset="images/picture/picture-desktop.webp" media="(min-width: 1280px)" type="image/webp">
+                  <source srcset="images/picture/picture-desktop.jpg" media="(min-width: 1280px)" type="image/jpeg">
+                  <source srcset="images/picture/picture-tablet.webp" media="(min-width: 768px)" type="image/webp">
+                  <source srcset="images/picture/picture-tablet.jpg" media="(min-width: 768px)" type="image/jpeg">
+                  <source srcset="images/picture/picture-mob.webp" type="image/webp"><img src="images/picture/picture-mob.jpg" alt="Картинка товара" width="390" height="419">
+                </picture>
+              </div>
+              <div class="picture__slide swiper-slide">
+                <picture>
+                  <source srcset="images/picture/picture-desktop.webp" media="(min-width: 1280px)" type="image/webp">
+                  <source srcset="images/picture/picture-desktop.jpg" media="(min-width: 1280px)" type="image/jpeg">
+                  <source srcset="images/picture/picture-tablet.webp" media="(min-width: 768px)" type="image/webp">
+                  <source srcset="images/picture/picture-tablet.jpg" media="(min-width: 768px)" type="image/jpeg">
+                  <source srcset="images/picture/picture-mob.webp" type="image/webp"><img src="images/picture/picture-mob.jpg" alt="Картинка товара" width="390" height="419">
+                </picture>
+              </div>
+            </div>
+            <div class="picture__pagination">
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </section>
+        <section class="goods">
+          <div class="goods__inner container">
+            <div class="goods__shop">
+              <div class="goods__manage">
+                <button class="goods__manage-btn goods__manage-btn--active title">По категориям </button><span class="goods__manage-separator">/</span>
+                <button class="goods__manage-btn title">По блогерам</button>
+              </div>
+              <div class="goods__chapter">
+                <ul class="goods__list">
+                  <li class="goods__item"><a class="goods__product" href="#">
+                      <div class="goods__pic">
+                        <picture>
+                          <source srcset="images/goods/goods-desk.webp" media="(min-width: 1280px)" type="image/webp">
+                          <source srcset="images/goods/goods-desk.jpg" media="(min-width: 1280px)" type="image/jpeg">
+                          <source srcset="images/goods/goods-mob.webp" type="image/webp"><img src="images/goods/goods-mob.png" alt="Картинка товара" width="81" height="50">
+                        </picture>
+                      </div>
+                      <h3 class="goods__name">Ноутбук<span>
+                          <svg>
+                            <use href="images/sprites/main.stack.svg#svg-arrow"></use>
+                          </svg></span></h3></a></li>
+                  <li class="goods__item"><a class="goods__product" href="#">
+                      <div class="goods__pic">
+                        <picture>
+                          <source srcset="images/goods/goods-desk.webp" media="(min-width: 1280px)" type="image/webp">
+                          <source srcset="images/goods/goods-desk.jpg" media="(min-width: 1280px)" type="image/jpeg">
+                          <source srcset="images/goods/goods-mob.webp" type="image/webp"><img src="images/goods/goods-mob.png" alt="Картинка товара" width="81" height="50">
+                        </picture>
+                      </div>
+                      <h3 class="goods__name">Ноутбук<span>
+                          <svg>
+                            <use href="images/sprites/main.stack.svg#svg-arrow"></use>
+                          </svg></span></h3></a></li>
+                  <li class="goods__item"><a class="goods__product" href="#">
+                      <div class="goods__pic">
+                        <picture>
+                          <source srcset="images/goods/goods-desk.webp" media="(min-width: 1280px)" type="image/webp">
+                          <source srcset="images/goods/goods-desk.jpg" media="(min-width: 1280px)" type="image/jpeg">
+                          <source srcset="images/goods/goods-mob.webp" type="image/webp"><img src="images/goods/goods-mob.png" alt="Картинка товара" width="81" height="50">
+                        </picture>
+                      </div>
+                      <h3 class="goods__name">Ноутбук<span>
+                          <svg>
+                            <use href="images/sprites/main.stack.svg#svg-arrow"></use>
+                          </svg></span></h3></a></li>
+                  <li class="goods__item"><a class="goods__product" href="#">
+                      <div class="goods__pic">
+                        <picture>
+                          <source srcset="images/goods/goods-desk.webp" media="(min-width: 1280px)" type="image/webp">
+                          <source srcset="images/goods/goods-desk.jpg" media="(min-width: 1280px)" type="image/jpeg">
+                          <source srcset="images/goods/goods-mob.webp" type="image/webp"><img src="images/goods/goods-mob.png" alt="Картинка товара" width="81" height="50">
+                        </picture>
+                      </div>
+                      <h3 class="goods__name">Ноутбук<span>
+                          <svg>
+                            <use href="images/sprites/main.stack.svg#svg-arrow"></use>
+                          </svg></span></h3></a></li>
+                  <li class="goods__item"><a class="goods__product" href="#">
+                      <div class="goods__pic">
+                        <picture>
+                          <source srcset="images/goods/goods-desk.webp" media="(min-width: 1280px)" type="image/webp">
+                          <source srcset="images/goods/goods-desk.jpg" media="(min-width: 1280px)" type="image/jpeg">
+                          <source srcset="images/goods/goods-mob.webp" type="image/webp"><img src="images/goods/goods-mob.png" alt="Картинка товара" width="81" height="50">
+                        </picture>
+                      </div>
+                      <h3 class="goods__name">Ноутбук<span>
+                          <svg>
+                            <use href="images/sprites/main.stack.svg#svg-arrow"></use>
+                          </svg></span></h3></a></li>
+                  <li class="goods__item"><a class="goods__product" href="#">
+                      <div class="goods__pic">
+                        <picture>
+                          <source srcset="images/goods/goods-desk.webp" media="(min-width: 1280px)" type="image/webp">
+                          <source srcset="images/goods/goods-desk.jpg" media="(min-width: 1280px)" type="image/jpeg">
+                          <source srcset="images/goods/goods-mob.webp" type="image/webp"><img src="images/goods/goods-mob.png" alt="Картинка товара" width="81" height="50">
+                        </picture>
+                      </div>
+                      <h3 class="goods__name">Ноутбук<span>
+                          <svg>
+                            <use href="images/sprites/main.stack.svg#svg-arrow"></use>
+                          </svg></span></h3></a></li>
+                  <li class="goods__item"><a class="goods__product" href="#">
+                      <div class="goods__pic">
+                        <picture>
+                          <source srcset="images/goods/goods-desk.webp" media="(min-width: 1280px)" type="image/webp">
+                          <source srcset="images/goods/goods-desk.jpg" media="(min-width: 1280px)" type="image/jpeg">
+                          <source srcset="images/goods/goods-mob.webp" type="image/webp"><img src="images/goods/goods-mob.png" alt="Картинка товара" width="81" height="50">
+                        </picture>
+                      </div>
+                      <h3 class="goods__name">Ноутбук<span>
+                          <svg>
+                            <use href="images/sprites/main.stack.svg#svg-arrow"></use>
+                          </svg></span></h3></a></li>
+                  <li class="goods__item"><a class="goods__product" href="#">
+                      <div class="goods__pic">
+                        <picture>
+                          <source srcset="images/goods/goods-desk.webp" media="(min-width: 1280px)" type="image/webp">
+                          <source srcset="images/goods/goods-desk.jpg" media="(min-width: 1280px)" type="image/jpeg">
+                          <source srcset="images/goods/goods-mob.webp" type="image/webp"><img src="images/goods/goods-mob.png" alt="Картинка товара" width="81" height="50">
+                        </picture>
+                      </div>
+                      <h3 class="goods__name">Ноутбук<span>
+                          <svg>
+                            <use href="images/sprites/main.stack.svg#svg-arrow"></use>
+                          </svg></span></h3></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="goods__news news">
+              <h2 class="news__title title">Новости / Блог</h2>
+              <div class="news__list"><a class="news__item news__item--active" href="#"> 
+                  <article class="news__article">
+                    <time class="news__date">25 июля 2022</time>
+                    <div class="news__pic">
+                      <picture>
+                        <source srcset="images/news/news-desk.webp" media="(min-width: 1280px)" type="image/webp">
+                        <source srcset="images/news/news-desk.jpg" media="(min-width: 1280px)" type="image/png">
+                        <source srcset="images/news/news.webp" type="image/webp"><img src="images/news/news.png" alt="Картинка товара" width="320" height="135">
+                      </picture>
+                    </div>
+                    <div class="news__info">
+                      <h3 class="news__heading title">Уход за механической клавиатурой</h3>
+                      <p>Мороженое в магазинах дорожает из-за импортной упаковки, стабилизаторов, эмульгаторов и разных других вещей</p>
+                    </div>
+                  </article></a><a class="news__item" href="#">
+                  <article class="news__article">
+                    <time class="news__date">25 июля 2022</time>
+                    <div class="news__pic">
+                      <picture>
+                        <source srcset="images/news/news-desk.webp" media="(min-width: 1280px)" type="image/webp">
+                        <source srcset="images/news/news-desk.jpg" media="(min-width: 1280px)" type="image/png">
+                        <source srcset="images/news/news.webp" type="image/webp"><img src="images/news/news.png" alt="Картинка товара" width="320" height="135">
+                      </picture>
+                    </div>
+                    <div class="news__info">
+                      <h3 class="news__heading title">Уход за механической клавиатурой</h3>
+                      <p>Мороженое в магазинах дорожает из-за импортной упаковки, стабилизаторов, эмульгаторов и разных других вещей</p>
+                    </div>
+                  </article></a><a class="news__item" href="#"> 
+                  <article class="news__article">
+                    <time class="news__date">25 июля 2022</time>
+                    <div class="news__pic">
+                      <picture>
+                        <source srcset="images/news/news-desk.webp" media="(min-width: 1280px)" type="image/webp">
+                        <source srcset="images/news/news-desk.jpg" media="(min-width: 1280px)" type="image/png">
+                        <source srcset="images/news/news.webp" type="image/webp"><img src="images/news/news.png" alt="Картинка товара" width="320" height="135">
+                      </picture>
+                    </div>
+                    <div class="news__info">
+                      <h3 class="news__heading title">Уход за механической клавиатурой</h3>
+                      <p>Мороженое в магазинах дорожает из-за импортной упаковки, стабилизаторов, эмульгаторов и разных других вещей</p>
+                    </div>
+                  </article></a></div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__inner container"><a class="footer__logo logo" href="#">
+            <h2 class="logo__title">4BLOGERS</h2></a>
+          <div class="footer__info">
+            <div class="footer__info-sec">
+              <h3 class="footer__info-title">Шоурум</h3>
+              <address class="footer__address">Каждый день <br>
+                11:00 – 20:00 <br>
+                м. Курская <br>
+                Нижний Сусальный переулок, <br>
+                5с4, подъезд 8
+              </address><a class="footer__btn" href="#">Онлайн тур</a>
+            </div>
+            <div class="footer__info-sec">
+              <h3 class="footer__info-title">Полезная информация</h3>
+              <nav class="footer__nav">
+                <ul class="footer__nav-menu">
+                  <li><a href="#">Доставка и оплата</a></li>
+                  <li><a href="#">Гарантия и возврат</a></li>
+                  <li><a href="#">Шоурум</a></li>
+                  <li><a href="#">Статьи</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

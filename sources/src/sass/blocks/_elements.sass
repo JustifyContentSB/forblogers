@@ -1,0 +1,128 @@
+.title
+   font-family: var(--firaSans)
+   font-weight: 400
+   font-size: 24px
+   line-height: 120%
+
+.main-title
+   font-family: var(--robotoCond)
+   font-weight: 400
+   font-size: 24px
+   line-height: 120%
+
+.logo
+   display: inline-block
+   &__title
+      font-weight: 400
+      font-size: 24px
+      line-height: 28px
+      font-family: var(--robotoCond)
+
+.btn
+   display: inline-block
+   padding: 5px 12px
+   border: 1px solid rgba(0, 0, 0, 0.1)
+   border-radius: 10px
+   cursor: pointer
+   background: #0083F1
+   color: #fff
+   font-family: var(--robotoCond)
+   font-size: 12px
+   line-height: 120%
+   font-weight: 400
+   text-align: center
+   &--empty
+      font-family: var(--firaSans)
+      background: #fff
+      color: #000
+      border: 1px solid rgba(0, 0, 0, 0.5)
+   &--cart
+      width: 100%
+      padding: 11px 24px
+      font-size: 18px
+      text-align: left
+      border: 1px solid rgba(0, 0, 0, 0.5)
+
+.field
+   width: auto
+   padding: 5px 8px
+   border-radius: 10px
+   font-size: 12px
+   line-height: 120%
+   font-weight: 400
+   font-family: var(--firaSans)
+   background: #fff
+   color: #000
+   border: 1px solid rgba(0, 0, 0, 0.5)
+   text-align: center
+   box-sizing: content-box
+   &::placeholder
+      text-align: center
+      color: #000
+   &:focus::placeholder
+      color: transparent
+
+.choose
+   &__item
+      margin-bottom: var(--mainMargin)
+      &:last-child
+         margin-bottom: 0
+   &__label
+      padding: 12px
+      display: flex
+      align-items: center
+      border: 1px solid rgba(0, 0, 0, 0.1)
+      border-radius: 10px
+      cursor: pointer
+   &__radio
+      width: 15px
+      min-width: 15px
+      height: 15px
+      margin-right: 24px
+      border-radius: 50%
+      background: #C4C4C4
+      position: relative
+      &::after
+         content: ''
+         position: absolute
+         top: 50%
+         left: 50%
+         transform: translate(-50%, -50%)
+         width: 5px
+         height: 5px
+         border-radius: 50%
+         background: #0083F1
+         opacity: 0
+         transition: opacity .2s ease
+   &__info
+      flex-grow: 1
+      font-family: var(--robotoCond)
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+   &__title
+      font-size: 16px
+   &__desc
+      font-size: 10px
+      line-height: 100%
+      color: #858784
+   &__price
+      font-family: var(--firaSans)
+      font-size: 12px
+      padding-left: 18px
+   input
+      display: none
+      &:checked ~ .choose__radio::after
+         opacity: 1
+
+@media screen and (min-width: 500px)
+   .btn
+      &--cart
+         text-align: center
+
+@media screen and (min-width: $desktop)
+   .main-title
+      font-size: 28px
+   .choose
+      &__price
+         padding-left: 12px

@@ -1,0 +1,62 @@
+.news
+   &__title
+      margin-bottom: 20px
+   &__item
+      margin-bottom: 10px
+      display: none
+      &--active
+         display: block
+   &__article
+      @extend %borderSec
+      padding: 33px 15px 15px
+   &__info
+      font-family: var(--robotoCond)
+   &__date
+      display: block
+      margin-bottom: 13px
+      font-family: var(--firaSans)
+      font-weight: 400
+      color: #888888
+      font-size: 16px
+   &__pic
+      margin-bottom: 4px
+      display: flex
+      justify-content: center
+      img
+         display: block
+         width: 100%
+   &__heading.title
+      margin-bottom: 10px
+      font-size: 24px
+      font-family: var(--robotoCond)
+
+@media screen and (min-width: $tablet)
+   .news
+      &__list
+         display: grid
+         grid-template-columns: 1fr 1fr
+         grid-gap: 25px
+      &__item
+         margin: 0
+         &:nth-child(2)
+            display: block
+
+@media screen and (min-width: $desktop)
+   .news
+      &__list
+         grid-template-columns: repeat(3, 1fr)
+         grid-gap: 25px
+      &__item
+         display: block
+      &__pic
+         margin-bottom: 10px
+      &__info
+         padding: 0 2px
+
+@media screen and (min-width: $desktopMedium)
+   .news
+      &__title
+         padding: 0 25px
+         margin-bottom: 28px
+         &.title
+            font-size: 28px

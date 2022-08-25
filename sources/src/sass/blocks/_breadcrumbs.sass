@@ -1,0 +1,27 @@
+.breadcrumbs
+   font-weight: 400
+   font-size: 14px
+   line-height: 120%
+   font-family: var(--firaSans)
+   &__list
+      max-width: var(--containerWidth)
+      margin: 0 auto
+      padding: var(--mainMargin)
+      padding-right: 0
+      display: flex
+      white-space: nowrap
+      overflow-x: auto
+   &__item
+      &:not(:last-child)
+         margin-right: 7px
+         padding-right: 12px
+         position: relative
+         &::after
+            content: '>'
+            position: absolute
+            right: 0
+            top: 0
+            color: #858784
+   &__link
+      &--active
+         color: #858784
