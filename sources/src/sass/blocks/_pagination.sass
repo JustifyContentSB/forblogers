@@ -1,0 +1,47 @@
+.pagination
+   margin-bottom: var(--mainMargin)
+   &__inner
+      width: 100%
+      max-width: 250px
+      margin: 0 auto
+      display: flex
+      justify-content: space-between
+      align-items: center
+      font-family: var(--robotoCond)
+   &__desktop
+      display: none
+   &__list
+      display: flex
+   &__btn
+      width: 50px
+      min-width: 50px
+      height: 50px
+      padding: 5px
+      display: flex
+      justify-content: center
+      align-items: center
+      background: #fff
+      &--arrow
+         width: 40px
+         min-width: 40px
+   &__mob
+      font-size: 24px
+
+@media screen and (min-width: $tablet)
+   .pagination
+      &__inner
+         max-width: 510px
+         margin: 0
+         justify-content: flex-start
+         flex-wrap: wrap
+      &__mob
+         display: none
+      &__desktop
+         margin: 0 10px
+         display: block
+      &__list
+         .pagination
+            &__btn
+               margin-right: 10px
+               &:last-child
+                  margin-right: 0

@@ -1,0 +1,89 @@
+.shop
+   &__list
+      margin-bottom: var(--mainMargin)
+   &__item
+      @extend %borderSec
+      margin-bottom: 10px
+      display: none
+      &--active
+         display: block
+      &-inner
+         width: 100%
+         max-width: 400px
+         margin: 0 auto
+   &__model
+      margin-bottom: var(--mainMargin)
+      text-align: center
+   &__slider
+      margin-bottom: 10px
+      overflow: hidden
+   &__pic
+      height: 274px
+      border-radius: 10px
+      overflow: hidden
+      position: relative
+   &__code
+      margin-bottom: 10px
+      font-weight: 300
+      font-size: 12px
+      color: #C4C4C4
+      &-name
+         color: #000
+   &__manage
+      display: flex
+      flex-direction: column
+      align-items: center
+   &__price
+      margin-bottom: 10px
+      font-size: 24px
+      font-family: var(--robotoCond)
+   &__pagination
+      padding-top: 10px
+      display: flex
+      .swiper
+         &-pagination
+            &-bullet
+               height: 5px !important
+               margin: 0 !important
+               flex-grow: 1
+               border-radius: 0
+               background: #C4C4C4
+               opacity: 1
+               &-active
+                  background: #000
+
+@media screen and (min-width: $tablet)
+   .shop
+      &__list
+         margin-bottom: 4px
+         display: flex
+         justify-content: space-between
+         flex-wrap: wrap
+      &__item
+         max-width: calc(50% - 10px)
+         margin-bottom: 20px
+         &:nth-child(2)
+            display: block
+         &-inner
+            max-width: 100%
+
+@media screen and (min-width: 1000px)
+   .shop
+      &__list
+         justify-content: flex-start
+      &__item
+         width: calc(33.33% - 13.5px)
+         margin-right: 20px
+         padding-bottom: 14px
+         display: block
+         &:nth-child(3n)
+            margin-right: 0
+      &__pic
+         height: 240px
+
+@media screen and (min-width: $desktop)
+   .shop
+      &__pic
+         height: 274px
+      &__price
+         margin-bottom: 14px

@@ -1,0 +1,247 @@
+extends base/_layout
+block head
+   title Каталог товаров
+block page
+   section.breadcrumbs
+      .breadcrumbs__inner
+         h2.visually-hidden Цепочка навигации по сайту
+         ul.breadcrumbs__list
+            li.breadcrumbs__item
+               a.breadcrumbs__link(href="#") 4BLOGERS
+            li.breadcrumbs__item
+               a.breadcrumbs__link(href="#") Каталог
+
+   section.catalog
+      .catalog__inner.container
+         h1.main-title Каталог товаров
+         header.catalog__header
+            .catalog__header-pic.background-image
+               picture
+                  source(srcset="images/catalog/catalog-title-desk.webp" media="(min-width: 768px)" type="image/webp")
+                  source(srcset="images/catalog/catalog-title-desk.jpg" media="(min-width: 768px)" type="image/jpeg")
+                  source(srcset="images/catalog/catalog-title.webp" type="image/webp")
+                  img(src="images/catalog/catalog-title.jpg" alt="Фоновая картинка" width="346" height="78")
+            h2.catalog__title Кольцевые лампы
+
+         form.filter
+            .filter__top
+               button.filter__reset(type="reset") Очистить
+               h2.title Фильтры
+               button.filter__toggle
+                  span.visually-hidden Раскрыть фильтр
+                  img(src="images/icons/filter.svg" alt="иконка" width="24" height="24")
+            .filter__manage
+               .filter__block
+                  h3.filter__type Цена, ₽
+                  .filter__col
+                     input.field.filter__btn(type="text" placeholder="10000")
+                     input.field.filter__btn(type="text" placeholder="10000")
+               .filter__block
+                  h3.filter__type Бренды
+                  .filter__col
+                     button.selector.filter__btn
+                        span.selector__text Apple
+                           span.selector__delete
+                              img(src="images/icons/close.svg" alt="удалить товар" width="8" height="8")
+                     button.selector.filter__btn.selector--active
+                        span.selector__text Apple
+                           span.selector__delete
+                              img(src="images/icons/close.svg" alt="удалить товар" width="8" height="8")
+                     button.selector.filter__btn.selector--disabled
+                        span.selector__text Apple
+                           span.selector__delete
+                              img(src="images/icons/close.svg" alt="удалить товар" width="8" height="8")
+               .filter__block
+                  h3.filter__type Размер
+                  .filter__col
+                     button.selector.filter__btn
+                        span.selector__text 1000
+                           span.selector__delete
+                              img(src="images/icons/close.svg" alt="удалить товар" width="8" height="8")
+                     button.selector.selector--active.filter__btn
+                        span.selector__text 100000
+                           span.selector__delete
+                              img(src="images/icons/close.svg" alt="удалить товар" width="8" height="8")
+               .filter__block
+                  h3.filter__type Цвет
+                  .filter__col
+                     button.filter__colour.filter__colour--white.filter__btn
+                        span.visually-hidden цвет белый
+                     button.filter__colour.filter__btn
+                        span.visually-hidden цвет черный
+
+         .catalog__regulate
+            .catalog__regulate-top
+               button.catalog__regulate-btn По популярности
+                  svg
+                     use(href="images/sprites/main.stack.svg#svg-arrow-down")
+               button.catalog__regulate-toggle
+                  span.visually-hidden раскрыть фильтр
+                  span
+                  span
+                  span
+         section.shop
+            h2.visually-hidden Список каталогов
+            ul.shop__list
+               li.shop__item.shop__item--active
+                  .shop__item-inner
+                     h3.shop__model.title CXB-RGB-460
+                     .shop__slider
+                        .shop__slider-inner
+                           .swiper-wrapper
+                              .shop__slide.swiper-slide
+                                 .shop__pic
+                                    .background-image
+                                       picture
+                                          source(srcset="images/shop/shop-model.webp" type="image/webp")
+                                          img(src="images/shop/shop-model.jpg" alt="Фоновая картинка" width="346" height="274")
+                              .shop__slide.swiper-slide
+                                 .shop__pic
+                                    .background-image
+                                       picture
+                                          source(srcset="images/shop/shop-model.webp" type="image/webp")
+                                          img(src="images/shop/shop-model.jpg" alt="Фоновая картинка" width="346" height="274")
+                              .shop__slide.swiper-slide
+                                 .shop__pic
+                                    .background-image
+                                       picture
+                                          source(srcset="images/shop/shop-model.webp" type="image/webp")
+                                          img(src="images/shop/shop-model.jpg" alt="Фоновая картинка" width="346" height="274")
+                              .shop__slide.swiper-slide
+                                 .shop__pic
+                                    .background-image
+                                       picture
+                                          source(srcset="images/shop/shop-model.webp" type="image/webp")
+                                          img(src="images/shop/shop-model.jpg" alt="Фоновая картинка" width="346" height="274")
+                              .shop__slide.swiper-slide
+                                 .shop__pic
+                                    .background-image
+                                       picture
+                                          source(srcset="images/shop/shop-model.webp" type="image/webp")
+                                          img(src="images/shop/shop-model.jpg" alt="Фоновая картинка" width="346" height="274")
+                           .shop__pagination
+                     .shop__bottom
+                        p.shop__code Код товара: 
+                           span.shop__code-name ZXC-1223123
+                        .shop__manage
+                           p.shop__price 2 400 ₽
+                           a.shop__btn.btn.btn--shop(href="#") Выбрать
+
+               li.shop__item
+                  .shop__item-inner
+                     h3.shop__model.title CXB-RGB-460
+                     .shop__slider
+                        .shop__slider-inner
+                           .swiper-wrapper
+                              .shop__slide.swiper-slide
+                                 .shop__pic
+                                    .background-image
+                                       picture
+                                          source(srcset="images/shop/shop-model.webp" type="image/webp")
+                                          img(src="images/shop/shop-model.jpg" alt="Фоновая картинка" width="346" height="274")
+                              .shop__slide.swiper-slide
+                                 .shop__pic
+                                    .background-image
+                                       picture
+                                          source(srcset="images/shop/shop-model.webp" type="image/webp")
+                                          img(src="images/shop/shop-model.jpg" alt="Фоновая картинка" width="346" height="274")
+                              .shop__slide.swiper-slide
+                                 .shop__pic
+                                    .background-image
+                                       picture
+                                          source(srcset="images/shop/shop-model.webp" type="image/webp")
+                                          img(src="images/shop/shop-model.jpg" alt="Фоновая картинка" width="346" height="274")
+                              .shop__slide.swiper-slide
+                                 .shop__pic
+                                    .background-image
+                                       picture
+                                          source(srcset="images/shop/shop-model.webp" type="image/webp")
+                                          img(src="images/shop/shop-model.jpg" alt="Фоновая картинка" width="346" height="274")
+                              .shop__slide.swiper-slide
+                                 .shop__pic
+                                    .background-image
+                                       picture
+                                          source(srcset="images/shop/shop-model.webp" type="image/webp")
+                                          img(src="images/shop/shop-model.jpg" alt="Фоновая картинка" width="346" height="274")
+                           .shop__pagination
+                     .shop__bottom
+                        p.shop__code Код товара: 
+                           span.shop__code-name ZXC-1223123
+                        .shop__manage
+                           p.shop__price 2 400 ₽
+                           a.shop__btn.btn.btn--shop(href="#") Выбрать
+
+               li.shop__item
+                  .shop__item-inner
+                     h3.shop__model.title CXB-RGB-460
+                     .shop__slider
+                        .shop__slider-inner
+                           .swiper-wrapper
+                              .shop__slide.swiper-slide
+                                 .shop__pic
+                                    .background-image
+                                       picture
+                                          source(srcset="images/shop/shop-model.webp" type="image/webp")
+                                          img(src="images/shop/shop-model.jpg" alt="Фоновая картинка" width="346" height="274")
+                              .shop__slide.swiper-slide
+                                 .shop__pic
+                                    .background-image
+                                       picture
+                                          source(srcset="images/shop/shop-model.webp" type="image/webp")
+                                          img(src="images/shop/shop-model.jpg" alt="Фоновая картинка" width="346" height="274")
+                              .shop__slide.swiper-slide
+                                 .shop__pic
+                                    .background-image
+                                       picture
+                                          source(srcset="images/shop/shop-model.webp" type="image/webp")
+                                          img(src="images/shop/shop-model.jpg" alt="Фоновая картинка" width="346" height="274")
+                              .shop__slide.swiper-slide
+                                 .shop__pic
+                                    .background-image
+                                       picture
+                                          source(srcset="images/shop/shop-model.webp" type="image/webp")
+                                          img(src="images/shop/shop-model.jpg" alt="Фоновая картинка" width="346" height="274")
+                              .shop__slide.swiper-slide
+                                 .shop__pic
+                                    .background-image
+                                       picture
+                                          source(srcset="images/shop/shop-model.webp" type="image/webp")
+                                          img(src="images/shop/shop-model.jpg" alt="Фоновая картинка" width="346" height="274")
+                           .shop__pagination
+                     .shop__bottom
+                        p.shop__code Код товара: 
+                           span.shop__code-name ZXC-1223123
+                        .shop__manage
+                           p.shop__price 2 400 ₽
+                           a.shop__btn.btn.btn--shop(href="#") Выбрать
+
+            section.pagination
+               h2.visually-hidden Пагинация на сайте
+               .pagination__inner
+                  button.pagination__btn.pagination__btn--arrow
+                     span.visually-hidden предыдущая
+                     img(src="images/icons/arrow-left.svg" alt="предыдущая" width="18" height="18")
+                  .pagination__info
+                     .pagination__mob
+                        span 1
+                        span /
+                        span 41
+                     .pagination__desktop
+                        .pagination__list
+                           a.pagination__page.pagination__btn(href="#") 1
+                           a.pagination__page.pagination__btn(href="#") 2
+                           a.pagination__page.pagination__btn(href="#") 3
+                           a.pagination__page.pagination__btn(href="#") 4
+                           a.pagination__page.pagination__btn(href="#") 5
+                           a.pagination__page.pagination__btn(href="#") ..
+                           a.pagination__page.pagination__btn(href="#") 41
+                  button.pagination__btn.pagination__btn--arrow
+                     span.visually-hidden следующая
+                     img(src="images/icons/arrow-right.svg" alt="следующая" width="16" height="16")
+
+         article.catalog__article
+            h2.title Сео текст для каталога
+            p.
+               Эта уникальная 7-рядная клавиатура — дань уважения классической раскладке, применявшейся в олдовых ноутбуках Lenovo / IBM серии ThinkPad вплоть до 2012 года. Много воды утекло с тех пор, но олды не забывают. Вот и ребята из Tex решили воплотить мечту многих, вернув легенду к жизни, не забыв при этом отсыпать ей щепотку новых возможностей.
+
+

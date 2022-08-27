@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Каталог товаров</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" href="images/favicons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/favicons/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicons/android-chrome-96x96.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="images/favicons/manifest.json">
+    <link rel="yandex-tableau-widget" href="images/favicons/yandex-browser-manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/favicons/mstile-144x144.png">
+    <meta name="msapplication-config" content="images/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="css/main.min.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__inner">
+          <div class="header__menu">
+            <button class="header__burger"><span class="visually-hidden">открыть меню</span>
+              <svg>
+                <use href="images/sprites/main.stack.svg#svg-burger"></use>
+              </svg>
+            </button>
+          </div><a class="header__logo logo" href="#">
+            <h1 class="logo__title">4BLOGERS</h1></a>
+          <div class="header__right">
+            <form class="header__search" action="#">
+              <button class="header__search-btn"><span class="visually-hidden">открыть поиск</span>
+                <svg>
+                  <use href="images/sprites/main.stack.svg#svg-loop"></use>
+                </svg>
+              </button>
+            </form><a class="header__cart" href="#"><span class="visually-hidden">Открыть корзину товаров</span>
+              <svg>
+                <use href="images/sprites/main.stack.svg#svg-basket"></use>
+              </svg><span class="header__cart-num">10</span></a>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="breadcrumbs">
+          <div class="breadcrumbs__inner">
+            <h2 class="visually-hidden">Цепочка навигации по сайту</h2>
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">4BLOGERS</a></li>
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Каталог</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="catalog">
+          <div class="catalog__inner container">
+            <h1 class="main-title">Каталог товаров</h1>
+            <header class="catalog__header">
+              <div class="catalog__header-pic background-image">
+                <picture>
+                  <source srcset="images/catalog/catalog-title-desk.webp" media="(min-width: 768px)" type="image/webp">
+                  <source srcset="images/catalog/catalog-title-desk.jpg" media="(min-width: 768px)" type="image/jpeg">
+                  <source srcset="images/catalog/catalog-title.webp" type="image/webp"><img src="images/catalog/catalog-title.jpg" alt="Фоновая картинка" width="346" height="78">
+                </picture>
+              </div>
+              <h2 class="catalog__title">Кольцевые лампы</h2>
+            </header>
+            <form class="filter">
+              <div class="filter__top">
+                <button class="filter__reset" type="reset">Очистить</button>
+                <h2 class="title">Фильтры</h2>
+                <button class="filter__toggle"><span class="visually-hidden">Раскрыть фильтр</span><img src="images/icons/filter.svg" alt="иконка" width="24" height="24"></button>
+              </div>
+              <div class="filter__manage">
+                <div class="filter__block">
+                  <h3 class="filter__type">Цена, ₽</h3>
+                  <div class="filter__col">
+                    <input class="field filter__btn" type="text" placeholder="10000">
+                    <input class="field filter__btn" type="text" placeholder="10000">
+                  </div>
+                </div>
+                <div class="filter__block">
+                  <h3 class="filter__type">Бренды</h3>
+                  <div class="filter__col">
+                    <button class="selector filter__btn"><span class="selector__text">Apple<span class="selector__delete"><img src="images/icons/close.svg" alt="удалить товар" width="8" height="8"></span></span></button>
+                    <button class="selector filter__btn selector--active"><span class="selector__text">Apple<span class="selector__delete"><img src="images/icons/close.svg" alt="удалить товар" width="8" height="8"></span></span></button>
+                    <button class="selector filter__btn selector--disabled"><span class="selector__text">Apple<span class="selector__delete"><img src="images/icons/close.svg" alt="удалить товар" width="8" height="8"></span></span></button>
+                  </div>
+                </div>
+                <div class="filter__block">
+                  <h3 class="filter__type">Размер</h3>
+                  <div class="filter__col">
+                    <button class="selector filter__btn"><span class="selector__text">1000<span class="selector__delete"><img src="images/icons/close.svg" alt="удалить товар" width="8" height="8"></span></span></button>
+                    <button class="selector selector--active filter__btn"><span class="selector__text">100000<span class="selector__delete"><img src="images/icons/close.svg" alt="удалить товар" width="8" height="8"></span></span></button>
+                  </div>
+                </div>
+                <div class="filter__block">
+                  <h3 class="filter__type">Цвет</h3>
+                  <div class="filter__col">
+                    <button class="filter__colour filter__colour--white filter__btn"><span class="visually-hidden">цвет белый</span></button>
+                    <button class="filter__colour filter__btn"><span class="visually-hidden">цвет черный</span></button>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <div class="catalog__regulate">
+              <div class="catalog__regulate-top">
+                <button class="catalog__regulate-btn">По популярности
+                  <svg>
+                    <use href="images/sprites/main.stack.svg#svg-arrow-down"></use>
+                  </svg>
+                </button>
+                <button class="catalog__regulate-toggle"><span class="visually-hidden">раскрыть фильтр</span><span></span><span></span><span></span></button>
+              </div>
+            </div>
+            <section class="shop">
+              <h2 class="visually-hidden">Список каталогов</h2>
+              <ul class="shop__list">
+                <li class="shop__item shop__item--active">
+                  <div class="shop__item-inner">
+                    <h3 class="shop__model title">CXB-RGB-460</h3>
+                    <div class="shop__slider">
+                      <div class="shop__slider-inner">
+                        <div class="swiper-wrapper">
+                          <div class="shop__slide swiper-slide">
+                            <div class="shop__pic">
+                              <div class="background-image">
+                                <picture>
+                                  <source srcset="images/shop/shop-model.webp" type="image/webp"><img src="images/shop/shop-model.jpg" alt="Фоновая картинка" width="346" height="274">
+                                </picture>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="shop__slide swiper-slide">
+                            <div class="shop__pic">
+                              <div class="background-image">
+                                <picture>
+                                  <source srcset="images/shop/shop-model.webp" type="image/webp"><img src="images/shop/shop-model.jpg" alt="Фоновая картинка" width="346" height="274">
+                                </picture>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="shop__slide swiper-slide">
+                            <div class="shop__pic">
+                              <div class="background-image">
+                                <picture>
+                                  <source srcset="images/shop/shop-model.webp" type="image/webp"><img src="images/shop/shop-model.jpg" alt="Фоновая картинка" width="346" height="274">
+                                </picture>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="shop__slide swiper-slide">
+                            <div class="shop__pic">
+                              <div class="background-image">
+                                <picture>
+                                  <source srcset="images/shop/shop-model.webp" type="image/webp"><img src="images/shop/shop-model.jpg" alt="Фоновая картинка" width="346" height="274">
+                                </picture>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="shop__slide swiper-slide">
+                            <div class="shop__pic">
+                              <div class="background-image">
+                                <picture>
+                                  <source srcset="images/shop/shop-model.webp" type="image/webp"><img src="images/shop/shop-model.jpg" alt="Фоновая картинка" width="346" height="274">
+                                </picture>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="shop__pagination"></div>
+                      </div>
+                    </div>
+                    <div class="shop__bottom">
+                      <p class="shop__code">Код товара: <span class="shop__code-name">ZXC-1223123</span></p>
+                      <div class="shop__manage">
+                        <p class="shop__price">2 400 ₽</p><a class="shop__btn btn btn--shop" href="#">Выбрать</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="shop__item">
+                  <div class="shop__item-inner">
+                    <h3 class="shop__model title">CXB-RGB-460</h3>
+                    <div class="shop__slider">
+                      <div class="shop__slider-inner">
+                        <div class="swiper-wrapper">
+                          <div class="shop__slide swiper-slide">
+                            <div class="shop__pic">
+                              <div class="background-image">
+                                <picture>
+                                  <source srcset="images/shop/shop-model.webp" type="image/webp"><img src="images/shop/shop-model.jpg" alt="Фоновая картинка" width="346" height="274">
+                                </picture>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="shop__slide swiper-slide">
+                            <div class="shop__pic">
+                              <div class="background-image">
+                                <picture>
+                                  <source srcset="images/shop/shop-model.webp" type="image/webp"><img src="images/shop/shop-model.jpg" alt="Фоновая картинка" width="346" height="274">
+                                </picture>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="shop__slide swiper-slide">
+                            <div class="shop__pic">
+                              <div class="background-image">
+                                <picture>
+                                  <source srcset="images/shop/shop-model.webp" type="image/webp"><img src="images/shop/shop-model.jpg" alt="Фоновая картинка" width="346" height="274">
+                                </picture>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="shop__slide swiper-slide">
+                            <div class="shop__pic">
+                              <div class="background-image">
+                                <picture>
+                                  <source srcset="images/shop/shop-model.webp" type="image/webp"><img src="images/shop/shop-model.jpg" alt="Фоновая картинка" width="346" height="274">
+                                </picture>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="shop__slide swiper-slide">
+                            <div class="shop__pic">
+                              <div class="background-image">
+                                <picture>
+                                  <source srcset="images/shop/shop-model.webp" type="image/webp"><img src="images/shop/shop-model.jpg" alt="Фоновая картинка" width="346" height="274">
+                                </picture>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="shop__pagination"></div>
+                      </div>
+                    </div>
+                    <div class="shop__bottom">
+                      <p class="shop__code">Код товара: <span class="shop__code-name">ZXC-1223123</span></p>
+                      <div class="shop__manage">
+                        <p class="shop__price">2 400 ₽</p><a class="shop__btn btn btn--shop" href="#">Выбрать</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="shop__item">
+                  <div class="shop__item-inner">
+                    <h3 class="shop__model title">CXB-RGB-460</h3>
+                    <div class="shop__slider">
+                      <div class="shop__slider-inner">
+                        <div class="swiper-wrapper">
+                          <div class="shop__slide swiper-slide">
+                            <div class="shop__pic">
+                              <div class="background-image">
+                                <picture>
+                                  <source srcset="images/shop/shop-model.webp" type="image/webp"><img src="images/shop/shop-model.jpg" alt="Фоновая картинка" width="346" height="274">
+                                </picture>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="shop__slide swiper-slide">
+                            <div class="shop__pic">
+                              <div class="background-image">
+                                <picture>
+                                  <source srcset="images/shop/shop-model.webp" type="image/webp"><img src="images/shop/shop-model.jpg" alt="Фоновая картинка" width="346" height="274">
+                                </picture>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="shop__slide swiper-slide">
+                            <div class="shop__pic">
+                              <div class="background-image">
+                                <picture>
+                                  <source srcset="images/shop/shop-model.webp" type="image/webp"><img src="images/shop/shop-model.jpg" alt="Фоновая картинка" width="346" height="274">
+                                </picture>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="shop__slide swiper-slide">
+                            <div class="shop__pic">
+                              <div class="background-image">
+                                <picture>
+                                  <source srcset="images/shop/shop-model.webp" type="image/webp"><img src="images/shop/shop-model.jpg" alt="Фоновая картинка" width="346" height="274">
+                                </picture>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="shop__slide swiper-slide">
+                            <div class="shop__pic">
+                              <div class="background-image">
+                                <picture>
+                                  <source srcset="images/shop/shop-model.webp" type="image/webp"><img src="images/shop/shop-model.jpg" alt="Фоновая картинка" width="346" height="274">
+                                </picture>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="shop__pagination"></div>
+                      </div>
+                    </div>
+                    <div class="shop__bottom">
+                      <p class="shop__code">Код товара: <span class="shop__code-name">ZXC-1223123</span></p>
+                      <div class="shop__manage">
+                        <p class="shop__price">2 400 ₽</p><a class="shop__btn btn btn--shop" href="#">Выбрать</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <section class="pagination">
+                <h2 class="visually-hidden">Пагинация на сайте</h2>
+                <div class="pagination__inner">
+                  <button class="pagination__btn pagination__btn--arrow"><span class="visually-hidden">предыдущая</span><img src="images/icons/arrow-left.svg" alt="предыдущая" width="18" height="18"></button>
+                  <div class="pagination__info">
+                    <div class="pagination__mob"><span>1</span><span>/</span><span>41</span></div>
+                    <div class="pagination__desktop">
+                      <div class="pagination__list"><a class="pagination__page pagination__btn" href="#">1</a><a class="pagination__page pagination__btn" href="#">2</a><a class="pagination__page pagination__btn" href="#">3</a><a class="pagination__page pagination__btn" href="#">4</a><a class="pagination__page pagination__btn" href="#">5</a><a class="pagination__page pagination__btn" href="#">..</a><a class="pagination__page pagination__btn" href="#">41</a></div>
+                    </div>
+                  </div>
+                  <button class="pagination__btn pagination__btn--arrow"><span class="visually-hidden">следующая</span><img src="images/icons/arrow-right.svg" alt="следующая" width="16" height="16"></button>
+                </div>
+              </section>
+            </section>
+            <article class="catalog__article">
+              <h2 class="title">Сео текст для каталога</h2>
+              <p>Эта уникальная 7-рядная клавиатура — дань уважения классической раскладке, применявшейся в олдовых ноутбуках Lenovo / IBM серии ThinkPad вплоть до 2012 года. Много воды утекло с тех пор, но олды не забывают. Вот и ребята из Tex решили воплотить мечту многих, вернув легенду к жизни, не забыв при этом отсыпать ей щепотку новых возможностей.</p>
+            </article>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__inner container"><a class="footer__logo logo" href="#">
+            <h2 class="logo__title">4BLOGERS</h2></a>
+          <div class="footer__info">
+            <div class="footer__info-sec">
+              <h3 class="footer__info-title">Шоурум</h3>
+              <address class="footer__address">Каждый день <br>
+                11:00 – 20:00 <br>
+                м. Курская <br>
+                Нижний Сусальный переулок, <br>
+                5с4, подъезд 8
+              </address><a class="footer__btn" href="#">Онлайн тур</a>
+            </div>
+            <div class="footer__info-sec">
+              <h3 class="footer__info-title">Полезная информация</h3>
+              <nav class="footer__nav">
+                <ul class="footer__nav-menu">
+                  <li><a href="#">Доставка и оплата</a></li>
+                  <li><a href="#">Гарантия и возврат</a></li>
+                  <li><a href="#">Шоурум</a></li>
+                  <li><a href="#">Статьи</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

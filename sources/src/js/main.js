@@ -3,16 +3,27 @@
 $(document).ready(function () {
    // Your code here
    pictureSlider()
+   shopSlider()
    inputWidth()
 });
 
 // Your functions here
 
 function pictureSlider() {
-   var swiper = new Swiper(".picture__slider", {
+   var swiper = new Swiper(".picture__pagination-bullets", {
       clickable: true,
       pagination: {
          el: ".swiper-pagination",
+         clickable: true,
+      },
+   });
+}
+
+function shopSlider() {
+   var swiper = new Swiper(".shop__slider-inner", {
+      clickable: true,
+      pagination: {
+         el: ".shop__pagination",
          clickable: true,
       },
    });

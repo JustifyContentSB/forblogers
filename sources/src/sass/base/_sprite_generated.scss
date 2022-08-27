@@ -6,13 +6,13 @@
 
 .svg-svg-arrow {
 	@extend %svg-common;
-	background-position: 48% 75.55555555555556%;
-	background-size: math.div(65, 15)*100% auto;
+	background-position: 38.70967741935484% 75.55555555555556%;
+	background-size: math.div(77, 15)*100% auto;
 	width: 15px;
 
 }
 @mixin svg-pos-svg-arrow {
-	background-position: 48% 75.55555555555556%;
+	background-position: 38.70967741935484% 75.55555555555556%;
 }
 @mixin svg-svg-arrow-hover {
 	.svg-svg-arrow {
@@ -33,15 +33,44 @@
 	height: 13px;
 }
 
+.svg-svg-arrow-down {
+	@extend %svg-common;
+	background-position: 61.904761904761905% 69.38775510204081%;
+	background-size: math.div(77, 14)*100% auto;
+	width: 14px;
+
+}
+@mixin svg-pos-svg-arrow-down {
+	background-position: 61.904761904761905% 69.38775510204081%;
+}
+@mixin svg-svg-arrow-down-hover {
+	.svg-svg-arrow-down {
+		@include svg-pos-svg-arrow-down-hover
+	}
+}
+
+.svg-svg-arrow-down:before {
+	content:"";
+	display:block;
+	font-size:0;
+	line-height:0;
+	padding-top: math.div(9, 14)*100%;
+}
+
+.svg-svg-arrow-down-dims {
+	width: 14px;
+	height: 9px;
+}
+
 .svg-svg-basket {
 	@extend %svg-common;
-	background-position: 100% 0;
-	background-size: math.div(65, 31)*100% auto;
+	background-position: 73.91304347826087% 0;
+	background-size: math.div(77, 31)*100% auto;
 	width: 31px;
 
 }
 @mixin svg-pos-svg-basket {
-	background-position: 100% 0;
+	background-position: 73.91304347826087% 0;
 }
 @mixin svg-svg-basket-hover {
 	.svg-svg-basket {
@@ -65,7 +94,7 @@
 .svg-svg-burger {
 	@extend %svg-common;
 	background-position: 0 0;
-	background-size: math.div(65, 34)*100% auto;
+	background-size: math.div(77, 34)*100% auto;
 	width: 34px;
 
 }
@@ -93,13 +122,13 @@
 
 .svg-svg-close {
 	@extend %svg-common;
-	background-position: 94.44444444444444% 72.34042553191489%;
-	background-size: math.div(65, 11)*100% auto;
+	background-position: 98.48484848484848% 38.297872340425535%;
+	background-size: math.div(77, 11)*100% auto;
 	width: 11px;
 
 }
 @mixin svg-pos-svg-close {
-	background-position: 94.44444444444444% 72.34042553191489%;
+	background-position: 98.48484848484848% 38.297872340425535%;
 }
 @mixin svg-svg-close-hover {
 	.svg-svg-close {
@@ -123,7 +152,7 @@
 .svg-svg-loop {
 	@extend %svg-common;
 	background-position: 0 100%;
-	background-size: math.div(65, 24)*100% auto;
+	background-size: math.div(77, 24)*100% auto;
 	width: 24px;
 
 }
@@ -151,13 +180,13 @@
 
 .svg-svg-minus {
 	@extend %svg-common;
-	background-position: 64.15094339622641% 52.83018867924528%;
-	background-size: math.div(65, 12)*100% auto;
+	background-position: 100% 24.528301886792452%;
+	background-size: math.div(77, 12)*100% auto;
 	width: 12px;
 
 }
 @mixin svg-pos-svg-minus {
-	background-position: 64.15094339622641% 52.83018867924528%;
+	background-position: 100% 24.528301886792452%;
 }
 @mixin svg-svg-minus-hover {
 	.svg-svg-minus {
@@ -180,13 +209,13 @@
 
 .svg-svg-plus {
 	@extend %svg-common;
-	background-position: 73.58490566037736% 75.55555555555556%;
-	background-size: math.div(65, 12)*100% auto;
+	background-position: 100% 0;
+	background-size: math.div(77, 12)*100% auto;
 	width: 12px;
 
 }
 @mixin svg-pos-svg-plus {
-	background-position: 73.58490566037736% 75.55555555555556%;
+	background-position: 100% 0;
 }
 @mixin svg-svg-plus-hover {
 	.svg-svg-plus {

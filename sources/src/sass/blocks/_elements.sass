@@ -36,12 +36,27 @@
       background: #fff
       color: #000
       border: 1px solid rgba(0, 0, 0, 0.5)
+   &--catalog
+      padding: 14px 24px
+      font-family: var(--robotoCond)
+      background: #fff
+      color: #000
+      border: 1px solid rgba(0, 0, 0, 0.5)
+      font-size: 16px
+      font-weight: 700
    &--cart
       width: 100%
       padding: 11px 24px
       font-size: 18px
       text-align: left
       border: 1px solid rgba(0, 0, 0, 0.5)
+   &--shop
+      padding: 14px 24px
+      background: #fff
+      color: #000
+      border: 1px solid rgba(0, 0, 0, 0.5)
+      font-weight: 700
+      font-size: 16px
 
 .field
    width: auto
@@ -114,6 +129,38 @@
       display: none
       &:checked ~ .choose__radio::after
          opacity: 1
+
+.selector
+   padding: 5px 26px
+   position: relative
+   font-family: var(--firaSans)
+   font-weight: 400
+   font-size: 12px
+   line-height: 120%
+   background: #fff
+   border: 1px solid rgba(0, 0, 0, 0.5)
+   border-radius: 10px
+   white-space: nowrap
+   cursor: pointer
+   &__text
+      position: relative
+   &__delete
+      display: none
+      position: absolute
+      right: -14px
+      top: 50%
+      transform: translateY(-50%)
+      img
+         display: block
+   &--active
+      color: #fff
+      background: #0083F1
+      border-color: #0083F1
+      .selector
+         &__delete
+            display: block
+   &--disabled
+      color: #C9C9C9
 
 @media screen and (min-width: 500px)
    .btn

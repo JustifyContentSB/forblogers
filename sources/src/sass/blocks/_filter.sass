@@ -1,0 +1,75 @@
+.filter
+   margin-bottom: var(--mainMargin)
+   --filterMargin: 12px
+   @extend %borderSec
+   &__top
+      margin-bottom: var(--filterMargin)
+      display: flex
+      justify-content: space-between
+      .title
+         margin: 0
+   &__reset
+      font-weight: 400
+      font-size: 14px
+      color: #C8C8C8
+   &__toggle
+      width: 24px
+      min-width: 24px
+      height: 24px
+      img
+         display: block
+   &__block
+      &:last-child
+         margin-bottom: 0
+   &__type
+      margin-bottom: var(--filterMargin)
+      font-family: var(--robotoCond)
+      font-weight: 400
+      font-size: 16px
+   &__col
+      display: flex
+      flex-wrap: wrap
+      .field, .selector, .filter__colour
+         margin-right: var(--filterMargin)
+         &:last-child
+            margin-right: 0
+   &__btn
+      margin-bottom: var(--filterMargin)
+   &__colour
+      display: block
+      width: 25px
+      min-width: 25px
+      height: 25px
+      border-radius: 10px
+      --colour: black
+      background: var(--colour)
+      border-color: var(--colour)
+      &--white
+         border: 1px solid rgba(0, 0, 0, 0.5)
+         background: #fff
+
+@media screen and (min-width: $desktop)
+   .filter
+      padding-bottom: var(--filterMargin)
+      &__top
+         margin-bottom: var(--mainMargin)
+      &__reset
+         font-size: 20px
+      &__manage
+         display: flex
+         flex-wrap: wrap
+      &__block
+         width: calc(25% - 10px)
+         padding-right: 12px
+         margin-right: 12px
+         &:nth-child(4n)
+            margin-right: 0
+      &__col
+         .field
+            min-width: calc(50% - 34px)
+            padding: 5px 12px
+            text-align: left
+            &::placeholder
+               text-align: left
+            &:nth-child(2n)
+               margin-right: 0
