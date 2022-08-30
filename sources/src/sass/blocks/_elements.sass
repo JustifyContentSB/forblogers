@@ -57,6 +57,53 @@
       border: 1px solid rgba(0, 0, 0, 0.5)
       font-weight: 700
       font-size: 16px
+   &--wide
+      @extend .btn--shop
+      background: #0083F1
+      color: #fff
+
+.compare-btn
+   --border-color: #EBEBEB
+   padding: 6px 5px
+   display: inline-flex
+   align-items: center
+   justify-content: center
+   font-family: 'Roboto'
+   font-weight: 300
+   font-size: 12px
+   border-radius: 5px
+   border: 1px solid var(--border-color)
+   cursor: pointer
+   &__icon
+      width: 16px
+      min-width: 16px
+      height: 16px
+      margin-right: 12px
+      border: 1px solid var(--border-color)
+      border-radius: 5px
+
+.choose-btn
+   padding: 10px
+   display: inline-flex
+   justify-content: center
+   align-items: center
+   font-weight: 300
+   font-size: 12px
+   color: #0063F8
+   cursor: pointer
+   &__icon
+      width: 20px
+      min-width: 20px
+      height: 20px
+      margin-right: 4px
+      display: inline-flex
+      justify-content: center
+      align-items: center
+      border-radius: 50%
+      background: #C4C4C4
+      border-radius: 50%
+      color: #fff
+      font-size: 12px
 
 .field
    width: auto
@@ -161,6 +208,59 @@
             display: block
    &--disabled
       color: #C9C9C9
+
+.sec
+   margin-bottom: var(--mainMargin)
+
+.status
+   padding: 3px 12px
+   display: inline-flex
+   background: #C4C4C4
+   font-weight: 400
+   font-size: 12px
+   text-align: center
+   color: #fff
+   border-radius: 10px
+   border: 1px solid rgba(0, 0, 0, 0.1)
+   font-family: var(--robotoCond)
+   &--work
+      background: #55C55A
+   &--delivery
+      background: #0083F1
+   &--received
+      background: #000
+   &--canceled
+      background: #E85E5E
+
+.selected
+   &__btn
+      padding: 15px 25px
+      display: inline-flex
+      align-items: center
+      background: #fff
+      border-radius: 25px
+      font-size: 20px
+      font-family: var(--robotoCond)
+      &-text
+         margin: 0 23px
+      &-arrow
+         margin-left: auto
+
+.swiper
+   &-button
+      &-prev,
+      &-next
+         width: 64px
+         height: 64px
+         background: #005FAE
+         border-radius: 50%
+         &::after
+            color: #fff
+            font-size: 18px
+      &-disabled
+         background: #0083F1
+         opacity: 1 !important
+         pointer-events: auto !important
 
 @media screen and (min-width: 500px)
    .btn

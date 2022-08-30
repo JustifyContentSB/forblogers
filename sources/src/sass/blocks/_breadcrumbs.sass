@@ -7,7 +7,6 @@
       max-width: var(--containerWidth)
       margin: 0 auto
       padding: var(--mainMargin)
-      padding-right: 0
       display: flex
       white-space: nowrap
       overflow-x: auto
@@ -25,3 +24,9 @@
    &__link
       &--active
          color: #858784
+
+@media screen and (min-width: $desktop)
+   .breadcrumbs
+      &__list
+         overflow-x: none
+         flex-wrap: wrap

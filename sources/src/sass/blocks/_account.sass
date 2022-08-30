@@ -1,0 +1,181 @@
+.account
+   &__content
+      margin-bottom: var(--mainMargin)
+   &__manage
+      margin-bottom: var(--mainMargin)
+      font-family: var(--robotoCond)
+      position: relative
+      &--active
+         padding-bottom: 68px
+      &-item
+         width: 100%
+         overflow: hidden
+         border-bottom: 1px solid #C4C4C4
+         &:first-child
+            border-radius: 10px 10px 0 0
+         &:last-child
+            border-radius: 0 0 10px 10px
+            border-bottom: 0
+         &--active
+            position: absolute
+            bottom: 0
+            color: #C4C4C4
+            .account__manage-btn
+               background: transparent
+      &-btn
+         padding: 12px 24px
+         padding-right: 40px
+         display: flex
+         justify-content: space-between
+         align-items: center
+         background: #fff
+         position: relative
+         &::after
+            content: ''
+            position: absolute
+            right: 24px
+            top: 50%
+            transform: translateY(-50%)
+            width: 16px
+            height: 16px
+            background: url('../images/icons/account-arrow.svg')
+      &-icon
+         width: 20px
+         min-width: 20px
+         height: 20px
+         display: flex
+         justify-content: center
+         align-items: center
+      &-text
+         width: calc(100% - 32px)
+         line-height: 100%
+   &__goods
+      @extend %borderSec
+      margin-bottom: 12px
+      padding: 0
+      &-top
+         padding: 18px 24px 6px
+         display: flex
+         justify-content: space-between
+         border-bottom: 1px solid #C4C4C4
+      &-manage
+         display: flex
+         align-items: center
+      &-toggle
+         width: 16px
+         min-width: 16px
+         margin-right: 12px
+      &-order
+         margin-bottom: 8px
+         font-family: var(--robotoCond)
+         font-size: 20px
+      &-date
+         font-size: 16px
+         font-family: var(--robotoCond)
+      &-time
+         color: #000
+      &-type
+         color: #C4C4C4
+      &-price
+         margin-bottom: 10px
+         font-family: var(--robotoCond)
+         font-weight: 400
+         font-size: 20px
+      &-list
+         padding-bottom: var(--mainMargin)
+      &-item
+         padding: 12px var(--mainMargin) 0
+         display: flex
+         justify-content: space-between
+      &-pic
+         width: 100px
+         min-width: 100px
+         height: 102px
+         margin-right: 12px
+         position: relative
+         border-radius: 10px
+         overflow: hidden
+      &-content
+         width: calc(100% - 112px)
+      &-title
+         margin-bottom: 8px
+         font-family: var(--robotoCond)
+         font-weight: 400
+         font-size: 20px
+         line-height: 120%
+         width: 100%
+      &-code
+         margin-bottom: 12px
+         font-family: var(--firaSans)
+         font-weight: 400
+         font-size: 12px
+         color: #C4C4C4
+         &__num
+            color: #000
+      &-more
+         text-align: right
+      &-cost
+         font-family: var(--robotoCond)
+         font-size: 16px
+         text-align: right
+
+@media screen and (min-width: $tablet)
+   .account
+      &__goods
+         &-cost
+            max-width: 600px
+
+@media screen and (min-width: 1000px)
+   .account
+      --accountManageWidth: 290px
+      &__main
+         display: flex
+         align-items: flex-start
+      &__manage
+         width: var(--accountManageWidth)
+         min-width: var(--accountManageWidth)
+         margin-right: var(--mainMargin)
+         &--active
+            padding-bottom: 0
+         &-item
+            &--active
+               position: static
+               background: #fff
+      &__content
+         flex-grow: 1
+      .pagination
+         padding-left: calc(var(--accountManageWidth) + var(--mainMargin))
+
+@media screen and (min-width: $desktop)
+   .account
+      &__goods
+         &-top
+            padding: 25px var(--mainMargin) 12px
+         &-info
+            display: flex
+            align-items: center
+         &-order
+            margin: 0
+            margin-right: 12px
+         &-more
+            display: flex
+            align-items: center
+         &-price
+            margin: 0
+            margin-right: 12px
+         &-date
+            &::before
+               content: 'Заказ '
+               color: #C4C4C4
+         &-content
+            display: flex
+            align-items: flex-start
+            justify-content: space-between
+         &-about
+            width: 100%
+            max-width: 420px
+         &-code
+            margin: 0
+         &-cost
+            min-width: 72px
+            text-align: left

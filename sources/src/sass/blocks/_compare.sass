@@ -1,0 +1,68 @@
+.compare
+   margin-bottom: var(--mainMargin)
+   &__manage
+      @extend %borderSec
+      margin-bottom: var(--mainMargin)
+      padding-left: 0
+      padding-right: 0
+      &-slider
+         padding-bottom: 12px
+         position: relative
+         overflow: hidden
+      &-swiper
+         padding-left: var(--mainMargin)
+         padding-right: var(--mainMargin)
+      &-arrow
+         width: 48px
+         min-width: 48px
+         height: 48px
+         background: #C4C4C4
+         border-radius: 50%
+         display: flex
+         justify-content: center
+         align-items: center
+      &-bullets
+         width: 100%
+         @extend .shop__pagination
+         padding-top: 13px
+         .compare__manage-pagination
+            display: flex
+            padding-left: var(--mainMargin)
+            padding-right: var(--mainMargin)
+      .swiper
+         &-slide
+            width: auto
+   &__slider
+      margin-bottom: var(--mainMargin)
+      overflow: hidden
+      position: relative
+      &-prev,
+      &-next
+         top: 40%
+         bottom: auto
+      &-prev
+         left: 0
+      &-next
+         right: 0
+      .shop
+         &__item
+            margin-bottom: 0
+
+@media screen and (min-width: $tablet)
+   .compare
+      &__manage
+         &-slider
+            padding: 0
+         &-swiper
+            display: flex
+         &-btn
+            margin-right: 12px
+            &:last-child
+               margin-right: 0
+         &-mobile
+            order: -1
+         &-arrow
+            margin-left: auto
+            order: 1
+         &-bullets
+            display: none

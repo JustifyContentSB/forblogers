@@ -1,0 +1,59 @@
+.specific
+   &__title
+      font-family: var(--robotoCond)
+      font-weight: 400
+      font-size: 28px
+      line-height: 110%
+      margin-bottom: var(--mainMargin)
+   &__table
+      @extend %borderSec
+   &__col
+      margin-bottom: var(--mainMargin)
+      &:last-child
+         margin-bottom: 0
+   &__top
+      margin-bottom: 14px
+      display: flex
+      justify-content: space-between
+      align-items: center
+   &__name
+      padding-right: 10px
+   &__toggle
+      width: 24px
+      min-width: 24px
+      height: 24px
+      img
+         display: block
+   &__type
+      font-family: var(--robotoCond)
+      font-weight: 400
+      font-size: 16px
+      color: #858784
+   &__num
+      width: 100%
+      padding: 12px
+      border-bottom: 1px solid #EBEBEB
+      display: none
+      flex-grow: 1
+      &:nth-child(1)
+         display: block
+   &__list
+      display: flex
+      &--active
+         background: #F0F2F4
+         color: #0083F1
+   &__item
+      margin-bottom: 12px
+      &:last-child
+         margin-bottom: 0
+
+@media screen and (min-width: $tablet)
+   .specific
+      &__num
+         &:nth-child(2)
+            display: block
+
+@media screen and (min-width: $desktop)
+   .specific
+      &__num
+         display: block

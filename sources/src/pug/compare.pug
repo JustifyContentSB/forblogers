@@ -1,0 +1,335 @@
+extends base/_layout
+block head
+   title Заказы
+block page
+   section.breadcrumbs
+      .breadcrumbs__inner
+         h2.visually-hidden Цепочка навигации по сайту
+         ul.breadcrumbs__list
+            li.breadcrumbs__item
+               a.breadcrumbs__link(href="#") 4BLOGERS
+            li.breadcrumbs__item
+               a.breadcrumbs__link.breadcrumbs__link--active(href="#") Заказы
+
+   section.compare
+      .compare__inner.container
+         .compare__manage
+            .compare__manage-slider
+               .compare__manage-swiper
+                  .swiper-wrapper
+                     button.compare__manage-btn.btn.btn--wide.swiper-slide Добавить
+                     button.compare__manage-btn.compare__manage-mobile.btn.btn--shop.swiper-slide Мобильные телефоны (16)
+                     a.compare__manage-btn.compare__manage-arrow.swiper-slide(href="#")
+                        img(src="images/icons/arrow-right.svg", alt="иконка" width="16" height="16")
+               .compare__manage-bullets
+                  .swiper-pagination.compare__manage-pagination
+         .compare__slider.shop
+            .compare__slider-swiper
+               .swiper-wrapper
+                  .shop__item.swiper-slide
+                     .shop__item-inner
+                        h3.shop__model.title CXB-RGB-460
+                        .shop__slider
+                           .shop__slider-inner
+                              .swiper-wrapper
+                                 .shop__slide.swiper-slide
+                                    .shop__pic
+                                       .background-image
+                                          picture
+                                             source(srcset="images/shop/shop-model.webp" type="image/webp")
+                                             img(src="images/shop/shop-model.jpg" alt="Фоновая картинка" width="346" height="274")
+                                 .shop__slide.swiper-slide
+                                    .shop__pic
+                                       .background-image
+                                          picture
+                                             source(srcset="images/shop/shop-model.webp" type="image/webp")
+                                             img(src="images/shop/shop-model.jpg" alt="Фоновая картинка" width="346" height="274")
+                                 .shop__slide.swiper-slide
+                                    .shop__pic
+                                       .background-image
+                                          picture
+                                             source(srcset="images/shop/shop-model.webp" type="image/webp")
+                                             img(src="images/shop/shop-model.jpg" alt="Фоновая картинка" width="346" height="274")
+                                 .shop__slide.swiper-slide
+                                    .shop__pic
+                                       .background-image
+                                          picture
+                                             source(srcset="images/shop/shop-model.webp" type="image/webp")
+                                             img(src="images/shop/shop-model.jpg" alt="Фоновая картинка" width="346" height="274")
+                                 .shop__slide.swiper-slide
+                                    .shop__pic
+                                       .background-image
+                                          picture
+                                             source(srcset="images/shop/shop-model.webp" type="image/webp")
+                                             img(src="images/shop/shop-model.jpg" alt="Фоновая картинка" width="346" height="274")
+                              .shop__pagination
+                        .shop__bottom
+                           p.shop__code Код товара: 
+                              span.shop__code-name ZXC-1223123
+                           .shop__manage
+                              p.shop__price 2 400 ₽
+                              a.shop__btn.btn.btn--wide(href="#") Выбрать
+
+                  .shop__item.swiper-slide
+                     .shop__item-inner
+                        h3.shop__model.title CXB-RGB-460
+                        .shop__slider
+                           .shop__slider-inner
+                              .swiper-wrapper
+                                 .shop__slide.swiper-slide
+                                    .shop__pic
+                                       .background-image
+                                          picture
+                                             source(srcset="images/shop/shop-model.webp" type="image/webp")
+                                             img(src="images/shop/shop-model.jpg" alt="Фоновая картинка" width="346" height="274")
+                                 .shop__slide.swiper-slide
+                                    .shop__pic
+                                       .background-image
+                                          picture
+                                             source(srcset="images/shop/shop-model.webp" type="image/webp")
+                                             img(src="images/shop/shop-model.jpg" alt="Фоновая картинка" width="346" height="274")
+                                 .shop__slide.swiper-slide
+                                    .shop__pic
+                                       .background-image
+                                          picture
+                                             source(srcset="images/shop/shop-model.webp" type="image/webp")
+                                             img(src="images/shop/shop-model.jpg" alt="Фоновая картинка" width="346" height="274")
+                                 .shop__slide.swiper-slide
+                                    .shop__pic
+                                       .background-image
+                                          picture
+                                             source(srcset="images/shop/shop-model.webp" type="image/webp")
+                                             img(src="images/shop/shop-model.jpg" alt="Фоновая картинка" width="346" height="274")
+                                 .shop__slide.swiper-slide
+                                    .shop__pic
+                                       .background-image
+                                          picture
+                                             source(srcset="images/shop/shop-model.webp" type="image/webp")
+                                             img(src="images/shop/shop-model.jpg" alt="Фоновая картинка" width="346" height="274")
+                              .shop__pagination
+                        .shop__bottom
+                           p.shop__code Код товара: 
+                              span.shop__code-name ZXC-1223123
+                           .shop__manage
+                              p.shop__price 2 400 ₽
+                              a.shop__btn.btn.btn--shop(href="#") Выбрать
+
+                  .shop__item.swiper-slide
+                     .shop__item-inner
+                        h3.shop__model.title CXB-RGB-460
+                        .shop__slider
+                           .shop__slider-inner
+                              .swiper-wrapper
+                                 .shop__slide.swiper-slide
+                                    .shop__pic
+                                       .background-image
+                                          picture
+                                             source(srcset="images/shop/shop-model.webp" type="image/webp")
+                                             img(src="images/shop/shop-model.jpg" alt="Фоновая картинка" width="346" height="274")
+                                 .shop__slide.swiper-slide
+                                    .shop__pic
+                                       .background-image
+                                          picture
+                                             source(srcset="images/shop/shop-model.webp" type="image/webp")
+                                             img(src="images/shop/shop-model.jpg" alt="Фоновая картинка" width="346" height="274")
+                                 .shop__slide.swiper-slide
+                                    .shop__pic
+                                       .background-image
+                                          picture
+                                             source(srcset="images/shop/shop-model.webp" type="image/webp")
+                                             img(src="images/shop/shop-model.jpg" alt="Фоновая картинка" width="346" height="274")
+                                 .shop__slide.swiper-slide
+                                    .shop__pic
+                                       .background-image
+                                          picture
+                                             source(srcset="images/shop/shop-model.webp" type="image/webp")
+                                             img(src="images/shop/shop-model.jpg" alt="Фоновая картинка" width="346" height="274")
+                                 .shop__slide.swiper-slide
+                                    .shop__pic
+                                       .background-image
+                                          picture
+                                             source(srcset="images/shop/shop-model.webp" type="image/webp")
+                                             img(src="images/shop/shop-model.jpg" alt="Фоновая картинка" width="346" height="274")
+                              .shop__pagination
+                        .shop__bottom
+                           p.shop__code Код товара: 
+                              span.shop__code-name ZXC-1223123
+                           .shop__manage
+                              p.shop__price 2 400 ₽
+                              a.shop__btn.btn.btn--shop(href="#") Выбрать
+
+                  .shop__item.swiper-slide
+                     .shop__item-inner
+                        h3.shop__model.title CXB-RGB-460
+                        .shop__slider
+                           .shop__slider-inner
+                              .swiper-wrapper
+                                 .shop__slide.swiper-slide
+                                    .shop__pic
+                                       .background-image
+                                          picture
+                                             source(srcset="images/shop/shop-model.webp" type="image/webp")
+                                             img(src="images/shop/shop-model.jpg" alt="Фоновая картинка" width="346" height="274")
+                                 .shop__slide.swiper-slide
+                                    .shop__pic
+                                       .background-image
+                                          picture
+                                             source(srcset="images/shop/shop-model.webp" type="image/webp")
+                                             img(src="images/shop/shop-model.jpg" alt="Фоновая картинка" width="346" height="274")
+                                 .shop__slide.swiper-slide
+                                    .shop__pic
+                                       .background-image
+                                          picture
+                                             source(srcset="images/shop/shop-model.webp" type="image/webp")
+                                             img(src="images/shop/shop-model.jpg" alt="Фоновая картинка" width="346" height="274")
+                                 .shop__slide.swiper-slide
+                                    .shop__pic
+                                       .background-image
+                                          picture
+                                             source(srcset="images/shop/shop-model.webp" type="image/webp")
+                                             img(src="images/shop/shop-model.jpg" alt="Фоновая картинка" width="346" height="274")
+                                 .shop__slide.swiper-slide
+                                    .shop__pic
+                                       .background-image
+                                          picture
+                                             source(srcset="images/shop/shop-model.webp" type="image/webp")
+                                             img(src="images/shop/shop-model.jpg" alt="Фоновая картинка" width="346" height="274")
+                              .shop__pagination
+                        .shop__bottom
+                           p.shop__code Код товара: 
+                              span.shop__code-name ZXC-1223123
+                           .shop__manage
+                              p.shop__price 2 400 ₽
+                              a.shop__btn.btn.btn--shop(href="#") Выбрать
+
+                  .shop__item.swiper-slide
+                     .shop__item-inner
+                        h3.shop__model.title CXB-RGB-460
+                        .shop__slider
+                           .shop__slider-inner
+                              .swiper-wrapper
+                                 .shop__slide.swiper-slide
+                                    .shop__pic
+                                       .background-image
+                                          picture
+                                             source(srcset="images/shop/shop-model.webp" type="image/webp")
+                                             img(src="images/shop/shop-model.jpg" alt="Фоновая картинка" width="346" height="274")
+                                 .shop__slide.swiper-slide
+                                    .shop__pic
+                                       .background-image
+                                          picture
+                                             source(srcset="images/shop/shop-model.webp" type="image/webp")
+                                             img(src="images/shop/shop-model.jpg" alt="Фоновая картинка" width="346" height="274")
+                                 .shop__slide.swiper-slide
+                                    .shop__pic
+                                       .background-image
+                                          picture
+                                             source(srcset="images/shop/shop-model.webp" type="image/webp")
+                                             img(src="images/shop/shop-model.jpg" alt="Фоновая картинка" width="346" height="274")
+                                 .shop__slide.swiper-slide
+                                    .shop__pic
+                                       .background-image
+                                          picture
+                                             source(srcset="images/shop/shop-model.webp" type="image/webp")
+                                             img(src="images/shop/shop-model.jpg" alt="Фоновая картинка" width="346" height="274")
+                                 .shop__slide.swiper-slide
+                                    .shop__pic
+                                       .background-image
+                                          picture
+                                             source(srcset="images/shop/shop-model.webp" type="image/webp")
+                                             img(src="images/shop/shop-model.jpg" alt="Фоновая картинка" width="346" height="274")
+                              .shop__pagination
+                        .shop__bottom
+                           p.shop__code Код товара: 
+                              span.shop__code-name ZXC-1223123
+                           .shop__manage
+                              p.shop__price 2 400 ₽
+                              a.shop__btn.btn.btn--shop(href="#") Выбрать
+
+                  .shop__item.swiper-slide
+                     .shop__item-inner
+                        h3.shop__model.title CXB-RGB-460
+                        .shop__slider
+                           .shop__slider-inner
+                              .swiper-wrapper
+                                 .shop__slide.swiper-slide
+                                    .shop__pic
+                                       .background-image
+                                          picture
+                                             source(srcset="images/shop/shop-model.webp" type="image/webp")
+                                             img(src="images/shop/shop-model.jpg" alt="Фоновая картинка" width="346" height="274")
+                                 .shop__slide.swiper-slide
+                                    .shop__pic
+                                       .background-image
+                                          picture
+                                             source(srcset="images/shop/shop-model.webp" type="image/webp")
+                                             img(src="images/shop/shop-model.jpg" alt="Фоновая картинка" width="346" height="274")
+                                 .shop__slide.swiper-slide
+                                    .shop__pic
+                                       .background-image
+                                          picture
+                                             source(srcset="images/shop/shop-model.webp" type="image/webp")
+                                             img(src="images/shop/shop-model.jpg" alt="Фоновая картинка" width="346" height="274")
+                                 .shop__slide.swiper-slide
+                                    .shop__pic
+                                       .background-image
+                                          picture
+                                             source(srcset="images/shop/shop-model.webp" type="image/webp")
+                                             img(src="images/shop/shop-model.jpg" alt="Фоновая картинка" width="346" height="274")
+                                 .shop__slide.swiper-slide
+                                    .shop__pic
+                                       .background-image
+                                          picture
+                                             source(srcset="images/shop/shop-model.webp" type="image/webp")
+                                             img(src="images/shop/shop-model.jpg" alt="Фоновая картинка" width="346" height="274")
+                              .shop__pagination
+                        .shop__bottom
+                           p.shop__code Код товара: 
+                              span.shop__code-name ZXC-1223123
+                           .shop__manage
+                              p.shop__price 2 400 ₽
+                              a.shop__btn.btn.btn--shop(href="#") Выбрать
+
+            button.swiper-button-prev.compare__slider-prev
+            button.swiper-button-next.compare__slider-next
+
+         section.specific
+            .specific__inner
+               h2.specific__title Сравнение характеристик
+               .specific__table
+                  .specific__col
+                     .specific__top
+                        h3.specific__name.title Габариты и вес
+                        button.specific__toggle
+                           img(src="images/icons/arrow-circle-down.svg" alt="иконка" width="24" height="24")
+                     ul.specific__shedule
+                        li.specific__item
+                           p.specific__type Ширина
+                           ul.specific__list.specific__list--active
+                              li.specific__num 200 гр
+                              li.specific__num 200 гр
+                              li.specific__num 200 гр
+                        li.specific__item
+                           p.specific__type Вес
+                           ul.specific__list
+                              li.specific__num 200 гр
+                              li.specific__num 200 гр
+                              li.specific__num 200 гр
+                  .specific__col
+                     .specific__top
+                        h3.specific__name.title Питание
+                        button.specific__toggle
+                           img(src="images/icons/arrow-circle-down.svg" alt="иконка" width="24" height="24")
+                     ul.specific__shedule
+                        li.specific__item
+                           p.specific__type Ширина
+                           ul.specific__list.specific__list--active
+                              li.specific__num 200 гр
+                              li.specific__num 200 гр
+                              li.specific__num 200 гр
+                        li.specific__item
+                           p.specific__type Вес
+                           ul.specific__list
+                              li.specific__num 200 гр
+                              li.specific__num 200 гр
+                              li.specific__num 200 гр

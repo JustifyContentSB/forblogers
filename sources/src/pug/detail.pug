@@ -1,0 +1,165 @@
+extends base/_layout
+block head
+   title Детальная
+block page
+   section.breadcrumbs
+      .breadcrumbs__inner
+         h2.visually-hidden Цепочка навигации по сайту
+         ul.breadcrumbs__list
+            li.breadcrumbs__item
+               a.breadcrumbs__link(href="#") 4BLOGERS
+            li.breadcrumbs__item
+               a.breadcrumbs__link(href="#") Свет
+            li.breadcrumbs__item
+               a.breadcrumbs__link(href="#") Кольцевые лампы
+            li.breadcrumbs__item
+               a.breadcrumbs__link.breadcrumbs__link--active(href="#") CXB-RGB-460
+
+   section.product
+      .product__inner.container
+         .product__card
+            .product__card-inner
+               .product__card-top
+                  h1.product__card-title CXB-RGB-460
+                  p.product__card-code Код товара: 1616316
+               .product__card-bottom
+                  .product__card-images
+                     .product__card-list
+                        .product__card-pic
+                           picture
+                              source(srcset="images/card/card-tab.webp" media="(min-width: 768px)" type="image/webp")
+                              source(srcset="images/card/card-tab.jpg" media="(min-width: 768px)" type="image/jpeg")
+                              source(srcset="images/card/card-mob.webp" type="image/webp")
+                              img(src="images/card/card-mob.jpg" alt="Картинка товара" width="311" height="273")
+                     .product__card-tab
+                        .product__card-tab__list
+                           button.product__card-btn
+                              img(src="images/card/card-1.jpg" alt="Картинка товара" width="71" height="68")
+                           button.product__card-btn
+                              img(src="images/card/card-2.jpg" alt="Картинка товара" width="71" height="68")
+                           button.product__card-btn
+                              img(src="images/card/card-3.jpg" alt="Картинка товара" width="71" height="68")
+                           button.product__card-btn
+                              img(src="images/card/card-4.jpg" alt="Картинка товара" width="71" height="68")
+                           button.product__card-btn
+                              img(src="images/card/card-5.jpg" alt="Картинка товара" width="71" height="68")
+                           button.product__card-btn
+                              img(src="images/card/card-6.jpg" alt="Картинка товара" width="71" height="68")
+                  .product__card-info
+                     .product__card-desc
+                        .product__card-more
+                           button.compare-btn
+                              span.compare-btn__icon
+                              span Cравнить
+                           p.product__card-price 2 400 ₽
+                        .product__card-manage
+                           button.product__card-calendar.product__card-manage__btn
+                              span.visually-hidden Календарь
+                              img(src="images/icons/calendar.svg" alt="календарь" width="25" height="24")
+                           button.btn Выбрать
+                           button.product__card-favourite.product__card-manage__btn
+                              span.visually-hidden В избранное
+                              img(src="images/icons/heart.svg" alt="в избранное" width="29" height="24")
+                     section.delivery
+                        .delivery__top
+                           h2.delivery__title Доставка
+                           span.delivery__day сегодня
+                           img.delivery__icon(src="images/icons/delivery.svg" alt="доставка" width="54" height="26")
+                        .delivery__text
+                           p.
+                              По Москве (в пределах МКАД) — 290 ₽, заказ от 10 тыс - доставим бесплатно
+                           p.
+                              По Московской области (за МКАД) — от 400 ₽ (зависит от удаленности от МКАД)
+
+         .product__middle
+            .product__desc.sec
+               .product__desc-info
+                  h2.product__desc-title Описание
+                  p.
+                     Эта уникальная 7-рядная клавиатура — дань уважения классической раскладке, применявшейся в олдовых ноутбуках Lenovo / IBM серии ThinkPad вплоть до 2012 года. Много воды утекло с тех пор, но олды не забывают. Вот и ребята из Tex решили воплотить мечту многих, вернув легенду к жизни, не забыв при этом отсыпать ей щепотку новых возможностей.
+               button.btn.btn--empty Раскрыть
+
+            section.property.sec
+               h2.title Характеристики
+               table.property__table
+                  tbody
+                     tr
+                        td.property__type Вес
+                        td.property__value 30 шт
+                     tr
+                        td.property__type Вес
+                        td.property__value 30 шт
+               .property__manage
+                  button.compare-btn
+                     span.compare-btn__icon
+                     span Cравнить
+                  a.choose-btn(href="#")
+                     span.choose-btn__icon ?
+                     span.choose-btn__text Как выбрать?
+
+            section.features.sec
+               h2.visually-hidden Особенности товара
+               ul.features__list
+                  li.features__item
+                     .features__icon
+                        img(src="images/features/features-1.png" alt="иконка" width="75" height="75")
+                     .features__info
+                        h3.features__title Качественная сборка ламп
+                        p.
+                           Надежная конструкция, которая гарантирует долговечность лампы
+                  li.features__item
+                     .features__icon
+                        img(src="images/features/features-2.png" alt="иконка" width="75" height="75")
+                     .features__info
+                        h3.features__title USB порты
+                        p.
+                           Для зарядки телефонов и камер прямо от лампы. Для зарядки телефонов и камер прямо от лампы. Для зарядки телефонов
+                  li.features__item
+                     .features__icon
+                        img(src="images/features/features-2.png" alt="иконка" width="75" height="75")
+                     .features__info
+                        h3.features__title USB порты
+                        p.
+                           Для зарядки телефонов и камер прямо от лампы. Для зарядки телефонов и камер прямо от лампы. Для зарядки телефонов
+
+            section.delivery.product__delivery
+               .delivery__top
+                  h2.delivery__title Доставка
+                  span.delivery__day сегодня
+                  img.delivery__icon(src="images/icons/delivery.svg" alt="доставка" width="54" height="26")
+               .delivery__text
+                  p.
+                     По Москве (в пределах МКАД) — 290 ₽, заказ от 10 тыс - доставим бесплатно
+                  p.
+                     По Московской области (за МКАД) — от 400 ₽ (зависит от удаленности от МКАД)
+
+            article.comment.sec
+               .comment__content
+                  .comment__top
+                     .comment__ava
+                        .comment__ava-pic
+                           img(src="images/comment/ava.png" alt="аватарка" width="80" height="80")
+                        span.comment__ava-pro Стример
+                     .comment__info
+                        h2.comment__name Olyashaa
+                        p.
+                           Стиральная машинка — незаменимый помощник в доме. Она существенно облегчает быт и экономит ваше время.
+                  p.comment__text.
+                     Покупка стиральной машины избавит вас от ежедневной ручной стирки. В дом стиральная машина приобретается наряду с такими вещами первой необходимости, как чайник и плита для приготовления пищи. Стиральная машина ВОЛТЕРА ВТ-СМП4ДRU успешно используется в городских условиях, на даче и в сельской местности. Предусмотрены два режима стирки: нормальный и деликатный, а также таймер отжима – до 5 минут.
+               .comment__manage
+                  button.comment__btn
+                     span.comment__btn-icon
+                        svg
+                           use(href="images/sprites/main.stack.svg#svg-comment-arrow")
+                     span.comment__btn-num 30
+                  button.comment__btn
+                     span.comment__btn-icon
+                        svg
+                           use(href="images/sprites/main.stack.svg#svg-comment-arrow-bottom")
+                     span.comment__btn-num 30
+
+            section.survey
+               h2.survey__title.title Сложно сделать выбор?
+               p.survey__text.
+                  Пройди тест и получи рекомендации как выбрать кольцевую лампу?
+               a.btn.btn--empty(href="#") Пройти опрос

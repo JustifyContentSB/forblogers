@@ -1,0 +1,32 @@
+.delivery
+   @extend %borderSec
+   padding: 18px 34px 24px
+   &__top
+      margin-bottom: var(--mainMargin)
+      display: flex
+      justify-content: space-between
+      align-items: center
+   &__title
+      font-family: var(--robotoCond)
+      font-weight: 400
+      font-size: 24px
+   &__day
+      font-family: var(--firaSans)
+      font-weight: 400
+      font-size: 12px
+      color: #046B1A
+   &__icon
+      width: 54px
+      height: 26px
+   &__text
+      font-weight: 300
+      font-size: 12px
+      line-height: 130%
+      p
+         margin-bottom: 10px
+         &:last-child
+            margin-bottom: 0
+
+@media screen and (min-width: $desktop)
+   .delivery
+      padding: 24px 34px 48px

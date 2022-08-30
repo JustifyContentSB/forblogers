@@ -1,0 +1,56 @@
+.blogger
+   &__top
+      display: none
+   &__list
+      margin-bottom: var(--mainMargin)
+   &__item
+      @extend %borderSec
+      margin-bottom: 10px
+   &__info
+      margin-bottom: 16px
+   &__pic
+      width: 190px
+      margin: 0 auto
+      margin-bottom: 10px
+      display: flex
+      justify-content: center
+      align-items: center
+      border-radius: 50%
+      overflow: hidden
+      img
+         border-radius: 50%
+   &__name
+      text-align: center
+      font-family: var(--robotoCond)
+      font-weight: 400
+      font-size: 26px
+
+@media screen and (min-width: $tablet)
+   .blogger
+      &__list
+         display: grid
+         grid-template-columns: 1fr 1fr
+         grid-gap: var(--mainMargin)
+      &__item
+         margin: 0
+      &__top
+         display: block
+      &__title
+         margin-bottom: 30px
+         font-family: var(--robotoCond)
+         font-weight: 400
+         font-size: 30px
+      &__manage
+         margin-bottom: var(--mainMargin)
+         display: flex
+         flex-wrap: wrap
+         .selected
+            margin-right: 10px
+
+@media screen and (min-width: $desktop)
+   .blogger
+      &__pic
+         width: 167px
+      &__list
+         grid-template-columns: repeat(4, 1fr)
+         grid-gap: 32px
