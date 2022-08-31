@@ -3700,9 +3700,6 @@ picture {
   font-family: var(--robotoCond);
   position: relative
 }
-.account__manage--active {
-  padding-bottom: 68px
-}
 .account__manage-item {
   width: 100%;
   overflow: hidden;
@@ -3714,14 +3711,6 @@ picture {
 .account__manage-item:last-child {
   border-radius: 0 0 var(--mainBorderRadius) var(--mainBorderRadius);
   border-bottom: 0
-}
-.account__manage-item--active {
-  position: absolute;
-  bottom: 0;
-  color: var(--smallTitle)
-}
-.account__manage-item--active .account__manage-btn {
-  background: 0 0
 }
 .account__manage-btn {
   padding: var(--accountBlockMargin) 24px;
@@ -3748,6 +3737,9 @@ picture {
   width: 16px;
   height: 16px;
   background: url(../images/icons/account-arrow.svg)
+}
+.account__manage-btn--active {
+  color: var(--smallTitle)
 }
 .account__manage-icon {
   width: 20px;
@@ -4071,13 +4063,6 @@ picture {
     width: var(--accountManageWidth);
     min-width: var(--accountManageWidth);
     margin-right: var(--mainMargin)
-  }
-  .account__manage--active {
-    padding-bottom: 0
-  }
-  .account__manage-item--active {
-    position: static;
-    background: #fff
   }
   .account__content {
     -webkit-flex-grow: 1;

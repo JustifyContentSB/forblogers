@@ -6,8 +6,6 @@
       margin-bottom: var(--mainMargin)
       font-family: var(--robotoCond)
       position: relative
-      &--active
-         padding-bottom: 68px
       &-item
          width: 100%
          overflow: hidden
@@ -17,12 +15,6 @@
          &:last-child
             border-radius: 0 0 var(--mainBorderRadius) var(--mainBorderRadius)
             border-bottom: 0
-         &--active
-            position: absolute
-            bottom: 0
-            color: var(--smallTitle)
-            .account__manage-btn
-               background: transparent
       &-btn
          padding: var(--accountBlockMargin) 24px
          padding-right: 40px
@@ -40,6 +32,8 @@
             width: 16px
             height: 16px
             background: url('../images/icons/account-arrow.svg')
+         &--active
+            color: var(--smallTitle)
       &-icon
          width: 20px
          min-width: 20px
@@ -269,12 +263,6 @@
          width: var(--accountManageWidth)
          min-width: var(--accountManageWidth)
          margin-right: var(--mainMargin)
-         &--active
-            padding-bottom: 0
-         &-item
-            &--active
-               position: static
-               background: #fff
       &__content
          flex-grow: 1
       .pagination
