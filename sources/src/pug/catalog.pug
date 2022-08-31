@@ -13,8 +13,8 @@ block page
 
    section.catalog
       .catalog__inner.container
-         h1.main-title Каталог товаров
-         header.catalog__header
+         h2.desktop-title Каталог товаров
+         .catalog__header
             .catalog__header-pic.background-image
                picture
                   source(srcset="images/catalog/catalog-title-desk.webp" media="(min-width: 768px)" type="image/webp")
@@ -125,7 +125,7 @@ block page
                            span.shop__code-name ZXC-1223123
                         .shop__manage
                            p.shop__price 2 400 ₽
-                           a.shop__btn.btn.btn--shop(href="#") Выбрать
+                           a.shop__btn.btn.btn--wide(href="#") Выбрать
 
                li.shop__item
                   .shop__item-inner
@@ -228,7 +228,7 @@ block page
                         span 41
                      .pagination__desktop
                         .pagination__list
-                           a.pagination__page.pagination__btn(href="#") 1
+                           a.pagination__page.pagination__btn.pagination__btn--active(href="#") 1
                            a.pagination__page.pagination__btn(href="#") 2
                            a.pagination__page.pagination__btn(href="#") 3
                            a.pagination__page.pagination__btn(href="#") 4

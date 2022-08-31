@@ -1,4 +1,5 @@
 .account
+   --accountBlockMargin: 12px
    &__content
       margin-bottom: var(--mainMargin)
    &__manage
@@ -10,20 +11,20 @@
       &-item
          width: 100%
          overflow: hidden
-         border-bottom: 1px solid #C4C4C4
+         border-bottom: 1px solid var(--smallTitle)
          &:first-child
-            border-radius: 10px 10px 0 0
+            border-radius: var(--mainBorderRadius) var(--mainBorderRadius) 0 0
          &:last-child
-            border-radius: 0 0 10px 10px
+            border-radius: 0 0 var(--mainBorderRadius) var(--mainBorderRadius)
             border-bottom: 0
          &--active
             position: absolute
             bottom: 0
-            color: #C4C4C4
+            color: var(--smallTitle)
             .account__manage-btn
                background: transparent
       &-btn
-         padding: 12px 24px
+         padding: var(--accountBlockMargin) 24px
          padding-right: 40px
          display: flex
          justify-content: space-between
@@ -51,20 +52,22 @@
          line-height: 100%
    &__goods
       @extend %borderSec
-      margin-bottom: 12px
+      margin-bottom: var(--accountBlockMargin)
       padding: 0
+      &:last-child
+         margin-bottom: 0
       &-top
-         padding: 18px 24px 6px
+         padding: 18px 16px 6px
          display: flex
          justify-content: space-between
-         border-bottom: 1px solid #C4C4C4
+         border-bottom: 1px solid var(--smallTitle)
       &-manage
          display: flex
          align-items: center
       &-toggle
          width: 16px
          min-width: 16px
-         margin-right: 12px
+         margin-right: var(--accountBlockMargin)
       &-order
          margin-bottom: 8px
          font-family: var(--robotoCond)
@@ -75,7 +78,7 @@
       &-time
          color: #000
       &-type
-         color: #C4C4C4
+         color: var(--smallTitle)
       &-price
          margin-bottom: 10px
          font-family: var(--robotoCond)
@@ -84,19 +87,21 @@
       &-list
          padding-bottom: var(--mainMargin)
       &-item
-         padding: 12px var(--mainMargin) 0
+         padding: var(--accountBlockMargin) var(--mainMargin) 0
          display: flex
          justify-content: space-between
+      --accountGoodsPicWidth: 100px
+      --accountGoodsPicHeight: 102px
       &-pic
-         width: 100px
-         min-width: 100px
-         height: 102px
-         margin-right: 12px
+         width: var(--accountGoodsPicWidth)
+         min-width: var(--accountGoodsPicWidth)
+         height: var(--accountGoodsPicHeight)
+         margin-right: var(--accountBlockMargin)
          position: relative
-         border-radius: 10px
          overflow: hidden
+         @extend %borderRadius
       &-content
-         width: calc(100% - 112px)
+         width: calc(100% - var(--accountGoodsPicWidth) - var(--accountBlockMargin))
       &-title
          margin-bottom: 8px
          font-family: var(--robotoCond)
@@ -104,12 +109,17 @@
          font-size: 20px
          line-height: 120%
          width: 100%
+         display: -webkit-box
+         -webkit-line-clamp: 2
+         -webkit-box-orient: vertical
+         overflow: hidden
+         text-overflow: ellipsis
       &-code
-         margin-bottom: 12px
+         margin-bottom: var(--accountBlockMargin)
          font-family: var(--firaSans)
          font-weight: 400
          font-size: 12px
-         color: #C4C4C4
+         color: var(--smallTitle)
          &__num
             color: #000
       &-more
@@ -118,16 +128,140 @@
          font-family: var(--robotoCond)
          font-size: 16px
          text-align: right
+   &__add
+      @extend %borderSec
+      margin-bottom: var(--accountBlockMargin)
+      padding: var(--accountBlockMargin) var(--mainMargin) 0
+      &-btn
+         width: 43px
+         min-width: 43px
+         height: 43px
+         padding: 5px
+         margin-bottom: var(--accountBlockMargin)
+         display: inline-flex
+         justify-content: center
+         align-items: center
+         border: 1px solid var(--smallTitle)
+         @extend %borderRadius
+      &-list
+         display: flex
+         flex-wrap: wrap
+         white-space: nowrap
+         li
+            margin-right: var(--accountBlockMargin)
+            margin-bottom: var(--accountBlockMargin)
+         .btn
+            padding: 11px 24px
+            font-weight: 400
+   &__sum
+      margin-bottom: var(--accountBlockMargin)
+      &-item
+         @extend %borderSec
+         padding: var(--accountBlockMargin) var(--mainMargin)
+         margin-bottom: var(--accountBlockMargin)
+         color: var(--smallTitle)
+         font-family: var(--robotoCond)
+         &:last-child
+            margin-bottom: 0
+      &-price
+         display: block
+         font-size: 20px
+         color: #000
+   &__control
+      margin-bottom: var(--accountBlockMargin)
+      display: flex
+      flex-wrap: wrap
+      align-items: center
+      &-btn
+         margin-right: var(--accountBlockMargin)
+      &-compare
+         &__icon
+            width: 25px
+            height: 24px
+         &__text
+            display: none
+   &__notice
+      @extend %borderSec
+      text-align: center
+      &-title
+         margin-bottom: var(--mainMargin)
+      &-manage
+         width: 100%
+         max-width: 500px
+         margin: 0 auto
+         display: flex
+         flex-direction: column
+         justify-content: center
+         flex-wrap: wrap
+      &-btn
+         margin-bottom: var(--accountBlockMargin)
+         &:last-child
+            margin-bottom: 0
+
+@media screen and (min-width: 360px)
+   .account
+      &__goods
+         &--wishlist
+            --accountGoodsPicWidth: 120px
+            --accountGoodsPicHeight: 120px
+
+@media screen and (min-width: 400px)
+   .account
+      &__goods
+         &-top
+            padding: 18px 24px 6px
 
 @media screen and (min-width: $tablet)
    .account
       &__goods
          &-cost
             max-width: 600px
+      &__control
+         &-compare
+            padding: 2px 10px
+            display: inline-flex
+            align-items: center
+            border: var(--mainBorder)
+            border-radius: 3px
+            font-family: var(--robotoCond)
+            font-weight: 400
+            font-size: 12px
+            line-height: 100%
+            &__icon
+               margin-right: var(--accountBlockMargin)
+            &__text
+               display: inline
+      &__add
+         display: flex
+         &-btn
+            margin-right: var(--accountBlockMargin)
+      &__sum
+         font-size: 18px
+         &-price
+            display: inline
+            font-size: 22px
+            line-height: 120%
+      &__notice
+         padding-bottom: var(--accountBlockMargin)
+         &-manage
+            max-width: 100%
+            flex-direction: row
+         &-btn
+            margin-right: var(--accountBlockMargin)
+            &:last-child
+               margin-bottom: var(--accountBlockMargin)
 
 @media screen and (min-width: 1000px)
    .account
       --accountManageWidth: 290px
+      &__goods
+         &--wishlist
+            --accountGoodsPicWidth: 130px
+            --accountGoodsPicHeight: 139px
+            .account
+               &__goods
+                  &-content
+                     width: calc(100% - var(--accountGoodsPicWidth) - var(--mainMargin))
       &__main
          display: flex
          align-items: flex-start
@@ -148,25 +282,27 @@
 
 @media screen and (min-width: $desktop)
    .account
+      .desktop-title
+         margin-bottom: var(--mainMargin)
       &__goods
          &-top
-            padding: 25px var(--mainMargin) 12px
+            padding: 25px var(--mainMargin) var(--accountBlockMargin)
          &-info
             display: flex
             align-items: center
          &-order
             margin: 0
-            margin-right: 12px
+            margin-right: var(--accountBlockMargin)
          &-more
             display: flex
             align-items: center
          &-price
             margin: 0
-            margin-right: 12px
+            margin-right: var(--accountBlockMargin)
          &-date
             &::before
                content: 'Заказ '
-               color: #C4C4C4
+               color: var(--smallTitle)
          &-content
             display: flex
             align-items: flex-start
@@ -178,4 +314,22 @@
             margin: 0
          &-cost
             min-width: 72px
+            padding-top: 4px
             text-align: left
+         &-title
+            -webkit-line-clamp: 3
+         &--wishlist
+            .account
+               &__goods
+                  &-item
+                     padding-top: var(--mainMargin)
+                  &-content
+                     align-items: center
+                  &-code
+                     margin-bottom: var(--accountBlockMargin)
+                  &-cost
+                     font-size: 20px
+      &__sum
+         font-size: 20px
+         &-price
+            font-size: 24px

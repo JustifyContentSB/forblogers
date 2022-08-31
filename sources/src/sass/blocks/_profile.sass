@@ -21,8 +21,6 @@
       display: flex
       justify-content: center
       align-items: center
-      img
-         display: block
    .social
       margin-bottom: 10px
    &__table
@@ -59,13 +57,11 @@
       &-title
          text-align: center
       &-item
+         @extend %borderRadius
          margin-bottom: 10px
-         border-radius: 10px
          overflow: hidden
          display: none
          &.profile__setup-item--active
-            display: block
-         img
             display: block
       &-bottom
          display: flex
@@ -74,7 +70,7 @@
       &-model
          margin-bottom: 10px
       &-read
-         color: var(--btnColor)
+         color: var(--accent)
          font-family: var(--firaSans)
    &__about
       @extend %borderSec

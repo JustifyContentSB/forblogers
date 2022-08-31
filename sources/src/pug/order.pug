@@ -13,7 +13,7 @@ block page
 
    section.account
       .account__inner.container
-         //- h1.account__title Заказы
+         h2.desktop-title Заказы
          .account__main
             .account__manage.account__manage--active
                .account__manage-list
@@ -40,7 +40,7 @@ block page
                            p.account__goods-order #[span.account__goods-type Заказ:] ZXC-10001
                            p.account__goods-date 
                               span.account__goods-type от:
-                              time.account__goods-time(datetime="12.03.2017")  12.03.2017
+                              span.account__goods-time  12.03.2017
                      .account__goods-more
                         p.account__goods-price 14 500 ₽
                         .account__goods-status.status Создан
@@ -78,7 +78,7 @@ block page
                            p.account__goods-order #[span.account__goods-type Заказ:] ZXC-10001
                            p.account__goods-date 
                               span.account__goods-type от:
-                              time.account__goods-time(datetime="12.03.2017")  12.03.2017
+                              span.account__goods-time  12.03.2017
                      .account__goods-more
                         p.account__goods-price 14 500 ₽
                         .account__goods-status.status.status--work В работе
@@ -116,7 +116,7 @@ block page
                            p.account__goods-order #[span.account__goods-type Заказ:] ZXC-10001
                            p.account__goods-date 
                               span.account__goods-type от:
-                              time.account__goods-time(datetime="12.03.2017")  12.03.2017
+                              span.account__goods-time  12.03.2017
                      .account__goods-more
                         p.account__goods-price 14 500 ₽
                         .account__goods-status.status.status--delivery Отдан в доставку
@@ -158,7 +158,7 @@ block page
                      span 41
                   .pagination__desktop
                      .pagination__list
-                        a.pagination__page.pagination__btn(href="#") 1
+                        a.pagination__page.pagination__btn.pagination__btn--active(href="#") 1
                         a.pagination__page.pagination__btn(href="#") 2
                         a.pagination__page.pagination__btn(href="#") 3
                         a.pagination__page.pagination__btn(href="#") 4

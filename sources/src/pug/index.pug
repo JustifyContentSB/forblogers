@@ -8,6 +8,8 @@ block page
          .swiper-wrapper
             .picture__slide.swiper-slide
                picture
+                  source(srcset="images/picture/picture-big.webp" media="(min-width: 2000px)" type="image/webp")
+                  source(srcset="images/picture/picture-big.jpg" media="(min-width: 2000px)" type="image/jpeg")
                   source(srcset="images/picture/picture-desktop.webp" media="(min-width: 1280px)" type="image/webp")
                   source(srcset="images/picture/picture-desktop.jpg" media="(min-width: 1280px)" type="image/jpeg")
                   source(srcset="images/picture/picture-tablet.webp" media="(min-width: 768px)" type="image/webp")
@@ -16,6 +18,8 @@ block page
                   img(src="images/picture/picture-mob.jpg" alt="Картинка товара" width="390" height="419")
             .picture__slide.swiper-slide
                picture
+                  source(srcset="images/picture/picture-big.webp" media="(min-width: 2000px)" type="image/webp")
+                  source(srcset="images/picture/picture-big.jpg" media="(min-width: 2000px)" type="image/jpeg")
                   source(srcset="images/picture/picture-desktop.webp" media="(min-width: 1280px)" type="image/webp")
                   source(srcset="images/picture/picture-desktop.jpg" media="(min-width: 1280px)" type="image/jpeg")
                   source(srcset="images/picture/picture-tablet.webp" media="(min-width: 768px)" type="image/webp")
@@ -24,6 +28,8 @@ block page
                   img(src="images/picture/picture-mob.jpg" alt="Картинка товара" width="390" height="419")
             .picture__slide.swiper-slide
                picture
+                  source(srcset="images/picture/picture-big.webp" media="(min-width: 2000px)" type="image/webp")
+                  source(srcset="images/picture/picture-big.jpg" media="(min-width: 2000px)" type="image/jpeg")
                   source(srcset="images/picture/picture-desktop.webp" media="(min-width: 1280px)" type="image/webp")
                   source(srcset="images/picture/picture-desktop.jpg" media="(min-width: 1280px)" type="image/jpeg")
                   source(srcset="images/picture/picture-tablet.webp" media="(min-width: 768px)" type="image/webp")
@@ -144,7 +150,7 @@ block page
             .news__list
                a.news__item.news__item--active(href="#") 
                   article.news__article
-                     time.news__date 25 июля 2022
+                     .news__date 25 июля 2022
                      .news__pic
                         picture
                            source(srcset="images/news/news-desk.webp" media="(min-width: 1280px)" type="image/webp")
@@ -157,7 +163,7 @@ block page
                            Мороженое в магазинах дорожает из-за импортной упаковки, стабилизаторов, эмульгаторов и разных других вещей
                a.news__item(href="#")
                   article.news__article
-                     time.news__date 25 июля 2022
+                     .news__date 25 июля 2022
                      .news__pic
                         picture
                            source(srcset="images/news/news-desk.webp" media="(min-width: 1280px)" type="image/webp")
@@ -170,7 +176,7 @@ block page
                            Мороженое в магазинах дорожает из-за импортной упаковки, стабилизаторов, эмульгаторов и разных других вещей
                a.news__item(href="#") 
                   article.news__article
-                     time.news__date 25 июля 2022
+                     .news__date 25 июля 2022
                      .news__pic
                         picture
                            source(srcset="images/news/news-desk.webp" media="(min-width: 1280px)" type="image/webp")
@@ -181,3 +187,33 @@ block page
                         h3.news__heading.title Уход за механической клавиатурой
                         p.
                            Мороженое в магазинах дорожает из-за импортной упаковки, стабилизаторов, эмульгаторов и разных других вещей
+
+   nav.navigate
+      ul.navigate__list
+         li.navigate__item
+            a.navigate__link(href="#")
+               .navigate__top
+                  img.navigate__icon(src="images/icons/home.svg", alt="иконка" width="24" height="24")
+               h3.navigate__title Главная
+         li.navigate__item
+            a.navigate__link(href="#")
+               .navigate__top
+                  img.navigate__icon(src="images/icons/element.svg", alt="иконка" width="24" height="24")
+               h3.navigate__title Каталог
+         li.navigate__item
+            a.navigate__link(href="#")
+               .navigate__top
+                  img.navigate__icon(src="images/icons/driver.svg", alt="иконка" width="24" height="24")
+                  span.lot 10
+               h3.navigate__title Сравнение
+         li.navigate__item
+            a.navigate__link(href="#")
+               .navigate__top
+                  img.navigate__icon(src="images/icons/wish.svg", alt="иконка" width="24" height="24")
+                  span.lot 10
+               h3.navigate__title Избранное
+         li.navigate__item
+            a.navigate__link(href="#")
+               .navigate__top
+                  img.navigate__icon(src="images/icons/person.svg", alt="иконка" width="24" height="24")
+               h3.navigate__title Профиль

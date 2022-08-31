@@ -4,26 +4,34 @@
    &__item
       @extend %borderSec
       margin-bottom: 10px
+      position: relative
       &-inner
          width: 100%
          max-width: 400px
          margin: 0 auto
+   &__delete
+      width: 32px
+      height: 32px
+      position: absolute
+      right: 12px
+      top: 12px
    &__model
       margin-bottom: var(--mainMargin)
+      padding: 0 16px
       text-align: center
    &__slider
       margin-bottom: 10px
       overflow: hidden
    &__pic
+      @extend %borderRadius
       height: 274px
-      border-radius: 10px
       overflow: hidden
       position: relative
    &__code
       margin-bottom: 10px
       font-weight: 300
       font-size: 12px
-      color: #C4C4C4
+      color: var(--smallTitle)
       &-name
          color: #000
    &__manage
@@ -44,7 +52,7 @@
                margin: 0 !important
                flex-grow: 1
                border-radius: 0
-               background: #C4C4C4
+               background: var(--smallTitle)
                opacity: 1
                &-active
                   background: #000

@@ -1,6 +1,6 @@
 extends base/_layout
 block head
-   title Заказы
+   title Сравнение товаров
 block page
    section.breadcrumbs
       .breadcrumbs__inner
@@ -20,13 +20,15 @@ block page
                      button.compare__manage-btn.btn.btn--wide.swiper-slide Добавить
                      button.compare__manage-btn.compare__manage-mobile.btn.btn--shop.swiper-slide Мобильные телефоны (16)
                      a.compare__manage-btn.compare__manage-arrow.swiper-slide(href="#")
-                        img(src="images/icons/arrow-right.svg", alt="иконка" width="16" height="16")
+                        img(src="images/icons/arrow-right-white.svg", alt="иконка" width="16" height="16")
                .compare__manage-bullets
                   .swiper-pagination.compare__manage-pagination
          .compare__slider.shop
             .compare__slider-swiper
                .swiper-wrapper
                   .shop__item.swiper-slide
+                     button.shop__delete
+                        img(src="images/icons/menu-close.svg", alt="удалить" width="32" height="32")
                      .shop__item-inner
                         h3.shop__model.title CXB-RGB-460
                         .shop__slider

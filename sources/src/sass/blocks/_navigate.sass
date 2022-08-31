@@ -1,0 +1,31 @@
+.navigate
+   display: none
+   position: fixed
+   top: 50%
+   left: 50%
+   transform: translate(-50%, -50%)
+   z-index: 200
+   font-family: var(--robotoCond)
+   font-size: 12px
+   text-align: center
+   background: #fff
+   &__list
+      display: flex
+   &__link
+      display: block
+      padding: 5px
+   &__top
+      width: 24px
+      margin: 0 auto
+      margin-bottom: 8px
+      position: relative
+   &__title
+      font-weight: 400
+
+@media screen and (min-width: 390px)
+   .navigate
+      &__item
+         min-width: 70px
+         margin-right: 10px
+         &:last-child
+            margin-right: 0

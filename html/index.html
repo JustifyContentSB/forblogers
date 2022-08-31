@@ -25,6 +25,7 @@
   <body>
     <div class="wrapper">
       <header class="header">
+        <h1 class="visually-hidden">4BLOGERS</h1>
         <div class="header__inner">
           <div class="header__menu">
             <button class="header__burger"><span class="visually-hidden">открыть меню</span>
@@ -32,8 +33,7 @@
                 <use href="images/sprites/main.stack.svg#svg-burger"></use>
               </svg>
             </button>
-          </div><a class="header__logo logo" href="#">
-            <h1 class="logo__title">4BLOGERS</h1></a>
+          </div><a class="header__logo logo" href="#"><span class="logo__title">4BLOGERS</span></a>
           <div class="header__right">
             <form class="header__search" action="#">
               <button class="header__search-btn"><span class="visually-hidden">открыть поиск</span>
@@ -44,10 +44,30 @@
             </form><a class="header__cart" href="#"><span class="visually-hidden">Открыть корзину товаров</span>
               <svg>
                 <use href="images/sprites/main.stack.svg#svg-basket"></use>
-              </svg><span class="header__cart-num">10</span></a>
+              </svg><span class="lot">10</span></a>
           </div>
         </div>
       </header>
+      <section class="menu">
+        <h2 class="visually-hidden">Меню сайта</h2>
+        <div class="menu__top"><a class="logo" href="#"><span class="logo__title">4BLOGERS</span></a>
+          <button class="menu__close"><span class="visually-hidden">Закрыть меню</span><img src="images/icons/menu-close.svg" alt="иконка" width="32" height="32"></button>
+        </div>
+        <nav class="menu__nav">
+          <ul class="menu__nav-list">
+            <li class="menu__nav-item"><a class="menu__nav-link menu__nav-toggle" href="#">Каталог <img class="menu__nav-arrow" src="images/icons/arrow-right.svg" alt="иконка" width="20" height="20"></a>
+              <ul class="menu__nav-submenu">
+                <li class="menu__nav-submenu__item"><a href="#">Каталог</a></li>
+                <li class="menu__nav-submenu__item"><a href="#">Каталог</a></li>
+                <li class="menu__nav-submenu__item"><a href="#">Каталог</a></li>
+                <li class="menu__nav-submenu__item"><a href="#">Каталог</a></li>
+              </ul>
+            </li>
+            <li class="menu__nav-item"><a class="menu__nav-link" href="#">Каталог</a></li>
+          </ul>
+        </nav>
+      </section>
+      <div class="overlay"></div>
       <main class="main">
         <section class="picture">
           <h2 class="visually-hidden">Картинки товара</h2>
@@ -55,6 +75,8 @@
             <div class="swiper-wrapper">
               <div class="picture__slide swiper-slide">
                 <picture>
+                  <source srcset="images/picture/picture-big.webp" media="(min-width: 2000px)" type="image/webp">
+                  <source srcset="images/picture/picture-big.jpg" media="(min-width: 2000px)" type="image/jpeg">
                   <source srcset="images/picture/picture-desktop.webp" media="(min-width: 1280px)" type="image/webp">
                   <source srcset="images/picture/picture-desktop.jpg" media="(min-width: 1280px)" type="image/jpeg">
                   <source srcset="images/picture/picture-tablet.webp" media="(min-width: 768px)" type="image/webp">
@@ -64,6 +86,8 @@
               </div>
               <div class="picture__slide swiper-slide">
                 <picture>
+                  <source srcset="images/picture/picture-big.webp" media="(min-width: 2000px)" type="image/webp">
+                  <source srcset="images/picture/picture-big.jpg" media="(min-width: 2000px)" type="image/jpeg">
                   <source srcset="images/picture/picture-desktop.webp" media="(min-width: 1280px)" type="image/webp">
                   <source srcset="images/picture/picture-desktop.jpg" media="(min-width: 1280px)" type="image/jpeg">
                   <source srcset="images/picture/picture-tablet.webp" media="(min-width: 768px)" type="image/webp">
@@ -73,6 +97,8 @@
               </div>
               <div class="picture__slide swiper-slide">
                 <picture>
+                  <source srcset="images/picture/picture-big.webp" media="(min-width: 2000px)" type="image/webp">
+                  <source srcset="images/picture/picture-big.jpg" media="(min-width: 2000px)" type="image/jpeg">
                   <source srcset="images/picture/picture-desktop.webp" media="(min-width: 1280px)" type="image/webp">
                   <source srcset="images/picture/picture-desktop.jpg" media="(min-width: 1280px)" type="image/jpeg">
                   <source srcset="images/picture/picture-tablet.webp" media="(min-width: 768px)" type="image/webp">
@@ -198,7 +224,7 @@
               <h2 class="news__title title">Новости / Блог</h2>
               <div class="news__list"><a class="news__item news__item--active" href="#"> 
                   <article class="news__article">
-                    <time class="news__date">25 июля 2022</time>
+                    <div class="news__date">25 июля 2022</div>
                     <div class="news__pic">
                       <picture>
                         <source srcset="images/news/news-desk.webp" media="(min-width: 1280px)" type="image/webp">
@@ -212,7 +238,7 @@
                     </div>
                   </article></a><a class="news__item" href="#">
                   <article class="news__article">
-                    <time class="news__date">25 июля 2022</time>
+                    <div class="news__date">25 июля 2022</div>
                     <div class="news__pic">
                       <picture>
                         <source srcset="images/news/news-desk.webp" media="(min-width: 1280px)" type="image/webp">
@@ -226,7 +252,7 @@
                     </div>
                   </article></a><a class="news__item" href="#"> 
                   <article class="news__article">
-                    <time class="news__date">25 июля 2022</time>
+                    <div class="news__date">25 июля 2022</div>
                     <div class="news__pic">
                       <picture>
                         <source srcset="images/news/news-desk.webp" media="(min-width: 1280px)" type="image/webp">
@@ -236,16 +262,37 @@
                     </div>
                     <div class="news__info">
                       <h3 class="news__heading title">Уход за механической клавиатурой</h3>
-                      <p>Мороженое в магазинах дорожает из-за импортной упаковки, стабилизаторов, эмульгаторов и разных других вещей</p>
+                      <p>
+                        Мороженое в магазинах дорожает из-за импортной упаковки, стабилизаторов, эмульгаторов и разных других вещей
+                        
+                      </p>
                     </div>
                   </article></a></div>
             </div>
           </div>
         </section>
+        <nav class="navigate">
+          <ul class="navigate__list">
+            <li class="navigate__item"><a class="navigate__link" href="#">
+                <div class="navigate__top"><img class="navigate__icon" src="images/icons/home.svg" alt="иконка" width="24" height="24"></div>
+                <h3 class="navigate__title">Главная</h3></a></li>
+            <li class="navigate__item"><a class="navigate__link" href="#">
+                <div class="navigate__top"><img class="navigate__icon" src="images/icons/element.svg" alt="иконка" width="24" height="24"></div>
+                <h3 class="navigate__title">Каталог</h3></a></li>
+            <li class="navigate__item"><a class="navigate__link" href="#">
+                <div class="navigate__top"><img class="navigate__icon" src="images/icons/driver.svg" alt="иконка" width="24" height="24"><span class="lot">10</span></div>
+                <h3 class="navigate__title">Сравнение</h3></a></li>
+            <li class="navigate__item"><a class="navigate__link" href="#">
+                <div class="navigate__top"><img class="navigate__icon" src="images/icons/wish.svg" alt="иконка" width="24" height="24"><span class="lot">10</span></div>
+                <h3 class="navigate__title">Избранное</h3></a></li>
+            <li class="navigate__item"><a class="navigate__link" href="#">
+                <div class="navigate__top"><img class="navigate__icon" src="images/icons/person.svg" alt="иконка" width="24" height="24"></div>
+                <h3 class="navigate__title">Профиль</h3></a></li>
+          </ul>
+        </nav>
       </main>
       <footer class="footer">
-        <div class="footer__inner container"><a class="footer__logo logo" href="#">
-            <h2 class="logo__title">4BLOGERS</h2></a>
+        <div class="footer__inner container"><a class="footer__logo logo" href="#"><span class="logo__title">4BLOGERS</span></a>
           <div class="footer__info">
             <div class="footer__info-sec">
               <h3 class="footer__info-title">Шоурум</h3>

@@ -1,26 +1,37 @@
 :root
+   //fonts
    --mainFont: 'Roboto'
    --firaSans: 'Fira Sans Extra Condensed', sans-serif
    --robotoCond: 'Roboto Condensed', sans-serif
-   --inter: 'Inter', sans-serif
 
-   --bodyBg: #F0F2F4
+   //colors
+   --bodyBg: #f0f2f4
+   --accent: #0083f1
+   --secondaryText: #858784
+   --smallTitle: #c4c4c4
 
-   --mainMargin: 24px
-
-   --borderLine: 1px solid rgba(91, 91, 91, 0.2)
-
-   --btnColor: #0083F1
-
+   //sizes
    --containerWidth: 1028px
+   --mainMargin: 24px
+   --headerHeight: 60px
+   --borderLine: 1px solid rgba(91, 91, 91, 0.2)
+   --mainBorder: 1px solid rgba(0, 0, 0, 0.1)
+   --mainBorderRadius: 10px
+
+//mixins
+%borderRadius
+   border-radius: var(--mainBorderRadius)
 
 %borderSec
    padding: 24px
    background: #fff
-   border-radius: 10px
+   border-radius: var(--mainBorderRadius)
 
 %borderLine
    border-bottom: var(--borderLine)
+
+%borderBtn
+   border: 1px solid rgba(0, 0, 0, 0.5)
 
 //grid
 $mobile: 360px

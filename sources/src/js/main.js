@@ -7,6 +7,7 @@ $(document).ready(function () {
    inputWidth()
    compareSlider()
    compareManage()
+   menuToggle()
 });
 
 // Your functions here
@@ -71,4 +72,27 @@ function inputWidth() {
    elements.forEach(function (element, index) {
       element.style.width = element.getAttribute('placeholder').length + 'ch';
    });
+}
+
+function menuToggle() {
+   $('.header__burger').on('click', function(e) {
+      e.preventDefault();
+      $('.menu').addClass('menu--active')
+      $('.overlay').addClass('overlay--active')
+      $('body').addClass('no-scroll')
+   })
+
+   $('.menu__close').on('click', function(e) {
+      e.preventDefault();
+      $('.menu').removeClass('menu--active')
+      $('.overlay').removeClass('overlay--active')
+      $('body').removeClass('no-scroll')
+   })
+
+   $('.overlay').on('click', function(e) {
+      e.preventDefault();
+      $('.menu').removeClass('menu--active')
+      $('.overlay').removeClass('overlay--active')
+      $('body').removeClass('no-scroll')
+   })
 }

@@ -1,6 +1,6 @@
 extends base/_layout
 block head
-   title Главная
+   title Блогеры
 block page
    section.breadcrumbs
       .breadcrumbs__inner
@@ -19,14 +19,14 @@ block page
                .blogger__manage
                   .selected
                      button.selected__btn
-                        img.selected__btn-icon(src="images/icons/people.svg", alt="иконка" width="24" height="24")
+                        img.selected__btn-icon(src="images/icons/people.svg" alt="иконка" width="24" height="24")
                         span.selected__btn-text Cоц. сесть
-                        img.selected__btn-arrow(src="images/icons/arrow-circle-down.svg", alt="иконка" width="24" height="24")
+                        img.selected__btn-arrow(src="images/icons/arrow-circle-down.svg" alt="иконка" width="24" height="24")
                   .selected
                      button.selected__btn
-                        img.selected__btn-icon(src="images/icons/like.svg", alt="иконка" width="24" height="24")
+                        img.selected__btn-icon(src="images/icons/like.svg" alt="иконка" width="24" height="24")
                         span.selected__btn-text Популярность
-                        img.selected__btn-arrow(src="images/icons/arrow-circle-down.svg", alt="иконка" width="24" height="24")
+                        img.selected__btn-arrow(src="images/icons/arrow-circle-down.svg" alt="иконка" width="24" height="24")
             .blogger__list
                .blogger__item
                   .blogger__info
@@ -38,13 +38,13 @@ block page
                   ul.social
                      li.social__item
                         a.social__link(href="#")
-                           img(src="images/soc/instagram.svg" alt="instagram" width="24" height="24")
+                           img(src="images/soc/instagram.svg" alt="instagram" title="instagram" width="24" height="24")
                      li.social__item
                         a.social__link(href="#")
-                           img(src="images/soc/youtube.svg" alt="youtube" width="24" height="24")
+                           img(src="images/soc/youtube.svg" alt="youtube" title="youtube" width="24" height="24")
                      li.social__item
                         a.social__link(href="#")
-                           img(src="images/soc/twitch.svg" alt="twitch" width="24" height="24")
+                           img(src="images/soc/twitch.svg" alt="twitch" title="twitch" width="24" height="24")
 
                .blogger__item
                   .blogger__info
@@ -56,31 +56,13 @@ block page
                   ul.social
                      li.social__item
                         a.social__link(href="#")
-                           img(src="images/soc/instagram.svg" alt="instagram" width="24" height="24")
+                           img(src="images/soc/instagram.svg" alt="instagram" title="instagram" width="24" height="24")
                      li.social__item
                         a.social__link(href="#")
-                           img(src="images/soc/youtube.svg" alt="youtube" width="24" height="24")
+                           img(src="images/soc/youtube.svg" alt="youtube" title="youtube" width="24" height="24")
                      li.social__item
                         a.social__link(href="#")
-                           img(src="images/soc/twitch.svg" alt="twitch" width="24" height="24")
-                        
-               .blogger__item
-                  .blogger__info
-                     .blogger__pic
-                        picture
-                           source(srcset="images/blogger/blogger.webp" type="image/webp")
-                           img(src="images/blogger/blogger.png" alt="фото блогера" width="191" height="190")
-                     h3.blogger__name elwycco
-                  ul.social
-                     li.social__item
-                        a.social__link(href="#")
-                           img(src="images/soc/instagram.svg" alt="instagram" width="24" height="24")
-                     li.social__item
-                        a.social__link(href="#")
-                           img(src="images/soc/youtube.svg" alt="youtube" width="24" height="24")
-                     li.social__item
-                        a.social__link(href="#")
-                           img(src="images/soc/twitch.svg" alt="twitch" width="24" height="24")
+                           img(src="images/soc/twitch.svg" alt="twitch" title="twitch" width="24" height="24")
 
                .blogger__item
                   .blogger__info
@@ -92,13 +74,31 @@ block page
                   ul.social
                      li.social__item
                         a.social__link(href="#")
-                           img(src="images/soc/instagram.svg" alt="instagram" width="24" height="24")
+                           img(src="images/soc/instagram.svg" alt="instagram" title="instagram" width="24" height="24")
                      li.social__item
                         a.social__link(href="#")
-                           img(src="images/soc/youtube.svg" alt="youtube" width="24" height="24")
+                           img(src="images/soc/youtube.svg" alt="youtube" title="youtube" width="24" height="24")
                      li.social__item
                         a.social__link(href="#")
-                           img(src="images/soc/twitch.svg" alt="twitch" width="24" height="24")
+                           img(src="images/soc/twitch.svg" alt="twitch" title="twitch" width="24" height="24")
+
+               .blogger__item
+                  .blogger__info
+                     .blogger__pic
+                        picture
+                           source(srcset="images/blogger/blogger.webp" type="image/webp")
+                           img(src="images/blogger/blogger.png" alt="фото блогера" width="191" height="190")
+                     h3.blogger__name elwycco
+                  ul.social
+                     li.social__item
+                        a.social__link(href="#")
+                           img(src="images/soc/instagram.svg" alt="instagram" title="instagram" width="24" height="24")
+                     li.social__item
+                        a.social__link(href="#")
+                           img(src="images/soc/youtube.svg" alt="youtube" title="youtube" width="24" height="24")
+                     li.social__item
+                        a.social__link(href="#")
+                           img(src="images/soc/twitch.svg" alt="twitch" title="twitch" width="24" height="24")
 
          section.pagination
             h2.visually-hidden Пагинация на сайте
@@ -113,7 +113,7 @@ block page
                      span 41
                   .pagination__desktop
                      .pagination__list
-                        a.pagination__page.pagination__btn(href="#") 1
+                        a.pagination__page.pagination__btn.pagination__btn--active(href="#") 1
                         a.pagination__page.pagination__btn(href="#") 2
                         a.pagination__page.pagination__btn(href="#") 3
                         a.pagination__page.pagination__btn(href="#") 4

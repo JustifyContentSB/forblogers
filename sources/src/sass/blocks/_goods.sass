@@ -23,6 +23,12 @@
       display: block
       @extend %borderSec
       padding: 20px 15px 16px
+      &:hover,
+      &:focus
+         .goods
+            &__name
+               span
+                  transform: translateX(5px)
    &__pic
       width: 80px
       margin: 0 auto
@@ -42,6 +48,7 @@
       font-size: 16px
       span
          margin-left: 7px
+         transition: transform .2s ease
       svg
          display: block
          width: 16px
@@ -52,7 +59,7 @@
       margin-bottom: 35px
       &__list
          grid-template-columns: repeat(4, 1fr)
-         grid-gap: 40px 24px
+         grid-gap: var(--mainMargin)
       &__pic
          width: 100%
          margin-bottom: 15px

@@ -1,0 +1,73 @@
+extends base/_layout
+block head
+   title Заказы
+block page
+   section.breadcrumbs
+      .breadcrumbs__inner
+         h2.visually-hidden Цепочка навигации по сайту
+         ul.breadcrumbs__list
+            li.breadcrumbs__item
+               a.breadcrumbs__link(href="#") 4BLOGERS
+            li.breadcrumbs__item
+               a.breadcrumbs__link.breadcrumbs__link--active(href="#") Заказы
+
+   section.account
+      .account__inner.container
+         h2.desktop-title Избранное
+         .account__main
+            .account__manage.account__manage--active
+               .account__manage-list
+                  .account__manage-item
+                     a.account__manage-btn(href="#")
+                        img(src="images/icons/order.svg", alt="иконка" width="20" height="20").account__manage-icon
+                        span.account__manage-text Ваши заказы
+                  .account__manage-item.account__manage-item--active
+                     a.account__manage-btn(href="#")
+                        img(src="images/icons/wishlist.svg", alt="иконка" width="20" height="20").account__manage-icon
+                        span.account__manage-text Вишлисты
+                  .account__manage-item
+                     a.account__manage-btn(href="#")
+                        img(src="images/icons/settings.svg", alt="иконка" width="20" height="20").account__manage-icon
+                        span.account__manage-text Настройка
+            
+            .account__content
+               .account__add
+                  button.account__add-btn
+                     span.visually-hidden Добавить товар
+                     img(src="images/icons/add.svg", alt="добавить товар" width="21" height="21")
+                  ul.account__add-list
+                     li
+                        button.btn.btn--wide Очередь 1
+                     li
+                        button.btn.btn--shop Очередь 1
+
+               .account__notice
+                  .account__notice-info
+                     h2.account__notice-title.title Нет товаров в списке
+                  .account__notice-manage
+                     a.account__notice-btn.btn.btn--wide(href="#") Перейти в каталог
+                     a.account__notice-btn.btn.btn--shop(href="#") Удалить список
+
+         section.pagination
+            h2.visually-hidden Пагинация на сайте
+            .pagination__inner
+               button.pagination__btn.pagination__btn--arrow
+                  span.visually-hidden предыдущая
+                  img(src="images/icons/arrow-left.svg" alt="предыдущая" width="18" height="18")
+               .pagination__info
+                  .pagination__mob
+                     span 1
+                     span /
+                     span 41
+                  .pagination__desktop
+                     .pagination__list
+                        a.pagination__page.pagination__btn.pagination__btn--active(href="#") 1
+                        a.pagination__page.pagination__btn(href="#") 2
+                        a.pagination__page.pagination__btn(href="#") 3
+                        a.pagination__page.pagination__btn(href="#") 4
+                        a.pagination__page.pagination__btn(href="#") 5
+                        a.pagination__page.pagination__btn(href="#") ..
+                        a.pagination__page.pagination__btn(href="#") 41
+               button.pagination__btn.pagination__btn--arrow
+                  span.visually-hidden следующая
+                  img(src="images/icons/arrow-right.svg" alt="следующая" width="16" height="16")

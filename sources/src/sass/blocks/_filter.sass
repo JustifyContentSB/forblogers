@@ -16,8 +16,6 @@
       width: 24px
       min-width: 24px
       height: 24px
-      img
-         display: block
    &__block
       &:last-child
          margin-bottom: 0
@@ -36,11 +34,11 @@
    &__btn
       margin-bottom: var(--filterMargin)
    &__colour
+      @extend %borderRadius
       display: block
       width: 25px
       min-width: 25px
       height: 25px
-      border-radius: 10px
       --colour: black
       background: var(--colour)
       border-color: var(--colour)

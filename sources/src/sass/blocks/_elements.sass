@@ -10,21 +10,67 @@
    font-size: 24px
    line-height: 120%
 
+.desktop-title
+   font-family: var(--robotoCond)
+   font-weight: 400
+   font-size: 28px
+   line-height: 120%
+   position: absolute
+   width: 1px
+   height: 1px
+   margin: -1px
+   border: 0
+   padding: 0
+   clip: rect(0 0 0 0)
+   overflow: hidden
+
 .logo
    display: inline-block
+   text-align: center
    &__title
       font-weight: 400
       font-size: 24px
-      line-height: 28px
+      line-height: 120%
       font-family: var(--robotoCond)
 
+.overlay
+   position: fixed
+   z-index: 90
+   left: 0
+   right: 0
+   top: 0
+   bottom: 0
+   background: rgba(0, 0, 0, 0.3)
+   display: none
+   &--active
+      display: block
+
+.lot
+   min-width: 15px
+   height: 15px
+   padding: 2px
+   border-radius: 50%
+   background: #FF0000
+   position: absolute
+   z-index: 5
+   right: -2px
+   top: -2px
+   font-size: 9px
+   font-weight: bold
+   font-family: var(--firaSans)
+   text-align: center
+   color: #fff
+   display: inline-flex
+   justify-content: center
+   align-items: center
+
 .btn
+   @extend %borderRadius
    display: inline-block
    padding: 5px 12px
-   border: 1px solid rgba(0, 0, 0, 0.1)
-   border-radius: 10px
+   border: var(--mainBorder)
    cursor: pointer
-   background: #0083F1
+   background: var(--accent)
    color: #fff
    font-family: var(--robotoCond)
    font-size: 12px
@@ -32,34 +78,33 @@
    font-weight: 400
    text-align: center
    &--empty
+      @extend %borderBtn
       font-family: var(--firaSans)
       background: #fff
       color: #000
-      border: 1px solid rgba(0, 0, 0, 0.5)
    &--catalog
+      @extend %borderBtn
       padding: 14px 24px
       font-family: var(--robotoCond)
       background: #fff
       color: #000
-      border: 1px solid rgba(0, 0, 0, 0.5)
       font-size: 16px
       font-weight: 700
    &--cart
+      @extend %borderBtn
       width: 100%
       padding: 11px 24px
       font-size: 18px
-      text-align: left
-      border: 1px solid rgba(0, 0, 0, 0.5)
    &--shop
+      @extend %borderBtn
       padding: 14px 24px
       background: #fff
       color: #000
-      border: 1px solid rgba(0, 0, 0, 0.5)
       font-weight: 700
       font-size: 16px
    &--wide
       @extend .btn--shop
-      background: #0083F1
+      background: var(--accent)
       color: #fff
 
 .compare-btn
@@ -100,27 +145,29 @@
       justify-content: center
       align-items: center
       border-radius: 50%
-      background: #C4C4C4
+      background: var(--smallTitle)
       border-radius: 50%
       color: #fff
       font-size: 12px
 
 .field
+   @extend %borderRadius
    width: auto
    padding: 5px 8px
-   border-radius: 10px
    font-size: 12px
    line-height: 120%
    font-weight: 400
    font-family: var(--firaSans)
    background: #fff
    color: #000
-   border: 1px solid rgba(0, 0, 0, 0.5)
+   border: 1px solid var(--smallTitle)
    text-align: center
    box-sizing: content-box
    &::placeholder
       text-align: center
-      color: #000
+      color: var(--smallTitle)
+   &:focus
+      border-color: #000
    &:focus::placeholder
       color: transparent
 
@@ -130,11 +177,11 @@
       &:last-child
          margin-bottom: 0
    &__label
+      @extend %borderRadius
       padding: 12px
       display: flex
       align-items: center
       border: 1px solid rgba(0, 0, 0, 0.1)
-      border-radius: 10px
       cursor: pointer
    &__radio
       width: 15px
@@ -142,7 +189,7 @@
       height: 15px
       margin-right: 24px
       border-radius: 50%
-      background: #C4C4C4
+      background: var(--smallTitle)
       position: relative
       &::after
          content: ''
@@ -153,7 +200,7 @@
          width: 5px
          height: 5px
          border-radius: 50%
-         background: #0083F1
+         background: var(--accent)
          opacity: 0
          transition: opacity .2s ease
    &__info
@@ -167,7 +214,7 @@
    &__desc
       font-size: 10px
       line-height: 100%
-      color: #858784
+      color: var(--secondaryText)
    &__price
       font-family: var(--firaSans)
       font-size: 12px
@@ -178,6 +225,8 @@
          opacity: 1
 
 .selector
+   @extend %borderRadius
+   @extend %borderBtn
    padding: 5px 26px
    position: relative
    font-family: var(--firaSans)
@@ -185,8 +234,6 @@
    font-size: 12px
    line-height: 120%
    background: #fff
-   border: 1px solid rgba(0, 0, 0, 0.5)
-   border-radius: 10px
    white-space: nowrap
    cursor: pointer
    &__text
@@ -197,12 +244,10 @@
       right: -14px
       top: 50%
       transform: translateY(-50%)
-      img
-         display: block
    &--active
       color: #fff
-      background: #0083F1
-      border-color: #0083F1
+      background: var(--accent)
+      border-color: var(--accent)
       .selector
          &__delete
             display: block
@@ -213,20 +258,20 @@
    margin-bottom: var(--mainMargin)
 
 .status
+   @extend %borderRadius
    padding: 3px 12px
    display: inline-flex
-   background: #C4C4C4
+   background: var(--smallTitle)
    font-weight: 400
    font-size: 12px
    text-align: center
    color: #fff
-   border-radius: 10px
-   border: 1px solid rgba(0, 0, 0, 0.1)
+   border: var(--mainBorder)
    font-family: var(--robotoCond)
    &--work
       background: #55C55A
    &--delivery
-      background: #0083F1
+      background: var(--accent)
    &--received
       background: #000
    &--canceled
@@ -258,7 +303,7 @@
             color: #fff
             font-size: 18px
       &-disabled
-         background: #0083F1
+         background: var(--accent)
          opacity: 1 !important
          pointer-events: auto !important
 
@@ -270,6 +315,15 @@
 @media screen and (min-width: $desktop)
    .main-title
       font-size: 28px
+   .desktop-title
+      position: static
+      width: auto
+      height: auto
+      margin: 0
+      border: 0
+      padding: 0
+      clip: auto
+      overflow: visible
    .choose
       &__price
          padding-left: 12px

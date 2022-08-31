@@ -17,10 +17,9 @@ block page
 
    section.profile
       .profile__inner.container
-         section.profile__main
-            h2.visually-hidden Профиль человека
+         .profile__main
             .profile__top
-               h3.profile__name Olyashaa
+               h2.profile__name Olyashaa
             .profile__info
                .profile__ava
                   picture
@@ -29,16 +28,16 @@ block page
                ul.social
                   li.social__item
                      a.social__link(href="#")
-                        img(src="images/soc/instagram.svg", alt="instagram" width="24" height="24")
+                        img(src="images/soc/instagram.svg", alt="instagram" title="instagram" width="24" height="24")
                   li.social__item
                      a.social__link(href="#")
-                        img(src="images/soc/youtube.svg", alt="youtube" width="24" height="24")
+                        img(src="images/soc/youtube.svg", alt="youtube" title="youtube" width="24" height="24")
                   li.social__item
                      a.social__link(href="#")
-                        img(src="images/soc/twitch.svg", alt="twitch" width="24" height="24")
+                        img(src="images/soc/twitch.svg", alt="twitch" title="twitch" width="24" height="24")
                   li.social__item
                      a.social__link(href="#")
-                        img(src="images/soc/steam.svg", alt="steam" width="24" height="24")
+                        img(src="images/soc/steam.svg", alt="steam" title="steam" width="24" height="24")
                ul.profile__table
                      li.profile__table-item
                         span.profile__table-title Команда:
@@ -52,6 +51,7 @@ block page
                      li.profile__table-item
                         span.profile__table-title СДР:
                         span Июнь  08, 1993
+                        
          section.profile__setup
             h2.profile__setup-heading.title #[span Рекомендуемое оборудование]
             .profile__setup-info

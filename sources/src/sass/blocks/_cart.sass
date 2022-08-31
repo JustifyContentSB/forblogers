@@ -34,14 +34,13 @@
       right: 0
       top: 0
    &__pic
+      @extend %borderRadius
       width: 100%
       max-width: 100px
       margin-bottom: 10px
-      border: 1px solid rgba(0, 0, 0, 0.1)
-      border-radius: 10px
+      border: var(--mainBorder)
       overflow: hidden
       img
-         display: block
          width: 100%
    &__right
       display: flex
@@ -63,12 +62,12 @@
       font-weight: 400
       font-size: 16px
    &__manage
+      @extend %borderRadius
       max-width: 90px
       padding: 2px
       display: flex
       align-items: center
       border: 1px solid #F0F0F0
-      border-radius: 10px
       &-btn
          width: 24px
          min-width: 24px
@@ -92,7 +91,7 @@
       font-size: 12px
       line-height: 120%
       &-name
-         color: #858784
+         color: var(--secondaryText)
    &__result
       font-family: var(--firaSans)
       &-item
@@ -119,7 +118,7 @@
       &-top
          @extend %borderSec
          padding: 12px
-         border-radius: 10px 10px 0 0
+         border-radius: var(--mainBorderRadius) var(--mainBorderRadius) 0 0
       &-bottom
          @extend %borderSec
          margin-bottom: var(--mainMargin)
@@ -160,7 +159,6 @@
    &__notify
       @extend %borderSec
       padding: 24px 34px
-
       &-inner
          width: 100%
          max-width: 280px
@@ -232,10 +230,10 @@
          &-inner
             padding: 24px 44px
             background: #fff
-            border-radius: 10px
             display: flex
             justify-content: space-between
             flex-wrap: wrap
+            border-radius: var(--mainBorderRadius)
          &-top, &-bottom
             padding: 0
             background: transparent

@@ -25,6 +25,7 @@
   <body>
     <div class="wrapper">
       <header class="header">
+        <h1 class="visually-hidden">4BLOGERS</h1>
         <div class="header__inner">
           <div class="header__menu">
             <button class="header__burger"><span class="visually-hidden">открыть меню</span>
@@ -32,8 +33,7 @@
                 <use href="images/sprites/main.stack.svg#svg-burger"></use>
               </svg>
             </button>
-          </div><a class="header__logo logo" href="#">
-            <h1 class="logo__title">4BLOGERS</h1></a>
+          </div><a class="header__logo logo" href="#"><span class="logo__title">4BLOGERS</span></a>
           <div class="header__right">
             <form class="header__search" action="#">
               <button class="header__search-btn"><span class="visually-hidden">открыть поиск</span>
@@ -44,10 +44,30 @@
             </form><a class="header__cart" href="#"><span class="visually-hidden">Открыть корзину товаров</span>
               <svg>
                 <use href="images/sprites/main.stack.svg#svg-basket"></use>
-              </svg><span class="header__cart-num">10</span></a>
+              </svg><span class="lot">10</span></a>
           </div>
         </div>
       </header>
+      <section class="menu">
+        <h2 class="visually-hidden">Меню сайта</h2>
+        <div class="menu__top"><a class="logo" href="#"><span class="logo__title">4BLOGERS</span></a>
+          <button class="menu__close"><span class="visually-hidden">Закрыть меню</span><img src="images/icons/menu-close.svg" alt="иконка" width="32" height="32"></button>
+        </div>
+        <nav class="menu__nav">
+          <ul class="menu__nav-list">
+            <li class="menu__nav-item"><a class="menu__nav-link menu__nav-toggle" href="#">Каталог <img class="menu__nav-arrow" src="images/icons/arrow-right.svg" alt="иконка" width="20" height="20"></a>
+              <ul class="menu__nav-submenu">
+                <li class="menu__nav-submenu__item"><a href="#">Каталог</a></li>
+                <li class="menu__nav-submenu__item"><a href="#">Каталог</a></li>
+                <li class="menu__nav-submenu__item"><a href="#">Каталог</a></li>
+                <li class="menu__nav-submenu__item"><a href="#">Каталог</a></li>
+              </ul>
+            </li>
+            <li class="menu__nav-item"><a class="menu__nav-link" href="#">Каталог</a></li>
+          </ul>
+        </nav>
+      </section>
+      <div class="overlay"></div>
       <main class="main">
         <section class="breadcrumbs">
           <div class="breadcrumbs__inner">
@@ -65,7 +85,7 @@
             <div class="product__card">
               <div class="product__card-inner">
                 <div class="product__card-top">
-                  <h1 class="product__card-title">CXB-RGB-460</h1>
+                  <h2 class="product__card-title">CXB-RGB-460</h2>
                   <p class="product__card-code">Код товара: 1616316</p>
                 </div>
                 <div class="product__card-bottom">
@@ -218,8 +238,7 @@
         </section>
       </main>
       <footer class="footer">
-        <div class="footer__inner container"><a class="footer__logo logo" href="#">
-            <h2 class="logo__title">4BLOGERS</h2></a>
+        <div class="footer__inner container"><a class="footer__logo logo" href="#"><span class="logo__title">4BLOGERS</span></a>
           <div class="footer__info">
             <div class="footer__info-sec">
               <h3 class="footer__info-title">Шоурум</h3>
