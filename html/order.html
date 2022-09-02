@@ -28,20 +28,20 @@
         <h1 class="visually-hidden">4BLOGERS</h1>
         <div class="header__inner">
           <div class="header__menu">
-            <button class="header__burger"><span class="visually-hidden">открыть меню</span>
+            <button class="header__burger svg-stroke"><span class="visually-hidden">открыть меню</span>
               <svg>
                 <use href="images/sprites/main.stack.svg#svg-burger"></use>
               </svg>
             </button>
-          </div><a class="header__logo logo" href="#"><span class="logo__title">4BLOGERS</span></a>
+          </div><a class="header__logo logo" href="index.html"><span class="logo__title">4BLOGERS</span></a>
           <div class="header__right">
             <form class="header__search" action="#">
-              <button class="header__search-btn"><span class="visually-hidden">открыть поиск</span>
+              <button class="header__search-btn svg-fill"><span class="visually-hidden">открыть поиск</span>
                 <svg>
                   <use href="images/sprites/main.stack.svg#svg-loop"></use>
                 </svg>
               </button>
-            </form><a class="header__cart" href="#"><span class="visually-hidden">Открыть корзину товаров</span>
+            </form><a class="header__cart svg-fill" href="#"><span class="visually-hidden">Открыть корзину товаров</span>
               <svg>
                 <use href="images/sprites/main.stack.svg#svg-basket"></use>
               </svg><span class="lot">10</span></a>
@@ -50,12 +50,16 @@
       </header>
       <section class="menu">
         <h2 class="visually-hidden">Меню сайта</h2>
-        <div class="menu__top"><a class="logo" href="#"><span class="logo__title">4BLOGERS</span></a>
-          <button class="menu__close"><span class="visually-hidden">Закрыть меню</span><img src="images/icons/menu-close.svg" alt="иконка" width="32" height="32"></button>
+        <div class="menu__top"><a class="logo" href="index.html"><span class="logo__title">4BLOGERS</span></a>
+          <button class="menu__close svg-fill"><span class="visually-hidden">Закрыть меню</span>
+            <svg>
+              <use href="images/sprites/main.stack.svg#svg-menu-close"></use>
+            </svg>
+          </button>
         </div>
         <nav class="menu__nav">
           <ul class="menu__nav-list">
-            <li class="menu__nav-item"><a class="menu__nav-link menu__nav-toggle" href="#">Каталог <img class="menu__nav-arrow" src="images/icons/arrow-right.svg" alt="иконка" width="20" height="20"></a>
+            <li class="menu__nav-item"><a class="menu__nav-link menu__nav-toggle" href="#">Каталог</a>
               <ul class="menu__nav-submenu">
                 <li class="menu__nav-submenu__item"><a href="#">Каталог</a></li>
                 <li class="menu__nav-submenu__item"><a href="#">Каталог</a></li>
@@ -84,16 +88,29 @@
             <div class="account__main">
               <div class="account__manage">
                 <div class="account__manage-list">
-                  <div class="account__manage-item"><a class="account__manage-btn" href="#"><img class="account__manage-icon" src="images/icons/order.svg" alt="иконка" width="20" height="20"><span class="account__manage-text">Ваши заказы</span></a></div>
-                  <div class="account__manage-item"><a class="account__manage-btn account__manage-btn--active" href="#"><img class="account__manage-icon" src="images/icons/wishlist.svg" alt="иконка" width="20" height="20"><span class="account__manage-text">Вишлисты</span></a></div>
-                  <div class="account__manage-item"><a class="account__manage-btn" href="#"><img class="account__manage-icon" src="images/icons/settings.svg" alt="иконка" width="20" height="20"><span class="account__manage-text">Настройка</span></a></div>
+                  <div class="account__manage-item"><a class="account__manage-btn svg-fill" href="#"><span class="account__manage-icon">
+                        <svg>
+                          <use href="images/sprites/main.stack.svg#svg-order"></use>
+                        </svg></span><span class="account__manage-text">Ваши заказы</span></a></div>
+                  <div class="account__manage-item"><a class="account__manage-btn svg-fill account__manage-btn--active" href="#"><span class="account__manage-icon">
+                        <svg>
+                          <use href="images/sprites/main.stack.svg#svg-wishlist"></use>
+                        </svg></span><span class="account__manage-text">Вишлисты</span></a></div>
+                  <div class="account__manage-item"><a class="account__manage-btn svg-fill" href="#"><span class="account__manage-icon">
+                        <svg>
+                          <use href="images/sprites/main.stack.svg#svg-settings"></use>
+                        </svg></span><span class="account__manage-text">Настройка</span></a></div>
                 </div>
               </div>
               <div class="account__content">
                 <div class="account__goods">
                   <div class="account__goods-top">
                     <div class="account__goods-manage">
-                      <button class="account__goods-toggle"><img src="images/icons/arrow-bottom.svg" alt="кнопка раскрыть" width="16" height="10"></button>
+                      <button class="account__goods-toggle svg-stroke">
+                        <svg>
+                          <use href="images/sprites/main.stack.svg#svg-arrow-bottom"></use>
+                        </svg>
+                      </button>
                       <div class="account__goods-info">
                         <p class="account__goods-order"><span class="account__goods-type">Заказ:</span> ZXC-10001</p>
                         <p class="account__goods-date"> <span class="account__goods-type">от:</span><span class="account__goods-time"> 12.03.2017</span></p>
@@ -144,7 +161,11 @@
                 <div class="account__goods">
                   <div class="account__goods-top">
                     <div class="account__goods-manage">
-                      <button class="account__goods-toggle"><img src="images/icons/arrow-bottom.svg" alt="кнопка раскрыть" width="16" height="10"></button>
+                      <button class="account__goods-toggle svg-stroke">
+                        <svg>
+                          <use href="images/sprites/main.stack.svg#svg-arrow-bottom"></use>
+                        </svg>
+                      </button>
                       <div class="account__goods-info">
                         <p class="account__goods-order"><span class="account__goods-type">Заказ:</span> ZXC-10001</p>
                         <p class="account__goods-date"> <span class="account__goods-type">от:</span><span class="account__goods-time"> 12.03.2017</span></p>
@@ -152,7 +173,7 @@
                     </div>
                     <div class="account__goods-more">
                       <p class="account__goods-price">14 500 ₽</p>
-                      <div class="account__goods-status status status--work">В работе</div>
+                      <div class="account__goods-status status">Создан</div>
                     </div>
                   </div>
                   <div class="account__goods-bottom">
@@ -195,7 +216,11 @@
                 <div class="account__goods">
                   <div class="account__goods-top">
                     <div class="account__goods-manage">
-                      <button class="account__goods-toggle"><img src="images/icons/arrow-bottom.svg" alt="кнопка раскрыть" width="16" height="10"></button>
+                      <button class="account__goods-toggle svg-stroke">
+                        <svg>
+                          <use href="images/sprites/main.stack.svg#svg-arrow-bottom"></use>
+                        </svg>
+                      </button>
                       <div class="account__goods-info">
                         <p class="account__goods-order"><span class="account__goods-type">Заказ:</span> ZXC-10001</p>
                         <p class="account__goods-date"> <span class="account__goods-type">от:</span><span class="account__goods-time"> 12.03.2017</span></p>
@@ -203,7 +228,7 @@
                     </div>
                     <div class="account__goods-more">
                       <p class="account__goods-price">14 500 ₽</p>
-                      <div class="account__goods-status status status--delivery">Отдан в доставку</div>
+                      <div class="account__goods-status status">Создан</div>
                     </div>
                   </div>
                   <div class="account__goods-bottom">
@@ -248,21 +273,29 @@
             <section class="pagination">
               <h2 class="visually-hidden">Пагинация на сайте</h2>
               <div class="pagination__inner">
-                <button class="pagination__btn pagination__btn--arrow"><span class="visually-hidden">предыдущая</span><img src="images/icons/arrow-left.svg" alt="предыдущая" width="18" height="18"></button>
+                <button class="pagination__btn pagination__btn--arrow svg-fill"><span class="visually-hidden">предыдущая</span>
+                  <svg>
+                    <use href="images/sprites/main.stack.svg#svg-arrow-left"></use>
+                  </svg>
+                </button>
                 <div class="pagination__info">
                   <div class="pagination__mob"><span>1</span><span>/</span><span>41</span></div>
                   <div class="pagination__desktop">
                     <div class="pagination__list"><a class="pagination__page pagination__btn pagination__btn--active" href="#">1</a><a class="pagination__page pagination__btn" href="#">2</a><a class="pagination__page pagination__btn" href="#">3</a><a class="pagination__page pagination__btn" href="#">4</a><a class="pagination__page pagination__btn" href="#">5</a><a class="pagination__page pagination__btn" href="#">..</a><a class="pagination__page pagination__btn" href="#">41</a></div>
                   </div>
                 </div>
-                <button class="pagination__btn pagination__btn--arrow"><span class="visually-hidden">следующая</span><img src="images/icons/arrow-right.svg" alt="следующая" width="16" height="16"></button>
+                <button class="pagination__btn pagination__btn--arrow svg-fill"><span class="visually-hidden">следующая</span>
+                  <svg>
+                    <use href="images/sprites/main.stack.svg#svg-arrow-right"></use>
+                  </svg>
+                </button>
               </div>
             </section>
           </div>
         </section>
       </main>
       <footer class="footer">
-        <div class="footer__inner container"><a class="footer__logo logo" href="#"><span class="logo__title">4BLOGERS</span></a>
+        <div class="footer__inner container"><a class="footer__logo logo" href="index.html"><span class="logo__title">4BLOGERS</span></a>
           <div class="footer__info">
             <div class="footer__info-sec">
               <h3 class="footer__info-title">Шоурум</h3>
@@ -287,6 +320,45 @@
           </div>
         </div>
       </footer>
+      <nav class="navigate">
+        <ul class="navigate__list">
+          <li class="navigate__item"><a class="navigate__link svg-fill navigate__link--active" href="#">
+              <div class="navigate__top">
+                <svg class="navigate__icon">
+                  <use href="images/sprites/main.stack.svg#svg-home"></use>
+                </svg>
+              </div>
+              <h3 class="navigate__title">Главная</h3></a></li>
+          <li class="navigate__item"><a class="navigate__link" href="#">
+              <div class="navigate__top">
+                <svg class="navigate__icon">
+                  <use href="images/sprites/main.stack.svg#svg-element"></use>
+                </svg>
+              </div>
+              <h3 class="navigate__title">Каталог</h3></a></li>
+          <li class="navigate__item"><a class="navigate__link svg-fill" href="#">
+              <div class="navigate__top">
+                <svg class="navigate__icon">
+                  <use href="images/sprites/main.stack.svg#svg-driver"></use>
+                </svg><span class="lot">10</span>
+              </div>
+              <h3 class="navigate__title">Сравнение</h3></a></li>
+          <li class="navigate__item"><a class="navigate__link" href="#">
+              <div class="navigate__top">
+                <svg class="navigate__icon">
+                  <use href="images/sprites/main.stack.svg#svg-wish"></use>
+                </svg><span class="lot">10</span>
+              </div>
+              <h3 class="navigate__title">Избранное</h3></a></li>
+          <li class="navigate__item"><a class="navigate__link" href="#">
+              <div class="navigate__top">
+                <svg class="navigate__icon">
+                  <use href="images/sprites/main.stack.svg#svg-person"></use>
+                </svg>
+              </div>
+              <h3 class="navigate__title">Профиль</h3></a></li>
+        </ul>
+      </nav>
     </div>
     <script src="js/main.min.js"></script>
   </body>

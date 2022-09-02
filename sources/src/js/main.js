@@ -75,21 +75,21 @@ function inputWidth() {
 }
 
 function menuToggle() {
-   $('.header__burger').on('click', function(e) {
+   $('.header__burger').on('click', function (e) {
       e.preventDefault();
       $('.menu').addClass('menu--active')
       $('.overlay').addClass('overlay--active')
       $('body').addClass('no-scroll')
    })
 
-   $('.menu__close').on('click', function(e) {
+   $('.menu__close').on('click', function (e) {
       e.preventDefault();
       $('.menu').removeClass('menu--active')
       $('.overlay').removeClass('overlay--active')
       $('body').removeClass('no-scroll')
    })
 
-   $('.overlay').on('click', function(e) {
+   $('.overlay').on('click', function (e) {
       e.preventDefault();
       $('.menu').removeClass('menu--active')
       $('.overlay').removeClass('overlay--active')

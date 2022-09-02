@@ -27,9 +27,10 @@ block page
             .filter__top
                button.filter__reset(type="reset") Очистить
                h2.title Фильтры
-               button.filter__toggle
+               button.filter__toggle.svg-stroke
                   span.visually-hidden Раскрыть фильтр
-                  img(src="images/icons/filter.svg" alt="иконка" width="24" height="24")
+                  svg.navigate__icon
+                     use(href="images/sprites/main.stack.svg#svg-filter")
             .filter__manage
                .filter__block
                   h3.filter__type Цена, ₽
@@ -218,9 +219,10 @@ block page
             section.pagination
                h2.visually-hidden Пагинация на сайте
                .pagination__inner
-                  button.pagination__btn.pagination__btn--arrow
+                  button.pagination__btn.pagination__btn--arrow.svg-fill
                      span.visually-hidden предыдущая
-                     img(src="images/icons/arrow-left.svg" alt="предыдущая" width="18" height="18")
+                     svg
+                        use(href="images/sprites/main.stack.svg#svg-arrow-left")
                   .pagination__info
                      .pagination__mob
                         span 1
@@ -235,9 +237,10 @@ block page
                            a.pagination__page.pagination__btn(href="#") 5
                            a.pagination__page.pagination__btn(href="#") ..
                            a.pagination__page.pagination__btn(href="#") 41
-                  button.pagination__btn.pagination__btn--arrow
+                  button.pagination__btn.pagination__btn--arrow.svg-fill
                      span.visually-hidden следующая
-                     img(src="images/icons/arrow-right.svg" alt="следующая" width="16" height="16")
+                     svg
+                        use(href="images/sprites/main.stack.svg#svg-arrow-right")
 
          article.catalog__article
             h2.title Сео текст для каталога

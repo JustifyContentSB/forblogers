@@ -21,6 +21,10 @@
          display: flex
          justify-content: center
          align-items: center
+         @extend %transition
+         &:hover,
+         &:focus
+            background: var(--hoverColor)
       &-bullets
          width: 100%
          @extend .shop__pagination

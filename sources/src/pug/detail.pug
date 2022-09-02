@@ -48,14 +48,17 @@ block page
                   .product__card-info
                      .product__card-desc
                         .product__card-more
-                           button.compare-btn
-                              span.compare-btn__icon
-                              span Cравнить
+                           label.compare-btn
+                              input(type="checkbox")
+                              span.compare-btn__manage
+                                 span.compare-btn__icon
+                                 span Cравнить
                            p.product__card-price 2 400 ₽
                         .product__card-manage
-                           button.product__card-calendar.product__card-manage__btn
+                           button.product__card-calendar.product__card-manage__btn.svg-fill
                               span.visually-hidden Календарь
-                              img(src="images/icons/calendar.svg" alt="календарь" width="25" height="24")
+                              svg
+                                 use(href="images/sprites/main.stack.svg#svg-calendar")
                            button.btn Выбрать
                            button.product__card-favourite.product__card-manage__btn
                               span.visually-hidden В избранное
@@ -90,9 +93,11 @@ block page
                         td.property__type Вес
                         td.property__value 30 шт
                .property__manage
-                  button.compare-btn
-                     span.compare-btn__icon
-                     span Cравнить
+                  label.compare-btn
+                     input(type="checkbox")
+                     span.compare-btn__manage
+                        span.compare-btn__icon
+                        span Cравнить
                   a.choose-btn(href="#")
                      span.choose-btn__icon ?
                      span.choose-btn__text Как выбрать?

@@ -27,8 +27,10 @@ block page
             .compare__slider-swiper
                .swiper-wrapper
                   .shop__item.swiper-slide
-                     button.shop__delete
-                        img(src="images/icons/menu-close.svg", alt="удалить" width="32" height="32")
+                     button.shop__delete.svg-fill
+                        span.visually-hidden открыть поиск
+                        svg
+                           use(href="images/sprites/main.stack.svg#svg-menu-close")
                      .shop__item-inner
                         h3.shop__model.title CXB-RGB-460
                         .shop__slider
@@ -302,8 +304,9 @@ block page
                   .specific__col
                      .specific__top
                         h3.specific__name.title Габариты и вес
-                        button.specific__toggle
-                           img(src="images/icons/arrow-circle-down.svg" alt="иконка" width="24" height="24")
+                        button.specific__toggle.svg-fill
+                           svg
+                              use(href="images/sprites/main.stack.svg#svg-arrow-circle-down")
                      ul.specific__shedule
                         li.specific__item
                            p.specific__type Ширина
@@ -320,8 +323,9 @@ block page
                   .specific__col
                      .specific__top
                         h3.specific__name.title Питание
-                        button.specific__toggle
-                           img(src="images/icons/arrow-circle-down.svg" alt="иконка" width="24" height="24")
+                        button.specific__toggle.svg-fill
+                           svg
+                              use(href="images/sprites/main.stack.svg#svg-arrow-circle-down")
                      ul.specific__shedule
                         li.specific__item
                            p.specific__type Ширина

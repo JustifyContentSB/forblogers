@@ -44,10 +44,20 @@
       display: inline-flex
       align-items: center
       font-size: 12px
+      @extend %transition
+      &:hover,
+      &:focus
+         background: var(--hoverColor)
+         color: #fff
+         svg
+            fill: #fff
       &-icon
          width: 15px
          height: 17px
          margin-right: 13px
+         svg
+            fill: #dedede
+            @extend %transition
       &-num
          padding-top: 2px
 

@@ -27,12 +27,15 @@
       display: flex
       justify-content: center
       align-items: center
-      width: 10px
-      min-width: 10px
-      height: 10px
+      width: 16px
+      min-width: 16px
+      height: 16px
       position: absolute
       right: 0
       top: 0
+      svg
+         width: 10px
+         height: 10px
    &__pic
       @extend %borderRadius
       width: 100%
@@ -77,9 +80,14 @@
          align-items: center
          color: #C8C8C8
          font-size: 18px
+         &:hover,
+         &:focus
+            svg
+               fill: var(--hoverColor)
          svg
             width: 13px
             height: 13px
+            fill: #c8c8c8
       &-num
          padding-top: 2px
          min-width: 30px
@@ -187,7 +195,7 @@
          padding-left: 18px
          flex-direction: row
       &__delete
-         left: 0
+         left: -6px
          top: 50%
          transform: translateY(-50%)
       &__pic

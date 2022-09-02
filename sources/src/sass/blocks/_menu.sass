@@ -1,6 +1,6 @@
 .menu
    position: fixed
-   z-index: 100
+   z-index: 200
    top: 0
    left: 0
    bottom: 0
@@ -8,12 +8,17 @@
    background: #fff
    transform: translateX(-100%)
    transition: transform .2s ease
+   overflow-y: auto
    &--active
       transform: translateX(0)
    &__top
-      padding: 20px 60px
+      height: 60px
+      padding: 10px 60px
       position: relative
       text-align: center
+      display: flex
+      justify-content: center
+      align-items: center
    &__close
       width: 32px
       height: 32px
@@ -31,12 +36,39 @@
       &-item
          padding-top: 10px
          margin-bottom: 10px
-         border-bottom: 1px solid rgba(0, 0, 0, 0.4)
+         
       &-link
          padding: 10px
          position: relative
+         @extend %transition
+         border-bottom: 1px solid rgba(0, 0, 0, 0.4)
+         &:hover,
+         &:focus
+            color: var(--hoverColor)
+            border-color: var(--hoverColor)
+            &::before
+               opacity: 0
+            &::after
+               opacity: 1
       &-toggle
          padding-right: 34px
+         position: relative
+         &::before,
+         &::after
+            content: ''
+            position: absolute
+            right: 0
+            top: 50%
+            transform: translateY(-50%)
+            width: 20px
+            height: 20px
+            transition: opacity var(--hoverTime) ease
+         &::before
+            background: url('../images/icons/arrow-right.svg') no-repeat center / contain
+            opacity: 1
+         &::after
+            background: url('../images/icons/arrow-right-blue.svg') no-repeat center / contain
+            opacity: 0
       &-arrow
          position: absolute
          right: 0

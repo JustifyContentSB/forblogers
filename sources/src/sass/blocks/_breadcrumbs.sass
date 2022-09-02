@@ -22,8 +22,16 @@
             top: 0
             color: var(--secondaryText)
    &__link
+      &:hover,
+      &:focus
+         color: var(--hoverColor)
+         @extend %transition
       &--active
          color: var(--secondaryText)
+         cursor: auto
+         &:hover,
+         &:focus
+            color: var(--secondaryText)
 
 @media screen and (min-width: $desktop)
    .breadcrumbs

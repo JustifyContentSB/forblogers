@@ -36,6 +36,11 @@
       background: #fff
       color: #000
       text-align: center
+      @extend %transition
+      &:hover,
+      &:focus
+         background: var(--hoverColor)
+         color: #fff
    &__nav
       font-weight: 300
       a

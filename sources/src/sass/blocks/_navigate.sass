@@ -1,26 +1,39 @@
 .navigate
-   display: none
+   width: 100%
    position: fixed
-   top: 50%
+   z-index: 100
+   bottom: 0
    left: 50%
-   transform: translate(-50%, -50%)
-   z-index: 200
-   font-family: var(--robotoCond)
-   font-size: 12px
+   transform: translateX(-50%)
    text-align: center
    background: #fff
    &__list
       display: flex
+      justify-content: center
    &__link
       display: block
       padding: 5px
+      &--active
+         color: var(--hoverColor)
+         svg
+            fill: var(--hoverColor)
+      &:hover,
+      &:focus
+         color: var(--hoverColor)
+         svg
+            fill: var(--hoverColor)
    &__top
-      width: 24px
+      width: 26px
       margin: 0 auto
-      margin-bottom: 8px
+      margin-bottom: 4px
       position: relative
+   &__icon
+      width: 26px
+      height: 26px
    &__title
       font-weight: 400
+      font-family: var(--robotoCond)
+      font-size: 12px
 
 @media screen and (min-width: 390px)
    .navigate
@@ -29,3 +42,7 @@
          margin-right: 10px
          &:last-child
             margin-right: 0
+
+@media screen and (min-width: $tablet)
+   .navigate
+      display: none

@@ -21,15 +21,28 @@
       justify-content: center
       align-items: center
       background: #fff
-      transition: color .2s ease
+      @extend %transition
       &:hover,
       &:focus
-         color: var(--accent)
+         color: #fff
+         background: var(--hoverColor)
+         svg
+            fill: #fff
       &--active
          color: var(--accent)
+         cursor: auto
+         &:hover,
+         &:focus
+            color: var(--accent)
+            background: #fff
+            svg
+               fill: var(--hoverColor)
       &--arrow
          width: 40px
          min-width: 40px
+         svg
+            width: 18px
+            height: 18px
    &__mob
       font-size: 24px
 
@@ -53,3 +66,5 @@
                margin-right: 10px
                &:last-child
                   margin-right: 0
+      &__page
+         padding-top: 8px

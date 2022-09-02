@@ -27,11 +27,17 @@
 .logo
    display: inline-block
    text-align: center
+   @extend %transition
+   cursor: text
    &__title
       font-weight: 400
       font-size: 24px
       line-height: 120%
       font-family: var(--robotoCond)
+   &[href="index.html"]:hover,
+   &[href="index.html"]:focus
+      color: var(--hoverColor)
+      cursor: pointer
 
 .overlay
    position: fixed
@@ -53,7 +59,7 @@
    background: #FF0000
    position: absolute
    z-index: 5
-   right: -2px
+   right: -4px
    top: -2px
    font-size: 9px
    font-weight: bold
@@ -77,11 +83,16 @@
    line-height: 120%
    font-weight: 400
    text-align: center
+   @extend %transition
    &--empty
       @extend %borderBtn
       font-family: var(--firaSans)
       background: #fff
       color: #000
+      &:hover,
+      &:focus
+         background: var(--hoverColor)
+         color: #fff
    &--catalog
       @extend %borderBtn
       padding: 14px 24px
@@ -102,30 +113,62 @@
       color: #000
       font-weight: 700
       font-size: 16px
+      &:hover,
+      &:focus
+         background: var(--hoverColor)
+         color: #fff
    &--wide
       @extend .btn--shop
       background: var(--accent)
       color: #fff
 
 .compare-btn
-   --border-color: #EBEBEB
-   padding: 6px 5px
    display: inline-flex
    align-items: center
    justify-content: center
    font-family: 'Roboto'
    font-weight: 300
    font-size: 12px
-   border-radius: 5px
-   border: 1px solid var(--border-color)
    cursor: pointer
+   &__manage
+      --border-color: #EBEBEB
+      padding: 6px 5px
+      display: flex
+      justify-content: center
+      align-items: center
+      border: 1px solid var(--border-color)
+      border-radius: 5px
    &__icon
+      display: block
       width: 16px
       min-width: 16px
       height: 16px
       margin-right: 12px
       border: 1px solid var(--border-color)
       border-radius: 5px
+      position: relative
+      &::after
+         content: ''
+         position: absolute
+         left: 50%
+         top: 50%
+         transform: translate(-50%, -50%)
+         width: 8px
+         height: 8px
+         background: url('../images/icons/check.svg') no-repeat center / contain
+         opacity: 0
+   input
+      display: none
+      &:checked
+         & ~ .compare
+            &-btn
+               &__manage
+                  color: var(--accent)
+                  border-color: var(--accent)
+                  .compare-btn__icon
+                     border-color: var(--accent)
+                     &::after
+                        opacity: 1
 
 .choose-btn
    padding: 10px
@@ -149,6 +192,13 @@
       border-radius: 50%
       color: #fff
       font-size: 12px
+   &:hover,
+   &:focus
+      .choose-btn
+         &__icon
+            background: var(--hoverColor)
+         &__text
+            text-decoration: underline
 
 .field
    @extend %borderRadius
@@ -202,7 +252,7 @@
          border-radius: 50%
          background: var(--accent)
          opacity: 0
-         transition: opacity .2s ease
+         @extend %transition
    &__info
       flex-grow: 1
       font-family: var(--robotoCond)
@@ -286,10 +336,27 @@
       border-radius: 25px
       font-size: 20px
       font-family: var(--robotoCond)
+      @extend %transition
+      &:hover,
+      &:focus
+         background: var(--hoverColor)
+         color: #fff
+         svg
+            fill: #fff
+      &-icon
+         width: 26px
+         min-width: 26px
+         height: 26px
+         margin-right: auto
+         @extend %transition
       &-text
          margin: 0 23px
       &-arrow
+         width: 26px
+         min-width: 26px
+         height: 26px
          margin-left: auto
+         @extend %transition
 
 .swiper
    &-button
@@ -306,6 +373,24 @@
          background: var(--accent)
          opacity: 1 !important
          pointer-events: auto !important
+
+.svg-stroke
+   svg
+      stroke: #000
+      transition: stroke .2s ease
+   &:hover,
+   &:focus
+      svg
+         stroke: var(--hoverColor)
+
+.svg-fill
+   svg
+      fill: #000
+      transition: fill .2s ease
+   &:hover,
+   &:focus
+      svg
+         fill: var(--hoverColor)
 
 @media screen and (min-width: 500px)
    .btn
